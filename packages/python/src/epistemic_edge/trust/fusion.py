@@ -50,6 +50,7 @@ class SLFusion:
             belief=b,
             disbelief=d,
             uncertainty=u,
+            base_rate=obs.base_rate,
             sources=[obs.source.agent_id],
         )
 
@@ -71,6 +72,7 @@ class SLFusion:
                 belief=result["belief"],
                 disbelief=result["disbelief"],
                 uncertainty=result["uncertainty"],
+                base_rate=(a.base_rate + b.base_rate) / 2,
                 sources=a.sources + b.sources,
             )
         except ImportError:
@@ -80,5 +82,6 @@ class SLFusion:
                 belief=(a.belief + b.belief) / 2,
                 disbelief=(a.disbelief + b.disbelief) / 2,
                 uncertainty=(a.uncertainty + b.uncertainty) / 2,
+                base_rate=(a.base_rate + b.base_rate) / 2,
                 sources=a.sources + b.sources,
             )
