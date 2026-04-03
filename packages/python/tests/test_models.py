@@ -1,6 +1,6 @@
 """Tests for core models and orchestrator logic."""
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
@@ -14,6 +14,10 @@ from epistemic_edge.models import (
 )
 from epistemic_edge.orchestrator import EdgeNode
 from epistemic_edge.memory.cache import DecayConfig
+
+
+def _now() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 # -- Model tests --------------------------------------------------------------
@@ -131,7 +135,7 @@ class TestEdgeNode:
             node_id="test_node",
             decay=DecayConfig(mean_reversion_rate=10.0, threshold=0.5),
         )
-        old_time = datetime.utcnow() - timedelta(hours=2)
+        old_time = _now() - timedelta(hours=2)
         node.state.facts.append(
             FusedState(
                 payload={"old": True},

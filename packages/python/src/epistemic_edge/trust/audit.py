@@ -12,7 +12,7 @@ import uuid
 from datetime import datetime
 from typing import Any
 
-from epistemic_edge.models import EdgeIntent, FusedState, Observation
+from epistemic_edge.models import EdgeIntent, FusedState, Observation, _utcnow
 
 logger = logging.getLogger(__name__)
 
@@ -31,7 +31,7 @@ class PROVOActivity:
         self.activity_type = activity_type
         self.entity_ids = entity_ids
         self.agent_ids = agent_ids
-        self.timestamp = timestamp or datetime.utcnow()
+        self.timestamp = timestamp or _utcnow()
 
     def to_jsonld(self) -> dict[str, Any]:
         """Serialize as a JSON-LD fragment compatible with PROV-O."""

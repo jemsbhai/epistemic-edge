@@ -85,28 +85,34 @@ class TemporalCache:
         facts: list[FusedState],
         query_time: datetime,
     ) -> tuple[list[FusedState], list[FusedState]]:
-        """Partition using chronofy TemporalFact wrapping."""
+        """Partition using chronofy EpistemicFilter.partition() directly."""
         from chronofy import TemporalFact
 
-        fresh: list[FusedState] = []
-        stale: list[FusedState] = []
+        if not facts:
+            return [], []
 
-        for fact in facts:
+        # Build TemporalFacts and maintain index mapping back to FusedState
+        temporal_facts: list[TemporalFact] = []
+        fact_map: dict[int, FusedState] = {}
+
+        for i, fact in enumerate(facts):
             tf = TemporalFact(
                 content=str(fact.payload),
                 timestamp=fact.fused_at,
                 fact_type="default",
                 source_quality=fact.expected_value,
             )
-            # Use the filter's decay to compute validity score
-            score = self._filter.decay_fn.compute(
-                age=(query_time - fact.fused_at).total_seconds(),
-                fact_type="default",
-            )
-            if score >= self.config.threshold:
-                fresh.append(fact)
-            else:
-                stale.append(fact)
+            temporal_facts.append(tf)
+            fact_map[id(tf)] = fact
+
+        # Use the filter's own partition method (handles _decay_fn internally)
+        valid_tfs, expired_tfs = self._filter.partition(temporal_facts, query_time)
+
+        valid_ids = {id(tf) for tf in valid_tfs}
+        expired_ids = {id(tf) for tf in expired_tfs}
+
+        fresh = [fact_map[tid] for tid in valid_ids if tid in fact_map]
+        stale = [fact_map[tid] for tid in expired_ids if tid in fact_map]
 
         return fresh, stale
 

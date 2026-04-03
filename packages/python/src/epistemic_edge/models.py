@@ -2,11 +2,16 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any
 
 from pydantic import BaseModel, Field
+
+
+def _utcnow() -> datetime:
+    """Timezone-aware UTC now, avoiding deprecated datetime.utcnow()."""
+    return datetime.now(timezone.utc)
 
 
 class TierLabel(str, Enum):
@@ -37,7 +42,7 @@ class Observation(BaseModel):
 
     payload: dict[str, Any]
     source: ObservationSource
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    timestamp: datetime = Field(default_factory=_utcnow)
     belief: float | None = None
     disbelief: float | None = None
     uncertainty: float | None = None
@@ -56,7 +61,7 @@ class FusedState(BaseModel):
     uncertainty: float
     sources: list[str] = Field(default_factory=list)
     prov_o_activity_id: str | None = None
-    fused_at: datetime = Field(default_factory=datetime.utcnow)
+    fused_at: datetime = Field(default_factory=_utcnow)
 
     @property
     def expected_value(self) -> float:
@@ -97,7 +102,7 @@ class EdgeIntent(BaseModel):
     action: str
     target: str
     parameters: dict[str, Any] = Field(default_factory=dict)
-    generated_at: datetime = Field(default_factory=datetime.utcnow)
+    generated_at: datetime = Field(default_factory=_utcnow)
     raw_llm_output: str | None = None
     grammar_constrained: bool = False
 

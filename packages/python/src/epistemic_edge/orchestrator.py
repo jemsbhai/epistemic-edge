@@ -19,6 +19,7 @@ from epistemic_edge.models import (
     FusedState,
     Observation,
     StateGraph,
+    _utcnow,
 )
 from epistemic_edge.trust.fusion import SLFusion
 from epistemic_edge.trust.audit import PROVOAudit
@@ -109,7 +110,7 @@ class EdgeNode:
 
         Returns the number of facts pruned.
         """
-        now = query_time or datetime.utcnow()
+        now = query_time or _utcnow()
         fresh, stale = self._cache.partition(self.state.facts, now)
         pruned = len(self.state.facts) - len(fresh)
         self.state.facts = fresh
@@ -167,7 +168,7 @@ class EdgeNode:
             intent=intent,
             permitted=ok,
             reason="" if ok else "Guardrail check returned False",
-            executed_at=datetime.utcnow() if ok else None,
+            executed_at=_utcnow() if ok else None,
         )
         if self._audit and ok:
             result.prov_o_receipt_id = self._audit.log_actuation(intent)
