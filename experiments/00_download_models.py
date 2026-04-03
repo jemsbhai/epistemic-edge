@@ -15,18 +15,18 @@ from pathlib import Path
 MODELS = {
     "1.7B": {
         "repo": "prism-ml/Bonsai-1.7B-gguf",
-        "filename": "Bonsai-1.7B-Q1_0_g128.gguf",
-        "size_mb": 240,
+        "filename": "Bonsai-1.7B.gguf",
+        "size_mb": 248,
     },
     "4B": {
         "repo": "prism-ml/Bonsai-4B-gguf",
-        "filename": "Bonsai-4B-Q1_0_g128.gguf",
+        "filename": "Bonsai-4B.gguf",
         "size_mb": 570,
     },
     "8B": {
         "repo": "prism-ml/Bonsai-8B-gguf",
-        "filename": "Bonsai-8B-Q1_0_g128.gguf",
-        "size_mb": 1150,
+        "filename": "Bonsai-8B.gguf",
+        "size_mb": 1160,
     },
 }
 

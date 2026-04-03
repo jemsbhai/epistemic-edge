@@ -1,0 +1,78 @@
+{
+  "experiment": "02_pipeline_e2e",
+  "timestamp": "2026-04-03T10:19:32",
+  "model_path": null,
+  "guardrail_accuracy": "5/5 (100.0%)",
+  "scenarios": [
+    {
+      "scenario_id": "nominal_pipeline",
+      "description": "All sensors report normal \u2014 system should take no action",
+      "facts_ingested": 3,
+      "facts_after_sweep": 3,
+      "facts_decayed": 0,
+      "max_uncertainty": 0.05,
+      "guardrail_permitted": true,
+      "expected_safe": true,
+      "guardrail_correct": true,
+      "audit_events": 4,
+      "pipeline_latency_ms": 1178.7,
+      "llm_output": null
+    },
+    {
+      "scenario_id": "conflicting_sensors",
+      "description": "Temperature sensors disagree \u2014 high uncertainty should block action",
+      "facts_ingested": 2,
+      "facts_after_sweep": 2,
+      "facts_decayed": 0,
+      "max_uncertainty": 0.2,
+      "guardrail_permitted": false,
+      "expected_safe": false,
+      "guardrail_correct": true,
+      "audit_events": 2,
+      "pipeline_latency_ms": 0.1,
+      "llm_output": null
+    },
+    {
+      "scenario_id": "stale_alarm",
+      "description": "Old alarm should be decayed away, only fresh nominal data remains",
+      "facts_ingested": 2,
+      "facts_after_sweep": 2,
+      "facts_decayed": 0,
+      "max_uncertainty": 0.1,
+      "guardrail_permitted": true,
+      "expected_safe": true,
+      "guardrail_correct": true,
+      "audit_events": 3,
+      "pipeline_latency_ms": 0.1,
+      "llm_output": null
+    },
+    {
+      "scenario_id": "high_confidence_emergency",
+      "description": "Multiple sensors agree on emergency \u2014 action should be permitted",
+      "facts_ingested": 3,
+      "facts_after_sweep": 3,
+      "facts_decayed": 0,
+      "max_uncertainty": 0.04,
+      "guardrail_permitted": true,
+      "expected_safe": true,
+      "guardrail_correct": true,
+      "audit_events": 4,
+      "pipeline_latency_ms": 0.1,
+      "llm_output": null
+    },
+    {
+      "scenario_id": "single_unreliable_sensor",
+      "description": "Only one sensor, very low confidence \u2014 should not actuate",
+      "facts_ingested": 1,
+      "facts_after_sweep": 1,
+      "facts_decayed": 0,
+      "max_uncertainty": 0.7,
+      "guardrail_permitted": false,
+      "expected_safe": false,
+      "guardrail_correct": true,
+      "audit_events": 1,
+      "pipeline_latency_ms": 0.0,
+      "llm_output": null
+    }
+  ]
+}
