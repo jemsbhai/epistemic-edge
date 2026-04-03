@@ -62,22 +62,23 @@ class GBNFCompiler:
             return EDGE_INTENT_GRAMMAR
 
         alternatives = " | ".join(
-            f'"\\"{a}\\""' for a in self._allowed_actions
+            '"\\"' + a + '\\""' for a in self._allowed_actions
         )
-        action_rule = f"action ::= {alternatives}"
+        action_rule = "action ::= " + alternatives
 
-        return (
-            f'root   ::= "{{" ws "\\"action\\"" ws ":" ws action "," '
-            f'ws "\\"target\\"" ws ":" ws string '
-            f'( "," ws "\\"parameters\\"" ws ":" ws object )? ws "}}"}\n'
-            f"{action_rule}\n"
-            f'string ::= "\\"" [a-zA-Z0-9_\\-/.]+ "\\""\n'
-            f'object ::= "{{" ws ( string ws ":" ws value '
-            f'( "," ws string ws ":" ws value )* )? ws "}}"\n'
-            f'value  ::= string | number | "true" | "false" | "null"\n'
-            f'number ::= "-"? [0-9]+ ("." [0-9]+)?\n'
-            f'ws     ::= [ \\t\\n]*'
-        )
+        lines = [
+            'root   ::= "{" ws "\\"action\\"" ws ":" ws action "," '
+            'ws "\\"target\\"" ws ":" ws string '
+            '( "," ws "\\"parameters\\"" ws ":" ws object )? ws "}"',
+            action_rule,
+            'string ::= "\\"" [a-zA-Z0-9_\\-/.]+ "\\""',
+            'object ::= "{" ws ( string ws ":" ws value '
+            '( "," ws string ws ":" ws value )* )? ws "}"',
+            'value  ::= string | number | "true" | "false" | "null"',
+            'number ::= "-"? [0-9]+ ("." [0-9]+)?',
+            'ws     ::= [ \\t\\n]*',
+        ]
+        return "\n".join(lines)
 
     @staticmethod
     def from_jsonld_schema(schema: dict[str, Any]) -> GBNFCompiler:

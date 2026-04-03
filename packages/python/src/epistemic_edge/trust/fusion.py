@@ -24,6 +24,17 @@ class SLFusion:
 
         If the observation carries its own SL bounds, those are used directly.
         Otherwise, a vacuous opinion (b=0, d=0, u=1) is assigned.
+
+        Design decision — vacuous default for missing uncertainty:
+            When a sensor provides belief but NOT uncertainty, we default u=1.0
+            (maximum uncertainty) rather than computing u = 1 - b - d (which
+            would preserve the sensor's stated confidence). This is deliberate:
+            in a safety-critical actuation pipeline, a sensor that cannot report
+            its own uncertainty should not be treated as confident. The vacuous
+            default ensures the guardrail layer can block actuation until a
+            properly calibrated sensor provides a complete (b, d, u) triple.
+            See Jøsang (2016), Subjective Logic, §3.2: "The vacuous opinion
+            represents total uncertainty."
         """
         b = obs.belief if obs.belief is not None else 0.0
         d = obs.disbelief if obs.disbelief is not None else 0.0

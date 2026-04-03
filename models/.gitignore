@@ -1,0 +1,3 @@
+# Bonsai GGUF models are downloaded here by experiments/00_download_models.py
+# These files are large and should NOT be committed to git.
+*.gguf
