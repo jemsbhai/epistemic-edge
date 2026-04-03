@@ -318,8 +318,8 @@ class BATADALAdapter(DatasetAdapter):
             for j in range(i, i + window_size):
                 contexts = self.get_sensor_contexts(j)
                 for ctx in contexts:
-                    b, d, u = self._assign_bdu(ctx)
-                    obs = self._make_observation(ctx, b, d, u)
+                    b, d, u, a = self._assign_bdu(ctx)
+                    obs = self._make_observation(ctx, b, d, u, a)
                     observations.append(obs)
 
             # Ground truth: attack if ANY row in the window is attack

@@ -90,10 +90,10 @@ class SensorAgreementStrategy(UncertaintyStrategy):
         self.high_belief = high_belief
         self.disagreement_uncertainty = disagreement_uncertainty
 
-    def assign(self, context: SensorContext) -> tuple[float, float, float]:
+    def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if not context.related_readings:
             # No related sensors — moderate confidence fallback
-            return (0.6, 0.1, 0.3)
+            return self._clamp_and_normalize(0.6, 0.1, 0.3)
 
         # Compute agreement ratio across related sensors
         agreements = 0
@@ -111,7 +111,7 @@ class SensorAgreementStrategy(UncertaintyStrategy):
 
         total_comparisons = agreements + disagreements
         if total_comparisons == 0:
-            return (0.6, 0.1, 0.3)
+            return self._clamp_and_normalize(0.6, 0.1, 0.3)
 
         agreement_ratio = agreements / total_comparisons
 
@@ -158,17 +158,17 @@ class HistoricalDeviationStrategy(UncertaintyStrategy):
     ) -> None:
         self.sigma_warn, self.sigma_critical = sigma_thresholds
 
-    def assign(self, context: SensorContext) -> tuple[float, float, float]:
+    def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if context.historical_mean is None or context.historical_std is None:
             # No history — vacuous opinion
-            return (0.0, 0.0, 1.0)
+            return self._clamp_and_normalize(0.0, 0.0, 1.0)
 
         if context.historical_std == 0:
             # Constant sensor — any deviation is suspicious
             if context.reading == context.historical_mean:
-                return (0.95, 0.02, 0.03)
+                return self._clamp_and_normalize(0.95, 0.02, 0.03)
             else:
-                return (0.1, 0.6, 0.3)
+                return self._clamp_and_normalize(0.1, 0.6, 0.3)
 
         # Compute z-score
         z = abs(context.reading - context.historical_mean) / context.historical_std
@@ -221,7 +221,7 @@ class PhysicsBoundsStrategy(UncertaintyStrategy):
         self.boundary_margin = boundary_margin
         self._fallback = HistoricalDeviationStrategy()
 
-    def assign(self, context: SensorContext) -> tuple[float, float, float]:
+    def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if context.physical_min is None or context.physical_max is None:
             # No physical bounds — delegate to historical deviation
             return self._fallback.assign(context)
@@ -231,7 +231,7 @@ class PhysicsBoundsStrategy(UncertaintyStrategy):
         prange = pmax - pmin
 
         if prange <= 0:
-            return (0.0, 0.0, 1.0)  # Degenerate bounds
+            return self._clamp_and_normalize(0.0, 0.0, 1.0)  # Degenerate bounds
 
         reading = context.reading
 
@@ -298,11 +298,12 @@ class CompositeStrategy(UncertaintyStrategy):
         total_weight = sum(w for _, w in strategies)
         self.normalized_weights = [w / total_weight for _, w in strategies]
 
-    def assign(self, context: SensorContext) -> tuple[float, float, float]:
-        b_total, d_total, u_total = 0.0, 0.0, 0.0
+    def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
+        b_total, d_total, u_total, a_total = 0.0, 0.0, 0.0, 0.0
         for (strategy, _), weight in zip(self.strategies, self.normalized_weights):
-            b, d, u = strategy.assign(context)
+            b, d, u, a = strategy.assign(context)
             b_total += b * weight
             d_total += d * weight
             u_total += u * weight
-        return self._clamp_and_normalize(b_total, d_total, u_total)
+            a_total += a * weight
+        return self._clamp_and_normalize(b_total, d_total, u_total, a_total)

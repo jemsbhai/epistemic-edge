@@ -241,8 +241,14 @@ class DatasetAdapter(ABC):
         """
         ...
 
-    def _assign_bdu(self, context: SensorContext) -> tuple[float, float, float]:
-        """Delegate b/d/u assignment to the configured strategy."""
+    def _assign_bdu(
+        self, context: SensorContext
+    ) -> tuple[float, float, float, float]:
+        """Delegate b/d/u/a assignment to the configured strategy.
+
+        Returns:
+            Tuple of (belief, disbelief, uncertainty, base_rate).
+        """
         return self.strategy.assign(context)
 
     def _make_observation(
@@ -251,8 +257,17 @@ class DatasetAdapter(ABC):
         b: float,
         d: float,
         u: float,
+        a: float = 0.5,
     ) -> Observation:
-        """Create an Observation from a SensorContext and assigned b/d/u."""
+        """Create an Observation from a SensorContext and assigned b/d/u/a.
+
+        Args:
+            context: The sensor context.
+            b: Belief.
+            d: Disbelief.
+            u: Uncertainty.
+            a: Base rate (prior probability). Default 0.5.
+        """
         return Observation(
             payload={context.sensor_id: context.reading, "unit": context.unit},
             source=ObservationSource(
@@ -263,4 +278,5 @@ class DatasetAdapter(ABC):
             belief=b,
             disbelief=d,
             uncertainty=u,
+            base_rate=a,
         )
