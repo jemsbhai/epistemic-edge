@@ -34,15 +34,11 @@ poetry build
 # Production PyPI — uses your configured Poetry credentials. Run from your own
 # terminal. This step is the point of no return for the 0.1.0 version number.
 poetry publish
-
-# Post-publish verification in a fresh venv
-python -m venv test_env
-.\test_env\Scripts\Activate.ps1
-pip install epistemic-edge==0.1.0
-python -c "import epistemic_edge as ee; print('PyPI install OK', ee.__version__)"
-deactivate
-Remove-Item -Recurse -Force test_env
 ```
+
+Post-publish verification runs in Claude's container (fresh venv there:
+`pip install epistemic-edge==0.1.0` from the live index, import + version check,
+extras metadata check) — no temporary environments are created on this machine.
 
 Environment note: invoke the project venv's interpreter directly
 (`.venv\Scripts\python.exe`) rather than relying on `poetry run` / `poetry sync`
