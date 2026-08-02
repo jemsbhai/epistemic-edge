@@ -1,0 +1,4 @@
+[submodule "prismml-llama.cpp"]
+	path = prismml-llama.cpp
+	url = https://github.com/PrismML-Eng/llama.cpp
+	branch = prism

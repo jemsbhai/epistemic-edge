@@ -11,4 +11,15 @@ build/
 .mypy_cache/
 .ruff_cache/
 *.gguf
-poetry.lock
+
+# local secrets & env (never committed)
+.env
+.env.*
+!.env.example
+*.key
+
+# release-workflow scratch venv
+test_env/
+
+# IEEE camera-ready material — kept out of the public repo
+papers/

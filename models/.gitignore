@@ -1,3 +1,5 @@
-# Bonsai GGUF models are downloaded here by experiments/00_download_models.py
-# These files are large and should NOT be committed to git.
-*.gguf
+# Model assets are downloaded here by experiments/00_download_models.py.
+# Nothing in this directory is ever committed — only this .gitignore is tracked,
+# so fresh clones get the directory as a download target.
+*
+!.gitignore
