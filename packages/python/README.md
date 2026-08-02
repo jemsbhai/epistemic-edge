@@ -1,34 +1,48 @@
 # epistemic-edge
 
-**Air-gapped, neuro-symbolic AIoT framework: 1-bit LLM cognition over mathematically verified, temporally valid edge state.**
+**Subjective-logic guardrails for LLM-driven IoT actuation** — an air-gapped,
+neuro-symbolic AIoT framework that places calibrated uncertainty quantification
+between your sensors and any LLM that can touch the physical world.
+
+Companion package for:
+
+> **Epistemic Edge: Subjective Logic Guardrails for LLM-Driven IoT Actuation.**
+> Muntaser Syed and Marius Silaghi. *IEEE 27th International Conference on
+> Information Reuse and Integration for Data Science (IEEE IRI 2026)*,
+> Seattle, WA. To appear.
+
+Full reproduction materials — experiment scripts, immutable result sets, and the
+pinned inference fork — live in the repository:
+https://github.com/jemsbhai/epistemic-edge
 
 ## Architecture
 
-Epistemic Edge orchestrates four tiers into a strict **verify-decay-generate** pipeline:
+Epistemic Edge orchestrates four tiers into a strict **verify–decay–generate**
+pipeline:
 
 | Tier | Layer | Engine | Function |
 |------|-------|--------|----------|
 | 1 | Transport | `cbor-ld-ex` | Hyper-compressed binary payloads over MQTT/CoAP |
 | 2 | Trust | `jsonld-ex` | Subjective Logic fusion + PROV-O audit trail |
-| 3 | Memory | `chronofy` | Temporal-Logical Decay Architecture (TLDA) |
-| 4 | Cognition | `llama-cpp-python` | Grammar-constrained 1-bit LLM inference |
+| 3 | Memory | `chronofy` | Temporal decay toward the vacuous opinion (0, 0, 1) |
+| 4 | Cognition | `llama-cpp-python` | Grammar-constrained local LLM inference behind threshold + whitelist guardrails |
 
-The key insight: **1-bit quantized models lose continuous probabilistic nuance**, making them susceptible to hallucination over conflicting or stale context. Epistemic Edge solves this by mathematically guaranteeing the truth of the state graph *before* the LLM ever touches it.
+Locally deployed LLMs can act on conflicting or stale context. Epistemic Edge
+annotates every source with a calibrated Subjective Logic opinion, fuses them via
+Jøsang cumulative fusion, decays stale beliefs toward uncertainty, and verifies
+epistemic thresholds before any actuation is allowed. In the paper's ablation
+(seven locally-deployed LLMs, 2,800 controlled trials), removing this epistemic
+layer collapses threshold-guardrail accuracy from **1.00 to 0.40 for every
+model**. On the BATADAL water-distribution benchmark, calibrated SL opinions
+reach **AUROC 0.9004 with no trained weights** and no labeled attack data.
 
 ## Installation
 
 ```bash
-# Core framework (transport + trust + memory)
-pip install epistemic-edge
-
-# With local LLM inference
-pip install epistemic-edge[llm]
-
-# With MQTT/CoAP transport
-pip install epistemic-edge[transport]
-
-# Everything
-pip install epistemic-edge[all]
+pip install epistemic-edge                # core: transport + trust + memory
+pip install "epistemic-edge[llm]"         # + local LLM inference (llama-cpp-python)
+pip install "epistemic-edge[transport]"   # + MQTT / CoAP transports
+pip install "epistemic-edge[all]"         # everything
 ```
 
 ## Quick Start
@@ -59,11 +73,24 @@ async def main():
 asyncio.run(main())
 ```
 
+## Citing
+
+```bibtex
+@inproceedings{syed2026epistemic,
+  author    = {Syed, Muntaser and Silaghi, Marius},
+  title     = {Epistemic Edge: Subjective Logic Guardrails for {LLM}-Driven {IoT} Actuation},
+  booktitle = {2026 IEEE 27th International Conference on Information Reuse and
+               Integration for Data Science (IRI)},
+  year      = {2026},
+  note      = {To appear}
+}
+```
+
 ## Core Libraries
 
-- **[jsonld-ex](https://github.com/jemsbhai/jsonld-ex)** - JSON-LD 1.2 extensions with Subjective Logic, FHIR R4, PROV-O
-- **[cbor-ld-ex](https://github.com/jemsbhai/cbor-ld-ex)** - Compact Binary Linked Data for constrained IoT networks
-- **[chronofy](https://github.com/jemsbhai/chronofy)** - Temporal validity framework implementing TLDA
+- **[jsonld-ex](https://github.com/jemsbhai/jsonld-ex)** — JSON-LD 1.2 extensions with Subjective Logic, FHIR R4, PROV-O
+- **[cbor-ld-ex](https://github.com/jemsbhai/cbor-ld-ex)** — Compact Binary Linked Data for constrained IoT networks
+- **[chronofy](https://github.com/jemsbhai/chronofy)** — Temporal validity framework implementing TLDA
 
 ## License
 

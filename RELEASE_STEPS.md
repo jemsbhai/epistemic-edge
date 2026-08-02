@@ -2,44 +2,51 @@
 
 PowerShell, from the repo root unless noted. Do not skip steps.
 
-## Phase 1 — repository (pre-publish gate)
+## Phase 1 — repository (pre-publish gate) — COMPLETED 2026-08-02
 
-1. `cd packages\python`
-2. `poetry check --lock` → must exit 0 (legacy `[tool.poetry]` warnings are expected and harmless).
-3. `poetry sync --all-extras` → dev venv matches the lock exactly.
-4. `poetry run pytest tests/ -v --cov=epistemic_edge --cov-report=term` → all green. No exceptions.
-5. Commit + push (explicit approval per commit; conventional messages).
-6. Independent verification of the public repo state (fresh clone with
-   `--recurse-submodules`, build, test) before Phase 2.
+1. `poetry check --lock` → exit 0. ✓
+2. Hermetic test suite in the project venv (direct interpreter invocation:
+   `.venv\Scripts\python.exe -m pytest tests/`) → 202 passed, 75% coverage. ✓
+3. Committed and pushed as 7 conventional commits (`17fc8f3..de0aaf6`). ✓
+4. Independent verification from a fresh public clone (Claude container):
+   `git clone --recurse-submodules` → submodule pinned at `f5dda72` →
+   `python -m build` → `twine check dist/*` PASSED → clean-venv wheel install →
+   Quick Start API verified signature-by-signature → live `[transport]` extra
+   install → 202/202 tests against the installed wheel. ✓
 
-## Phase 2 — publish
+## Phase 2 — publish (direct to PyPI; TestPyPI intentionally skipped)
+
+The Phase 1 gates substitute for TestPyPI: `twine check` covers metadata
+acceptance, and the clean-venv wheel install covers install-ability.
+
+**A published version number is permanent** — PyPI never allows re-uploading the
+same version, even after deletion. Any post-publish fix must ship as 0.1.1.
 
 ```powershell
 cd packages\python
 Remove-Item -Recurse -Force dist -ErrorAction SilentlyContinue
 poetry build
 
-# TestPyPI first
-poetry publish -r testpypi
+# Metadata gate — must PASS before publishing.
+# (If twine is missing from the venv: .venv\Scripts\python.exe -m pip install twine)
+.venv\Scripts\python.exe -m twine check dist/*
 
-# Verify from TestPyPI in a clean venv.
-# --extra-index-url is REQUIRED: dependencies (jsonld-ex, cbor-ld-ex, chronofy, ...)
-# live on real PyPI, not TestPyPI.
-python -m venv test_env
-.\test_env\Scripts\Activate.ps1
-pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ epistemic-edge==0.1.0
-python -c "import epistemic_edge as ee; print('core OK', ee.__version__)"
-pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ "epistemic-edge[all]==0.1.0"
-python -c "import aiomqtt, aiocoap, llama_cpp; print('extras OK')"
-deactivate
-Remove-Item -Recurse -Force test_env
-
-# Only after TestPyPI verification passes — production PyPI
+# Production PyPI — uses your configured Poetry credentials. Run from your own
+# terminal. This step is the point of no return for the 0.1.0 version number.
 poetry publish
 
-# Verify production
+# Post-publish verification in a fresh venv
+python -m venv test_env
+.\test_env\Scripts\Activate.ps1
 pip install epistemic-edge==0.1.0
+python -c "import epistemic_edge as ee; print('PyPI install OK', ee.__version__)"
+deactivate
+Remove-Item -Recurse -Force test_env
 ```
+
+Environment note: invoke the project venv's interpreter directly
+(`.venv\Scripts\python.exe`) rather than relying on `poetry run` / `poetry sync`
+from shells that may inherit a foreign `VIRTUAL_ENV`.
 
 ## Phase 3 — post-publish
 
