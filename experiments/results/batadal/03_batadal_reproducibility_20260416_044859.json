@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "original_metrics": {
+    "auroc": 0.9004,
+    "auprc": 0.6379,
+    "best_f1": 0.6481,
+    "best_threshold": 0.38,
+    "best_precision": 0.7273,
+    "best_recall": 0.5845
+  },
+  "verify_metrics": {
+    "auroc": 0.9004,
+    "auprc": 0.6379,
+    "best_f1": 0.6481,
+    "best_threshold": 0.38,
+    "best_precision": 0.7273,
+    "best_recall": 0.5845
+  },
+  "all_match": true,
+  "mismatches": [],
+  "config": {
+    "strategy": "historical",
+    "k": 24,
+    "lambda": 0.25,
+    "fusion": true,
+    "decay": true,
+    "phys_mode": "domain",
+    "anomaly_score": "fused_d",
+    "smoothing": 5,
+    "threshold_mode": "f1_optimal_eval",
+    "phase": "signal_sweep"
+  }
+}

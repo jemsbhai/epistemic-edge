@@ -1,0 +1,1334 @@
+window_idx,window_label,event_id,position,condition,rep,json_valid,action_str,action_class,max_uncertainty,threshold_permitted,whitelist_permitted,combined_permitted,detection_tp,detection_tn,detection_fp,detection_fn,llm_latency_ms,completion_tokens,prompt_tokens,reasoning_tokens
+1726,0,1,onset,A,0,0,,unclear,0.163468,1,1,1,0,0,0,0,2475.1,58,79,0
+1726,0,1,onset,A,1,1,Monitor and adjust the flow rate of the water distribution network based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2445.3,86,79,0
+1726,0,1,onset,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2496.0,78,79,0
+1726,0,1,onset,A,3,1,Monitor sensor data for pressure and flow anomalies,monitor,0.163468,1,1,1,0,1,0,0,2337.1,40,79,0
+1726,0,1,onset,A,4,1,Monitor sensor data for leaks and pressure changes,monitor,0.163468,1,1,1,0,1,0,0,2584.1,88,79,0
+1726,0,1,onset,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.163468,1,1,1,0,1,0,0,2573.9,87,79,0
+1726,0,1,onset,A,6,1,Monitor the water pressure in the distribution lines,monitor,0.163468,1,1,1,0,1,0,0,2375.2,50,79,0
+1726,0,1,onset,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2495.4,53,79,0
+1726,0,1,onset,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2409.2,50,79,0
+1726,0,1,onset,A,9,0,,unclear,0.163468,1,1,1,0,0,0,0,2649.7,143,79,0
+1727,0,1,onset,A,0,0,,unclear,0.193190,1,1,1,0,0,0,0,2372.2,56,79,0
+1727,0,1,onset,A,1,0,,unclear,0.193190,1,1,1,0,0,0,0,14219.5,4096,79,0
+1727,0,1,onset,A,2,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.193190,1,1,1,0,1,0,0,2528.2,53,79,0
+1727,0,1,onset,A,3,1,Monitor system temperature and pressure sensors,monitor,0.193190,1,1,1,0,1,0,0,2435.7,58,79,0
+1727,0,1,onset,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.193190,1,1,1,0,1,0,0,2398.6,48,79,0
+1727,0,1,onset,A,5,0,,unclear,0.193190,1,1,1,0,0,0,0,2552.4,100,79,0
+1727,0,1,onset,A,6,1,Monitor and adjust the water pressure in the distribution network based on real-time sensor data.,monitor,0.193190,1,1,1,0,1,0,0,2505.3,71,79,0
+1727,0,1,onset,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.193190,1,1,1,0,1,0,0,2370.8,62,79,0
+1727,0,1,onset,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.193190,1,1,1,0,1,0,0,2375.6,48,79,0
+1727,0,1,onset,A,9,1,Monitor the water pressure in the distribution lines,monitor,0.193190,1,1,1,0,1,0,0,2408.0,50,79,0
+1728,0,1,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.215938,1,1,1,0,1,0,0,2411.0,63,79,0
+1728,0,1,onset,A,1,1,Monitor sensor data for potential failures or anomalies,monitor,0.215938,1,1,1,0,1,0,0,2467.5,76,79,0
+1728,0,1,onset,A,2,0,,unclear,0.215938,1,1,1,0,0,0,0,2341.8,50,79,0
+1728,0,1,onset,A,3,1,Monitor and adjust water flow rates based on sensor data,monitor,0.215938,1,1,1,0,1,0,0,2407.9,61,79,0
+1728,0,1,onset,A,4,0,,unclear,0.215938,1,1,1,0,0,0,0,2443.8,84,79,0
+1728,0,1,onset,A,5,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.215938,1,1,1,0,1,0,0,2422.4,59,79,0
+1728,0,1,onset,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.215938,1,1,1,0,1,0,0,2454.1,49,79,0
+1728,0,1,onset,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.215938,1,1,1,0,1,0,0,2405.3,48,79,0
+1728,0,1,onset,A,8,1,Monitor the water pressure in the distribution network using the pressure sensor and check for any anomalies,monitor,0.215938,1,1,1,0,1,0,0,2452.6,64,79,0
+1728,0,1,onset,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.215938,1,1,1,0,1,0,0,2342.9,48,79,0
+1729,0,1,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.226855,1,1,1,0,1,0,0,2529.5,85,79,0
+1729,0,1,onset,A,1,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.226855,1,1,1,0,1,0,0,2398.7,60,79,0
+1729,0,1,onset,A,2,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.226855,1,1,1,0,1,0,0,2487.6,56,79,0
+1729,0,1,onset,A,3,0,,unclear,0.226855,1,1,1,0,0,0,0,2403.6,49,79,0
+1729,0,1,onset,A,4,1,Monitor and adjust pressure in the distribution system based on sensor readings,monitor,0.226855,1,1,1,0,1,0,0,2474.0,71,79,0
+1729,0,1,onset,A,5,1,Monitor and adjust the water flow distribution system based on sensor data,monitor,0.226855,1,1,1,0,1,0,0,2493.5,53,79,0
+1729,0,1,onset,A,6,1,Monitor and adjust water flow based on sensor readings,monitor,0.226855,1,1,1,0,1,0,0,2507.2,76,79,0
+1729,0,1,onset,A,7,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.226855,1,1,1,0,1,0,0,2495.7,78,79,0
+1729,0,1,onset,A,8,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.226855,1,1,1,0,1,0,0,2473.1,70,79,0
+1729,0,1,onset,A,9,1,Monitor the water flow and pressure in the distribution network,monitor,0.226855,1,1,1,0,1,0,0,2318.1,45,79,0
+1730,0,1,onset,A,0,0,,unclear,0.214445,1,1,1,0,0,0,0,2422.9,54,79,0
+1730,0,1,onset,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.214445,1,1,1,0,1,0,0,2444.2,65,79,0
+1730,0,1,onset,A,2,0,,unclear,0.214445,1,1,1,0,0,0,0,2397.5,63,79,0
+1730,0,1,onset,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.214445,1,1,1,0,1,0,0,2348.5,48,79,0
+1730,0,1,onset,A,4,0,,unclear,0.214445,1,1,1,0,0,0,0,2387.7,47,79,0
+1730,0,1,onset,A,5,0,,unclear,0.214445,1,1,1,0,0,0,0,2417.0,47,79,0
+1730,0,1,onset,A,6,1,Monitor the water quality in the distribution network and initiate a maintenance alert if there are any signs of contamination or degradation.,safety,0.214445,1,1,1,0,0,1,0,2489.5,78,79,0
+1730,0,1,onset,A,7,1,Monitor and adjust the flow rate of the distribution pipe based on sensor readings,monitor,0.214445,1,1,1,0,1,0,0,2426.4,51,79,0
+1730,0,1,onset,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.214445,1,1,1,0,1,0,0,2625.5,92,79,0
+1730,0,1,onset,A,9,1,Monitor the water flow and pressure in the distribution network using the current sensor states.,monitor,0.214445,1,1,1,0,1,0,0,2429.8,53,79,0
+1767,1,1,recovery,A,0,0,,unclear,0.244128,1,1,1,0,0,0,0,2434.7,53,79,0
+1767,1,1,recovery,A,1,1,Monitor and adjust water flow based on sensor readings,monitor,0.244128,1,1,1,0,0,0,1,2487.3,76,79,0
+1767,1,1,recovery,A,2,1,Monitor sensor data for pressure and flow anomalies,monitor,0.244128,1,1,1,0,0,0,1,2511.9,78,79,0
+1767,1,1,recovery,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244128,1,1,1,0,0,0,1,2380.4,48,79,0
+1767,1,1,recovery,A,4,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244128,1,1,1,0,0,0,1,2453.4,61,79,0
+1767,1,1,recovery,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.244128,1,1,1,0,0,0,1,2349.7,50,79,0
+1767,1,1,recovery,A,6,1,Monitor the water flow rate in the distribution network and adjust the pump accordingly.,monitor,0.244128,1,1,1,0,0,0,1,2484.6,78,79,0
+1767,1,1,recovery,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244128,1,1,1,0,0,0,1,2366.9,48,79,0
+1767,1,1,recovery,A,8,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.244128,1,1,1,0,0,0,1,2454.2,82,79,0
+1767,1,1,recovery,A,9,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.244128,1,1,1,0,0,0,1,2443.9,58,79,0
+1768,1,1,recovery,A,0,0,,unclear,0.245169,1,1,1,0,0,0,0,2550.5,81,79,0
+1768,1,1,recovery,A,1,1,Monitor sensor data for potential failures or anomalies,monitor,0.245169,1,1,1,0,0,0,1,2393.8,59,79,0
+1768,1,1,recovery,A,2,1,Monitor sensor data for pressure and temperature anomalies,monitor,0.245169,1,1,1,0,0,0,1,2427.6,37,79,0
+1768,1,1,recovery,A,3,1,Monitor and adjust the water pressure in the distribution system based on sensor readings,monitor,0.245169,1,1,1,0,0,0,1,2507.4,63,79,0
+1768,1,1,recovery,A,4,1,Monitor and adjust water flow rates based on sensor data,monitor,0.245169,1,1,1,0,0,0,1,2412.5,60,79,0
+1768,1,1,recovery,A,5,0,,unclear,0.245169,1,1,1,0,0,0,0,2359.4,53,79,0
+1768,1,1,recovery,A,6,0,,unclear,0.245169,1,1,1,0,0,0,0,2372.0,43,79,0
+1768,1,1,recovery,A,7,1,Monitor and adjust water pressure in the distribution network based on real-time sensor data.,monitor,0.245169,1,1,1,0,0,0,1,2479.8,76,79,0
+1768,1,1,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.245169,1,1,1,0,0,0,1,2336.8,46,79,0
+1768,1,1,recovery,A,9,0,,unclear,0.245169,1,1,1,0,0,0,0,2394.3,49,79,0
+1769,1,1,recovery,A,0,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.244799,1,1,1,0,0,0,1,2465.0,67,79,0
+1769,1,1,recovery,A,1,0,,unclear,0.244799,1,1,1,0,0,0,0,2430.3,53,79,0
+1769,1,1,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244799,1,1,1,0,0,0,1,2479.2,50,79,0
+1769,1,1,recovery,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.244799,1,1,1,0,0,0,1,2531.1,88,79,0
+1769,1,1,recovery,A,4,1,Monitor and adjust water flow based on sensor readings,monitor,0.244799,1,1,1,0,0,0,1,2492.1,82,79,0
+1769,1,1,recovery,A,5,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244799,1,1,1,0,0,0,1,2448.6,67,79,0
+1769,1,1,recovery,A,6,1,Monitor and adjust the water flow distribution system based on sensor data,monitor,0.244799,1,1,1,0,0,0,1,2392.9,57,79,0
+1769,1,1,recovery,A,7,1,Monitor water quality and flow rate,monitor,0.244799,1,1,1,0,0,0,1,2368.7,47,79,0
+1769,1,1,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244799,1,1,1,0,0,0,1,2372.8,43,79,0
+1769,1,1,recovery,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244799,1,1,1,0,0,0,1,2401.6,47,79,0
+1770,1,1,recovery,A,0,1,Monitor sensor data for leaks and pressure changes.,monitor,0.244111,1,1,1,0,0,0,1,2441.9,60,79,0
+1770,1,1,recovery,A,1,0,,unclear,0.244111,1,1,1,0,0,0,0,2364.7,49,79,0
+1770,1,1,recovery,A,2,1,Monitor sensor data for leaks and pressure changes,monitor,0.244111,1,1,1,0,0,0,1,2494.7,75,79,0
+1770,1,1,recovery,A,3,1,Monitor the water pressure in the distribution lines,monitor,0.244111,1,1,1,0,0,0,1,2390.5,53,79,0
+1770,1,1,recovery,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244111,1,1,1,0,0,0,1,2480.3,48,79,0
+1770,1,1,recovery,A,5,0,,unclear,0.244111,1,1,1,0,0,0,0,2594.0,103,79,0
+1770,1,1,recovery,A,6,1,Monitor and adjust water pressure in the distribution network based on sensor data,monitor,0.244111,1,1,1,0,0,0,1,2475.3,76,79,0
+1770,1,1,recovery,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.244111,1,1,1,0,0,0,1,2456.6,82,79,0
+1770,1,1,recovery,A,8,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.244111,1,1,1,0,0,0,1,2480.0,73,79,0
+1770,1,1,recovery,A,9,1,Monitor the water pressure in the distribution network,monitor,0.244111,1,1,1,0,0,0,1,2400.7,51,79,0
+1771,1,1,recovery,A,0,1,Monitor and adjust water flow rates based on sensor data,monitor,0.250663,1,1,1,0,0,0,1,2387.8,43,79,0
+1771,1,1,recovery,A,1,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.250663,1,1,1,0,0,0,1,2469.3,69,79,0
+1771,1,1,recovery,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.250663,1,1,1,0,0,0,1,2370.1,47,79,0
+1771,1,1,recovery,A,3,1,Monitor the water pressure in the distribution lines and adjust the pump accordingly.,monitor,0.250663,1,1,1,0,0,0,1,2495.6,79,79,0
+1771,1,1,recovery,A,4,0,,unclear,0.250663,1,1,1,0,0,0,0,2563.0,79,79,0
+1771,1,1,recovery,A,5,1,Monitor the water pressure in the distribution lines,monitor,0.250663,1,1,1,0,0,0,1,2462.0,50,79,0
+1771,1,1,recovery,A,6,0,,unclear,0.250663,1,1,1,0,0,0,0,2433.9,54,79,0
+1771,1,1,recovery,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.250663,1,1,1,0,0,0,1,2429.3,49,79,0
+1771,1,1,recovery,A,8,0,,unclear,0.250663,1,1,1,0,0,0,0,2430.1,60,79,0
+1771,1,1,recovery,A,9,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.250663,1,1,1,0,0,0,1,2386.8,58,79,0
+2332,0,2,onset,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.158074,1,1,1,0,1,0,0,2348.4,45,79,0
+2332,0,2,onset,A,1,1,Monitor the water pressure in the distribution lines,monitor,0.158074,1,1,1,0,1,0,0,2416.1,50,79,0
+2332,0,2,onset,A,2,1,Monitor and adjust water flow rates based on sensor data,monitor,0.158074,1,1,1,0,1,0,0,2373.3,44,79,0
+2332,0,2,onset,A,3,1,Monitor the water pressure in the distribution lines,monitor,0.158074,1,1,1,0,1,0,0,2433.8,50,79,0
+2332,0,2,onset,A,4,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.158074,1,1,1,0,1,0,0,2425.3,60,79,0
+2332,0,2,onset,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.158074,1,1,1,0,1,0,0,2497.9,94,79,0
+2332,0,2,onset,A,6,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.158074,1,1,1,0,1,0,0,2330.5,48,79,0
+2332,0,2,onset,A,7,0,,unclear,0.158074,1,1,1,0,0,0,0,2347.3,52,79,0
+2332,0,2,onset,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.158074,1,1,1,0,1,0,0,2461.7,74,79,0
+2332,0,2,onset,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.158074,1,1,1,0,1,0,0,2323.0,48,79,0
+2333,0,2,onset,A,0,0,,unclear,0.175286,1,1,1,0,0,0,0,2403.3,48,79,0
+2333,0,2,onset,A,1,1,Monitor for leaks and ensure proper drainage,monitor,0.175286,1,1,1,0,1,0,0,2418.2,58,79,0
+2333,0,2,onset,A,2,0,,unclear,0.175286,1,1,1,0,0,0,0,2392.2,54,79,0
+2333,0,2,onset,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.175286,1,1,1,0,1,0,0,2363.4,45,79,0
+2333,0,2,onset,A,4,0,,unclear,0.175286,1,1,1,0,0,0,0,2712.0,155,79,0
+2333,0,2,onset,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.175286,1,1,1,0,1,0,0,2315.4,50,79,0
+2333,0,2,onset,A,6,0,,unclear,0.175286,1,1,1,0,0,0,0,2427.9,55,79,0
+2333,0,2,onset,A,7,0,,unclear,0.175286,1,1,1,0,0,0,0,2470.3,76,79,0
+2333,0,2,onset,A,8,0,,unclear,0.175286,1,1,1,0,0,0,0,2600.1,88,79,0
+2333,0,2,onset,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.175286,1,1,1,0,1,0,0,2356.5,47,79,0
+2334,0,2,onset,A,0,0,,unclear,0.191065,1,1,1,0,0,0,0,2380.6,54,79,0
+2334,0,2,onset,A,1,1,Check for system failures and prioritize maintenance,monitor,0.191065,1,1,1,0,1,0,0,2267.0,28,79,0
+2334,0,2,onset,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.191065,1,1,1,0,1,0,0,2555.2,69,79,0
+2334,0,2,onset,A,3,1,Monitor and adjust flow rate based on sensor data,monitor,0.191065,1,1,1,0,1,0,0,2352.7,48,79,0
+2334,0,2,onset,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2391.2,48,79,0
+2334,0,2,onset,A,5,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2470.3,68,79,0
+2334,0,2,onset,A,6,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2517.4,71,79,0
+2334,0,2,onset,A,7,0,,unclear,0.191065,1,1,1,0,0,0,0,2441.0,59,79,0
+2334,0,2,onset,A,8,1,Monitor and adjust water flow based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2469.2,83,79,0
+2334,0,2,onset,A,9,1,Monitor and adjust the flow rate of the distribution network based on sensor data,monitor,0.191065,1,1,1,0,1,0,0,2467.9,70,79,0
+2335,0,2,onset,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.210778,1,1,1,0,1,0,0,2421.9,50,79,0
+2335,0,2,onset,A,1,1,Monitor the water pressure in the distribution lines,monitor,0.210778,1,1,1,0,1,0,0,2410.3,45,79,0
+2335,0,2,onset,A,2,0,,unclear,0.210778,1,1,1,0,0,0,0,2383.6,46,79,0
+2335,0,2,onset,A,3,1,Monitor and adjust the flow rate of the water distribution network based on real-time sensor data,monitor,0.210778,1,1,1,0,1,0,0,2537.6,89,79,0
+2335,0,2,onset,A,4,1,Monitor and adjust water flow distribution parameters based on sensor data,monitor,0.210778,1,1,1,0,1,0,0,2535.0,68,79,0
+2335,0,2,onset,A,5,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.210778,1,1,1,0,1,0,0,2372.0,56,79,0
+2335,0,2,onset,A,6,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.210778,1,1,1,0,1,0,0,2474.3,79,79,0
+2335,0,2,onset,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.210778,1,1,1,0,1,0,0,2395.5,48,79,0
+2335,0,2,onset,A,8,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.210778,1,1,1,0,1,0,0,2632.5,102,79,0
+2335,0,2,onset,A,9,1,Monitor sensor data for leaks or pressure issues,monitor,0.210778,1,1,1,0,1,0,0,2431.7,68,79,0
+2336,0,2,onset,A,0,1,Monitor sensor data for potential failures or anomalies,monitor,0.150594,1,1,1,0,1,0,0,2428.0,54,79,0
+2336,0,2,onset,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.150594,1,1,1,0,1,0,0,2515.0,92,79,0
+2336,0,2,onset,A,2,1,Monitor and adjust the water pressure in the distribution system based on sensor readings.,monitor,0.150594,1,1,1,0,1,0,0,2425.0,60,79,0
+2336,0,2,onset,A,3,0,,unclear,0.150594,1,1,1,0,0,0,0,2425.4,47,79,0
+2336,0,2,onset,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.150594,1,1,1,0,1,0,0,2410.5,48,79,0
+2336,0,2,onset,A,5,1,Monitor the water pressure in the distribution system and adjust the pump accordingly.,monitor,0.150594,1,1,1,0,1,0,0,2448.0,62,79,0
+2336,0,2,onset,A,6,1,Monitor the water flow and pressure in the distribution network,monitor,0.150594,1,1,1,0,1,0,0,2537.9,106,79,0
+2336,0,2,onset,A,7,1,Monitor sensor data for leaks and ensure compliance with water quality standards.,monitor,0.150594,1,1,1,0,1,0,0,2436.9,71,79,0
+2336,0,2,onset,A,8,1,Monitor and adjust flow rates based on sensor data,monitor,0.150594,1,1,1,0,1,0,0,2413.8,62,79,0
+2336,0,2,onset,A,9,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.150594,1,1,1,0,1,0,0,2454.6,79,79,0
+2391,1,2,recovery,A,0,0,,unclear,0.179318,1,1,1,0,0,0,0,2452.7,67,79,0
+2391,1,2,recovery,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.179318,1,1,1,0,0,0,1,2438.4,48,79,0
+2391,1,2,recovery,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.179318,1,1,1,0,0,0,1,2423.4,50,79,0
+2391,1,2,recovery,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.179318,1,1,1,0,0,0,1,2451.5,61,79,0
+2391,1,2,recovery,A,4,1,Monitor the water pressure in the distribution lines,monitor,0.179318,1,1,1,0,0,0,1,2367.1,50,79,0
+2391,1,2,recovery,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.179318,1,1,1,0,0,0,1,2460.3,69,79,0
+2391,1,2,recovery,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.179318,1,1,1,0,0,0,1,2484.0,48,79,0
+2391,1,2,recovery,A,7,1,Monitor sensor data for leaks and ensure compliance with regulatory standards,monitor,0.179318,1,1,1,0,0,0,1,2503.4,67,79,0
+2391,1,2,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.179318,1,1,1,0,0,0,1,2403.0,48,79,0
+2391,1,2,recovery,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.179318,1,1,1,0,0,0,1,2459.0,54,79,0
+2392,1,2,recovery,A,0,1,Monitor system temperature and pressure sensors,monitor,0.167899,1,1,1,0,0,0,1,2415.0,35,79,0
+2392,1,2,recovery,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.167899,1,1,1,0,0,0,1,2404.4,48,79,0
+2392,1,2,recovery,A,2,0,,unclear,0.167899,1,1,1,0,0,0,0,2574.5,94,79,0
+2392,1,2,recovery,A,3,0,,unclear,0.167899,1,1,1,0,0,0,0,2411.2,54,79,0
+2392,1,2,recovery,A,4,0,,unclear,0.167899,1,1,1,0,0,0,0,2471.4,59,79,0
+2392,1,2,recovery,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.167899,1,1,1,0,0,0,1,2455.1,64,79,0
+2392,1,2,recovery,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2463.6,45,79,0
+2392,1,2,recovery,A,7,1,Monitor the water pressure in the distribution lines and identify any anomalies,monitor,0.167899,1,1,1,0,0,0,1,2470.6,57,79,0
+2392,1,2,recovery,A,8,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.167899,1,1,1,0,0,0,1,2468.9,72,79,0
+2392,1,2,recovery,A,9,1,Monitor sensor data for pressure and flow anomalies,monitor,0.167899,1,1,1,0,0,0,1,2382.2,44,79,0
+2393,1,2,recovery,A,0,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.126926,1,1,1,0,0,0,1,2560.4,64,79,0
+2393,1,2,recovery,A,1,1,Monitor the water pressure in the distribution lines,monitor,0.126926,1,1,1,0,0,0,1,2370.3,51,79,0
+2393,1,2,recovery,A,2,0,,unclear,0.126926,1,1,1,0,0,0,0,2526.9,84,79,0
+2393,1,2,recovery,A,3,1,Monitor and adjust water flow rates based on sensor data,monitor,0.126926,1,1,1,0,0,0,1,2501.8,81,79,0
+2393,1,2,recovery,A,4,1,Monitor the water pressure in the distribution lines to ensure it is within safe limits.,monitor,0.126926,1,1,1,0,0,0,1,2418.2,60,79,0
+2393,1,2,recovery,A,5,1,Monitor sensor data for leaks and ensure pressure levels are within acceptable limits.,monitor,0.126926,1,1,1,0,0,0,1,2426.4,67,79,0
+2393,1,2,recovery,A,6,0,,unclear,0.126926,1,1,1,0,0,0,0,2474.9,48,79,0
+2393,1,2,recovery,A,7,0,,unclear,0.126926,1,1,1,0,0,0,0,2454.0,51,79,0
+2393,1,2,recovery,A,8,1,Monitor and adjust water flow based on sensor readings,monitor,0.126926,1,1,1,0,0,0,1,2443.0,64,79,0
+2393,1,2,recovery,A,9,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.126926,1,1,1,0,0,0,1,2436.6,77,79,0
+2394,1,2,recovery,A,0,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.135480,1,1,1,0,0,0,1,2375.7,68,79,0
+2394,1,2,recovery,A,1,1,Monitor the water flow rate in the distribution network and identify any anomalies,monitor,0.135480,1,1,1,0,0,0,1,2555.4,84,79,0
+2394,1,2,recovery,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.135480,1,1,1,0,0,0,1,2502.9,95,79,0
+2394,1,2,recovery,A,3,0,,unclear,0.135480,1,1,1,0,0,0,0,14311.1,4096,79,0
+2394,1,2,recovery,A,4,0,,unclear,0.135480,1,1,1,0,0,0,0,2563.4,52,79,0
+2394,1,2,recovery,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.135480,1,1,1,0,0,0,1,2410.7,50,79,0
+2394,1,2,recovery,A,6,1,Monitor sensor status and prioritize critical parameters,monitor,0.135480,1,1,1,0,0,0,1,2434.5,59,79,0
+2394,1,2,recovery,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.135480,1,1,1,0,0,0,1,2357.2,48,79,0
+2394,1,2,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.135480,1,1,1,0,0,0,1,2492.4,78,79,0
+2394,1,2,recovery,A,9,0,,unclear,0.135480,1,1,1,0,0,0,0,2484.4,49,79,0
+2395,1,2,recovery,A,0,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.105680,1,1,1,0,0,0,1,2513.1,83,79,0
+2395,1,2,recovery,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.105680,1,1,1,0,0,0,1,2350.5,45,79,0
+2395,1,2,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.105680,1,1,1,0,0,0,1,2358.2,49,79,0
+2395,1,2,recovery,A,3,0,,unclear,0.105680,1,1,1,0,0,0,0,2495.5,89,79,0
+2395,1,2,recovery,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.105680,1,1,1,0,0,0,1,2376.4,48,79,0
+2395,1,2,recovery,A,5,1,Monitor the water flow rate and pressure in the distribution network using current sensor data,monitor,0.105680,1,1,1,0,0,0,1,2335.9,52,79,0
+2395,1,2,recovery,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.105680,1,1,1,0,0,0,1,2385.5,56,79,0
+2395,1,2,recovery,A,7,0,,unclear,0.105680,1,1,1,0,0,0,0,2487.1,76,79,0
+2395,1,2,recovery,A,8,0,,unclear,0.105680,1,1,1,0,0,0,0,2342.9,49,79,0
+2395,1,2,recovery,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.105680,1,1,1,0,0,0,1,2368.6,50,79,0
+2846,0,3,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.203021,1,1,1,0,1,0,0,2382.5,45,79,0
+2846,0,3,onset,A,1,1,Monitor system pressure and flow rate,monitor,0.203021,1,1,1,0,1,0,0,2402.0,54,79,0
+2846,0,3,onset,A,2,1,Monitor and adjust flow rates based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2396.1,46,79,0
+2846,0,3,onset,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2403.2,46,79,0
+2846,0,3,onset,A,4,1,Monitor system status and sensor data for potential failures or anomalies,monitor,0.203021,1,1,1,0,1,0,0,2519.5,86,79,0
+2846,0,3,onset,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2390.3,48,79,0
+2846,0,3,onset,A,6,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2474.7,48,79,0
+2846,0,3,onset,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2383.3,48,79,0
+2846,0,3,onset,A,8,1,increase or decrease pressure accordingly,unclear,0.203021,1,1,1,0,0,0,0,2480.1,64,79,0
+2846,0,3,onset,A,9,0,,unclear,0.203021,1,1,1,0,0,0,0,2408.1,52,79,0
+2847,0,3,onset,A,0,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.184852,1,1,1,0,1,0,0,2385.9,60,79,0
+2847,0,3,onset,A,1,0,,unclear,0.184852,1,1,1,0,0,0,0,2347.4,54,79,0
+2847,0,3,onset,A,2,1,Monitor sensor data for potential failures or anomalies,monitor,0.184852,1,1,1,0,1,0,0,2443.6,65,79,0
+2847,0,3,onset,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.184852,1,1,1,0,1,0,0,2391.7,61,79,0
+2847,0,3,onset,A,4,0,,unclear,0.184852,1,1,1,0,0,0,0,2726.0,189,79,0
+2847,0,3,onset,A,5,0,,unclear,0.184852,1,1,1,0,0,0,0,2465.4,67,79,0
+2847,0,3,onset,A,6,0,,unclear,0.184852,1,1,1,0,0,0,0,2396.6,51,79,0
+2847,0,3,onset,A,7,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.184852,1,1,1,0,1,0,0,2490.5,79,79,0
+2847,0,3,onset,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.184852,1,1,1,0,1,0,0,2326.1,42,79,0
+2847,0,3,onset,A,9,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.184852,1,1,1,0,1,0,0,2431.6,69,79,0
+2848,0,3,onset,A,0,0,,unclear,0.173905,1,1,1,0,0,0,0,2325.7,49,79,0
+2848,0,3,onset,A,1,1,Monitor the water pressure in the distribution network and adjust the pump accordingly,monitor,0.173905,1,1,1,0,1,0,0,2471.8,67,79,0
+2848,0,3,onset,A,2,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.173905,1,1,1,0,1,0,0,2364.1,64,79,0
+2848,0,3,onset,A,3,1,Monitor sensor data for pressure and flow anomalies,monitor,0.173905,1,1,1,0,1,0,0,2399.7,53,79,0
+2848,0,3,onset,A,4,0,,unclear,0.173905,1,1,1,0,0,0,0,2366.3,49,79,0
+2848,0,3,onset,A,5,1,Monitor the water pressure in the distribution lines,monitor,0.173905,1,1,1,0,1,0,0,2398.5,51,79,0
+2848,0,3,onset,A,6,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.173905,1,1,1,0,1,0,0,2419.9,56,79,0
+2848,0,3,onset,A,7,0,,unclear,0.173905,1,1,1,0,0,0,0,2527.3,105,79,0
+2848,0,3,onset,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.173905,1,1,1,0,1,0,0,2485.3,77,79,0
+2848,0,3,onset,A,9,0,,unclear,0.173905,1,1,1,0,0,0,0,2359.6,52,79,0
+2849,0,3,onset,A,0,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.186867,1,1,1,0,1,0,0,2433.7,61,79,0
+2849,0,3,onset,A,1,0,,unclear,0.186867,1,1,1,0,0,0,0,2399.7,58,79,0
+2849,0,3,onset,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.186867,1,1,1,0,1,0,0,2348.7,49,79,0
+2849,0,3,onset,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.186867,1,1,1,0,1,0,0,2415.0,50,79,0
+2849,0,3,onset,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.186867,1,1,1,0,1,0,0,2387.1,48,79,0
+2849,0,3,onset,A,5,1,Monitor and adjust the flow rate of the distribution network based on sensor data,monitor,0.186867,1,1,1,0,1,0,0,2436.1,58,79,0
+2849,0,3,onset,A,6,1,Check for low water pressure in the distribution lines,monitor,0.186867,1,1,1,0,1,0,0,2335.9,38,79,0
+2849,0,3,onset,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.186867,1,1,1,0,1,0,0,2518.1,76,79,0
+2849,0,3,onset,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.186867,1,1,1,0,1,0,0,2547.0,81,79,0
+2849,0,3,onset,A,9,0,,unclear,0.186867,1,1,1,0,0,0,0,2377.2,50,79,0
+2850,0,3,onset,A,0,0,,unclear,0.198521,1,1,1,0,0,0,0,2454.1,62,79,0
+2850,0,3,onset,A,1,1,Monitor and adjust water flow based on sensor readings,monitor,0.198521,1,1,1,0,1,0,0,2340.8,46,79,0
+2850,0,3,onset,A,2,1,Monitor and adjust water flow rates based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2402.3,49,79,0
+2850,0,3,onset,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2406.3,50,79,0
+2850,0,3,onset,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.198521,1,1,1,0,1,0,0,2545.9,96,79,0
+2850,0,3,onset,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2476.5,65,79,0
+2850,0,3,onset,A,6,1,Monitor sensor data for potential failures or anomalies,monitor,0.198521,1,1,1,0,1,0,0,2469.2,80,79,0
+2850,0,3,onset,A,7,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.198521,1,1,1,0,1,0,0,2427.5,69,79,0
+2850,0,3,onset,A,8,1,Monitor the water pressure in the distribution lines,monitor,0.198521,1,1,1,0,1,0,0,2457.7,51,79,0
+2850,0,3,onset,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2475.8,78,79,0
+2882,1,3,recovery,A,0,0,,unclear,0.141483,1,1,1,0,0,0,0,2399.2,72,79,0
+2882,1,3,recovery,A,1,0,,unclear,0.141483,1,1,1,0,0,0,0,2463.3,66,79,0
+2882,1,3,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.141483,1,1,1,0,0,0,1,2442.8,48,79,0
+2882,1,3,recovery,A,3,1,Monitor the water pressure in the distribution network,monitor,0.141483,1,1,1,0,0,0,1,2438.9,56,79,0
+2882,1,3,recovery,A,4,0,,unclear,0.141483,1,1,1,0,0,0,0,2388.2,53,79,0
+2882,1,3,recovery,A,5,0,,unclear,0.141483,1,1,1,0,0,0,0,2517.0,88,79,0
+2882,1,3,recovery,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.141483,1,1,1,0,0,0,1,2419.8,45,79,0
+2882,1,3,recovery,A,7,0,,unclear,0.141483,1,1,1,0,0,0,0,2422.3,43,79,0
+2882,1,3,recovery,A,8,1,Monitor the water pressure in the distribution lines,monitor,0.141483,1,1,1,0,0,0,1,2416.9,50,79,0
+2882,1,3,recovery,A,9,0,,unclear,0.141483,1,1,1,0,0,0,0,2558.8,95,79,0
+2883,1,3,recovery,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.134475,1,1,1,0,0,0,1,2363.1,48,79,0
+2883,1,3,recovery,A,1,1,Monitor and adjust the water pressure in the distribution system based on sensor readings,monitor,0.134475,1,1,1,0,0,0,1,2575.0,83,79,0
+2883,1,3,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.134475,1,1,1,0,0,0,1,2372.7,49,79,0
+2883,1,3,recovery,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.134475,1,1,1,0,0,0,1,2448.2,82,79,0
+2883,1,3,recovery,A,4,1,Monitor and adjust water flow rates based on sensor data,monitor,0.134475,1,1,1,0,0,0,1,2333.0,43,79,0
+2883,1,3,recovery,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.134475,1,1,1,0,0,0,1,2350.7,48,79,0
+2883,1,3,recovery,A,6,1,Monitor sensor data for potential issues in water distribution network,monitor,0.134475,1,1,1,0,0,0,1,2464.8,73,79,0
+2883,1,3,recovery,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.134475,1,1,1,0,0,0,1,2430.5,79,79,0
+2883,1,3,recovery,A,8,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.134475,1,1,1,0,0,0,1,2469.1,73,79,0
+2883,1,3,recovery,A,9,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.134475,1,1,1,0,0,0,1,2495.9,75,79,0
+2884,1,3,recovery,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.175417,1,1,1,0,0,0,1,2328.7,50,79,0
+2884,1,3,recovery,A,1,0,,unclear,0.175417,1,1,1,0,0,0,0,2474.2,67,79,0
+2884,1,3,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.175417,1,1,1,0,0,0,1,2474.7,48,79,0
+2884,1,3,recovery,A,3,0,,unclear,0.175417,1,1,1,0,0,0,0,2465.7,56,79,0
+2884,1,3,recovery,A,4,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.175417,1,1,1,0,0,0,1,2427.3,57,79,0
+2884,1,3,recovery,A,5,1,Monitor sensor data for potential leaks or pressure fluctuations.,monitor,0.175417,1,1,1,0,0,0,1,2432.7,67,79,0
+2884,1,3,recovery,A,6,0,,unclear,0.175417,1,1,1,0,0,0,0,14290.1,4096,79,0
+2884,1,3,recovery,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.175417,1,1,1,0,0,0,1,2540.0,77,79,0
+2884,1,3,recovery,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.175417,1,1,1,0,0,0,1,2434.2,71,79,0
+2884,1,3,recovery,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.175417,1,1,1,0,0,0,1,2539.4,89,79,0
+2885,1,3,recovery,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.186659,1,1,1,0,0,0,1,2532.7,87,79,0
+2885,1,3,recovery,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.186659,1,1,1,0,0,0,1,2460.7,77,79,0
+2885,1,3,recovery,A,2,1,Monitor the water flow and pressure in the distribution network,monitor,0.186659,1,1,1,0,0,0,1,2405.4,75,79,0
+2885,1,3,recovery,A,3,1,Monitor the water pressure in the distribution network,monitor,0.186659,1,1,1,0,0,0,1,2468.0,52,79,0
+2885,1,3,recovery,A,4,0,,unclear,0.186659,1,1,1,0,0,0,0,14496.1,4096,79,0
+2885,1,3,recovery,A,5,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.186659,1,1,1,0,0,0,1,2588.1,61,79,0
+2885,1,3,recovery,A,6,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.186659,1,1,1,0,0,0,1,2400.3,68,79,0
+2885,1,3,recovery,A,7,1,Monitor sensor data for pressure and flow anomalies,monitor,0.186659,1,1,1,0,0,0,1,2380.8,59,79,0
+2885,1,3,recovery,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.186659,1,1,1,0,0,0,1,2483.7,82,79,0
+2885,1,3,recovery,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.186659,1,1,1,0,0,0,1,2413.0,48,79,0
+2886,1,3,recovery,A,0,1,Monitor and adjust the water pressure in the distribution network,monitor,0.206542,1,1,1,0,0,0,1,2531.6,67,79,0
+2886,1,3,recovery,A,1,1,Monitor sensor data for leaks and pressure changes,monitor,0.206542,1,1,1,0,0,0,1,2403.4,61,79,0
+2886,1,3,recovery,A,2,1,Monitor sensor data for pressure and flow anomalies,monitor,0.206542,1,1,1,0,0,0,1,2327.4,43,79,0
+2886,1,3,recovery,A,3,0,,unclear,0.206542,1,1,1,0,0,0,0,2412.0,50,79,0
+2886,1,3,recovery,A,4,0,,unclear,0.206542,1,1,1,0,0,0,0,2400.3,48,79,0
+2886,1,3,recovery,A,5,1,Monitor and adjust water pressure in distribution points,monitor,0.206542,1,1,1,0,0,0,1,2538.1,90,79,0
+2886,1,3,recovery,A,6,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.206542,1,1,1,0,0,0,1,2495.4,64,79,0
+2886,1,3,recovery,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.206542,1,1,1,0,0,0,1,2472.5,80,79,0
+2886,1,3,recovery,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.206542,1,1,1,0,0,0,1,2427.5,57,79,0
+2886,1,3,recovery,A,9,0,,unclear,0.206542,1,1,1,0,0,0,0,2438.0,48,79,0
+3503,0,4,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2502.6,82,79,0
+3503,0,4,onset,A,1,1,Monitor and adjust water flow based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2442.7,64,79,0
+3503,0,4,onset,A,2,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.213360,1,1,1,0,1,0,0,2468.8,58,79,0
+3503,0,4,onset,A,3,1,Monitor and adjust water flow rates based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2377.7,47,79,0
+3503,0,4,onset,A,4,1,Monitor and report sensor data to the central control center.,monitor,0.213360,1,1,1,0,1,0,0,2502.3,75,79,0
+3503,0,4,onset,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2358.2,48,79,0
+3503,0,4,onset,A,6,1,Monitor the water pressure in the distribution lines,monitor,0.213360,1,1,1,0,1,0,0,2368.0,51,79,0
+3503,0,4,onset,A,7,1,Monitor sensor data for leaks and pressure changes,monitor,0.213360,1,1,1,0,1,0,0,2453.7,66,79,0
+3503,0,4,onset,A,8,0,,unclear,0.213360,1,1,1,0,0,0,0,2374.9,55,79,0
+3503,0,4,onset,A,9,0,,unclear,0.213360,1,1,1,0,0,0,0,2443.3,70,79,0
+3504,0,4,onset,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.203050,1,1,1,0,1,0,0,2468.6,51,79,0
+3504,0,4,onset,A,1,1,Monitor sensor data for any anomalies or deviations from expected values.,monitor,0.203050,1,1,1,0,1,0,0,2555.4,79,79,0
+3504,0,4,onset,A,2,0,,unclear,0.203050,1,1,1,0,0,0,0,2457.3,67,79,0
+3504,0,4,onset,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.203050,1,1,1,0,1,0,0,2409.9,45,79,0
+3504,0,4,onset,A,4,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.203050,1,1,1,0,1,0,0,2436.1,62,79,0
+3504,0,4,onset,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.203050,1,1,1,0,1,0,0,2532.9,107,79,0
+3504,0,4,onset,A,6,1,Monitor the water pressure and flow rate in the distribution network to ensure it meets safety standards.,monitor,0.203050,1,1,1,0,1,0,0,2479.4,75,79,0
+3504,0,4,onset,A,7,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.203050,1,1,1,0,1,0,0,2439.7,74,79,0
+3504,0,4,onset,A,8,0,,unclear,0.203050,1,1,1,0,0,0,0,2357.0,53,79,0
+3504,0,4,onset,A,9,0,,unclear,0.203050,1,1,1,0,0,0,0,2380.3,49,79,0
+3505,0,4,onset,A,0,0,,unclear,0.189691,1,1,1,0,0,0,0,2430.8,56,79,0
+3505,0,4,onset,A,1,0,,unclear,0.189691,1,1,1,0,0,0,0,2476.6,86,79,0
+3505,0,4,onset,A,2,1,Monitor and adjust water flow based on sensor readings,monitor,0.189691,1,1,1,0,1,0,0,2519.1,75,79,0
+3505,0,4,onset,A,3,1,Monitor and adjust water pressure in the distribution network based on real-time sensor data.,monitor,0.189691,1,1,1,0,1,0,0,2379.0,53,79,0
+3505,0,4,onset,A,4,1,Monitor and adjust the distribution system pressure,monitor,0.189691,1,1,1,0,1,0,0,2399.9,53,79,0
+3505,0,4,onset,A,5,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.189691,1,1,1,0,1,0,0,2476.3,83,79,0
+3505,0,4,onset,A,6,0,,unclear,0.189691,1,1,1,0,0,0,0,2585.4,91,79,0
+3505,0,4,onset,A,7,0,,unclear,0.189691,1,1,1,0,0,0,0,2433.6,49,79,0
+3505,0,4,onset,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.189691,1,1,1,0,1,0,0,2449.9,48,79,0
+3505,0,4,onset,A,9,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.189691,1,1,1,0,1,0,0,2522.9,81,79,0
+3506,0,4,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.141036,1,1,1,0,1,0,0,2333.0,42,79,0
+3506,0,4,onset,A,1,0,,unclear,0.141036,1,1,1,0,0,0,0,2450.0,68,79,0
+3506,0,4,onset,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.141036,1,1,1,0,1,0,0,2475.9,48,79,0
+3506,0,4,onset,A,3,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.141036,1,1,1,0,1,0,0,2490.4,63,79,0
+3506,0,4,onset,A,4,1,Monitor and adjust flow rate based on sensor data,monitor,0.141036,1,1,1,0,1,0,0,2389.2,52,79,0
+3506,0,4,onset,A,5,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.141036,1,1,1,0,1,0,0,2444.9,73,79,0
+3506,0,4,onset,A,6,1,Monitor the water flow rate in the distribution pipe,monitor,0.141036,1,1,1,0,1,0,0,2443.3,56,79,0
+3506,0,4,onset,A,7,0,,unclear,0.141036,1,1,1,0,0,0,0,2454.1,47,79,0
+3506,0,4,onset,A,8,1,Monitor the water pressure and flow rate in the distribution network to ensure it meets safety standards.,monitor,0.141036,1,1,1,0,1,0,0,2482.1,72,79,0
+3506,0,4,onset,A,9,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.141036,1,1,1,0,1,0,0,2334.5,52,79,0
+3507,0,4,onset,A,0,0,,unclear,0.133259,1,1,1,0,0,0,0,2509.8,84,79,0
+3507,0,4,onset,A,1,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.133259,1,1,1,0,1,0,0,2389.8,56,79,0
+3507,0,4,onset,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.133259,1,1,1,0,1,0,0,2479.9,50,79,0
+3507,0,4,onset,A,3,1,Monitor the water pressure in the distribution lines,monitor,0.133259,1,1,1,0,1,0,0,2431.9,59,79,0
+3507,0,4,onset,A,4,0,,unclear,0.133259,1,1,1,0,0,0,0,2544.3,103,79,0
+3507,0,4,onset,A,5,1,Monitor sensor data for potential failures or anomalies,monitor,0.133259,1,1,1,0,1,0,0,2483.6,67,79,0
+3507,0,4,onset,A,6,1,Monitor system pressure and flow rate,monitor,0.133259,1,1,1,0,1,0,0,2382.2,57,79,0
+3507,0,4,onset,A,7,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.133259,1,1,1,0,1,0,0,2401.2,65,79,0
+3507,0,4,onset,A,8,1,Monitor water pressure and flow rate in the distribution network,monitor,0.133259,1,1,1,0,1,0,0,2409.1,56,79,0
+3507,0,4,onset,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.133259,1,1,1,0,1,0,0,2382.9,53,79,0
+3509,1,4,recovery,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2431.1,64,79,0
+3509,1,4,recovery,A,1,1,Monitor and adjust water flow rate based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2369.9,46,79,0
+3509,1,4,recovery,A,2,1,Monitor and adjust water flow based on sensor readings,monitor,0.177854,1,1,1,0,0,0,1,2608.4,141,79,0
+3509,1,4,recovery,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.177854,1,1,1,0,0,0,1,2417.6,68,79,0
+3509,1,4,recovery,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.177854,1,1,1,0,0,0,1,2436.9,80,79,0
+3509,1,4,recovery,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2524.3,86,79,0
+3509,1,4,recovery,A,6,1,Monitor and adjust water flow based on sensor readings,monitor,0.177854,1,1,1,0,0,0,1,2453.7,70,79,0
+3509,1,4,recovery,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2402.0,68,79,0
+3509,1,4,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2470.3,50,79,0
+3509,1,4,recovery,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.177854,1,1,1,0,0,0,1,2425.4,48,79,0
+3510,1,4,recovery,A,0,0,,unclear,0.198741,1,1,1,0,0,0,0,2498.2,73,79,0
+3510,1,4,recovery,A,1,0,,unclear,0.198741,1,1,1,0,0,0,0,2419.2,53,79,0
+3510,1,4,recovery,A,2,1,Monitor sensor data for potential failures or anomalies,monitor,0.198741,1,1,1,0,0,0,1,2354.7,63,79,0
+3510,1,4,recovery,A,3,1,Monitor and adjust the water distribution system based on sensor data,monitor,0.198741,1,1,1,0,0,0,1,2355.6,55,79,0
+3510,1,4,recovery,A,4,0,,unclear,0.198741,1,1,1,0,0,0,0,2490.3,77,79,0
+3510,1,4,recovery,A,5,1,Monitor the water flow rate in the distribution pipe,monitor,0.198741,1,1,1,0,0,0,1,2440.8,66,79,0
+3510,1,4,recovery,A,6,0,,unclear,0.198741,1,1,1,0,0,0,0,2471.7,60,79,0
+3510,1,4,recovery,A,7,0,,unclear,0.198741,1,1,1,0,0,0,0,2441.5,71,79,0
+3510,1,4,recovery,A,8,1,Monitor sensor data for pressure and flow anomalies,monitor,0.198741,1,1,1,0,0,0,1,2310.6,39,79,0
+3510,1,4,recovery,A,9,1,Monitor sensor data for leaks and pressure drops,monitor,0.198741,1,1,1,0,0,0,1,2380.8,48,79,0
+3511,1,4,recovery,A,0,1,Monitor the water pressure in the distribution network and adjust the pump accordingly,monitor,0.216144,1,1,1,0,0,0,1,2458.2,61,79,0
+3511,1,4,recovery,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.216144,1,1,1,0,0,0,1,2372.8,45,79,0
+3511,1,4,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.216144,1,1,1,0,0,0,1,2430.6,52,79,0
+3511,1,4,recovery,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.216144,1,1,1,0,0,0,1,2421.5,61,79,0
+3511,1,4,recovery,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.216144,1,1,1,0,0,0,1,2369.1,52,79,0
+3511,1,4,recovery,A,5,1,Monitor sensor status and trigger maintenance alerts if critical conditions are detected.,safety,0.216144,1,1,1,1,0,0,0,2436.6,69,79,0
+3511,1,4,recovery,A,6,0,,unclear,0.216144,1,1,1,0,0,0,0,2361.5,53,79,0
+3511,1,4,recovery,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.216144,1,1,1,0,0,0,1,2491.2,78,79,0
+3511,1,4,recovery,A,8,0,,unclear,0.216144,1,1,1,0,0,0,0,2423.2,49,79,0
+3511,1,4,recovery,A,9,1,Monitor sensor data for leaks and pressure fluctuations.,monitor,0.216144,1,1,1,0,0,0,1,2638.0,97,79,0
+3512,1,4,recovery,A,0,1,Monitor sensor data for leaks and pressure fluctuations.,monitor,0.228550,1,1,1,0,0,0,1,2458.1,74,79,0
+3512,1,4,recovery,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.228550,1,1,1,0,0,0,1,2466.3,72,79,0
+3512,1,4,recovery,A,2,1,Monitor the water pressure in the distribution lines,monitor,0.228550,1,1,1,0,0,0,1,2398.5,52,79,0
+3512,1,4,recovery,A,3,0,,unclear,0.228550,1,1,1,0,0,0,0,2326.4,49,79,0
+3512,1,4,recovery,A,4,1,Monitor and adjust water pressure in the distribution network based on real-time sensor data.,monitor,0.228550,1,1,1,0,0,0,1,2383.3,54,79,0
+3512,1,4,recovery,A,5,0,,unclear,0.228550,1,1,1,0,0,0,0,2435.5,54,79,0
+3512,1,4,recovery,A,6,1,Monitor and adjust water flow based on sensor readings,monitor,0.228550,1,1,1,0,0,0,1,2457.9,77,79,0
+3512,1,4,recovery,A,7,0,,unclear,0.228550,1,1,1,0,0,0,0,2623.0,104,79,0
+3512,1,4,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.228550,1,1,1,0,0,0,1,2405.5,44,79,0
+3512,1,4,recovery,A,9,1,Monitor and adjust water flow based on sensor readings,monitor,0.228550,1,1,1,0,0,0,1,2546.0,79,79,0
+3513,1,4,recovery,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.237114,1,1,1,0,0,0,1,2412.8,52,79,0
+3513,1,4,recovery,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.237114,1,1,1,0,0,0,1,2563.7,69,79,0
+3513,1,4,recovery,A,2,1,Monitor the water pressure in the distribution network,monitor,0.237114,1,1,1,0,0,0,1,2368.5,51,79,0
+3513,1,4,recovery,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.237114,1,1,1,0,0,0,1,2390.7,51,79,0
+3513,1,4,recovery,A,4,1,Monitor sensor data for leaks and ensure compliance with water distribution standards.,monitor,0.237114,1,1,1,0,0,0,1,2544.5,97,79,0
+3513,1,4,recovery,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.237114,1,1,1,0,0,0,1,2397.4,53,79,0
+3513,1,4,recovery,A,6,1,Monitor sensor data for leaks and ensure proper flow control,monitor,0.237114,1,1,1,0,0,0,1,2579.1,94,79,0
+3513,1,4,recovery,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.237114,1,1,1,0,0,0,1,2388.8,47,79,0
+3513,1,4,recovery,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.237114,1,1,1,0,0,0,1,2481.8,53,79,0
+3513,1,4,recovery,A,9,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.237114,1,1,1,0,0,0,1,2461.1,66,79,0
+3736,0,5,onset,A,0,1,Monitor and adjust water flow based on sensor readings,monitor,0.155277,1,1,1,0,1,0,0,2356.3,52,79,0
+3736,0,5,onset,A,1,1,Monitor the water pressure and flow rate in the distribution network to ensure it meets safety standards.,monitor,0.155277,1,1,1,0,1,0,0,2492.7,85,79,0
+3736,0,5,onset,A,2,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.155277,1,1,1,0,1,0,0,2520.3,68,79,0
+3736,0,5,onset,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.155277,1,1,1,0,1,0,0,2400.1,57,79,0
+3736,0,5,onset,A,4,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.155277,1,1,1,0,1,0,0,2370.4,48,79,0
+3736,0,5,onset,A,5,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.155277,1,1,1,0,1,0,0,2554.2,95,79,0
+3736,0,5,onset,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.155277,1,1,1,0,1,0,0,2378.6,48,79,0
+3736,0,5,onset,A,7,1,Monitor the water pressure in the distribution lines,monitor,0.155277,1,1,1,0,1,0,0,2465.1,53,79,0
+3736,0,5,onset,A,8,0,,unclear,0.155277,1,1,1,0,0,0,0,2391.2,52,79,0
+3736,0,5,onset,A,9,0,,unclear,0.155277,1,1,1,0,0,0,0,2502.9,79,79,0
+3737,0,5,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.135529,1,1,1,0,1,0,0,2614.1,106,79,0
+3737,0,5,onset,A,1,1,Monitor sensor data for potential failures or anomalies,monitor,0.135529,1,1,1,0,1,0,0,2524.5,94,79,0
+3737,0,5,onset,A,2,1,Monitor sensor data for pressure and flow anomalies,monitor,0.135529,1,1,1,0,1,0,0,2297.6,30,79,0
+3737,0,5,onset,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.135529,1,1,1,0,1,0,0,2536.7,79,79,0
+3737,0,5,onset,A,4,1,Monitor the water pressure in the distribution system using the pressure sensor,monitor,0.135529,1,1,1,0,1,0,0,2501.3,62,79,0
+3737,0,5,onset,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.135529,1,1,1,0,1,0,0,2394.1,49,79,0
+3737,0,5,onset,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.135529,1,1,1,0,1,0,0,2494.4,75,79,0
+3737,0,5,onset,A,7,1,Monitor the water pressure and flow rate in the distribution lines,monitor,0.135529,1,1,1,0,1,0,0,2360.2,64,79,0
+3737,0,5,onset,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.135529,1,1,1,0,1,0,0,2341.7,48,79,0
+3737,0,5,onset,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.135529,1,1,1,0,1,0,0,2401.9,48,79,0
+3738,0,5,onset,A,0,1,Monitor sensor data for leaks and ensure system integrity,monitor,0.174864,1,1,1,0,1,0,0,2377.9,43,79,0
+3738,0,5,onset,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.174864,1,1,1,0,1,0,0,2418.6,50,79,0
+3738,0,5,onset,A,2,0,,unclear,0.174864,1,1,1,0,0,0,0,2409.3,49,79,0
+3738,0,5,onset,A,3,0,,unclear,0.174864,1,1,1,0,0,0,0,2381.8,48,79,0
+3738,0,5,onset,A,4,0,,unclear,0.174864,1,1,1,0,0,0,0,2422.0,49,79,0
+3738,0,5,onset,A,5,1,Monitor the water pressure in the distribution network,monitor,0.174864,1,1,1,0,1,0,0,2385.1,51,79,0
+3738,0,5,onset,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.174864,1,1,1,0,1,0,0,2399.5,50,79,0
+3738,0,5,onset,A,7,1,Monitor and adjust flow rate based on sensor readings,monitor,0.174864,1,1,1,0,1,0,0,2593.5,118,79,0
+3738,0,5,onset,A,8,0,,unclear,0.174864,1,1,1,0,0,0,0,2392.0,49,79,0
+3738,0,5,onset,A,9,1,Monitor sensor data for pressure and flow anomalies,monitor,0.174864,1,1,1,0,1,0,0,2371.6,39,79,0
+3739,0,5,onset,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.201867,1,1,1,0,1,0,0,2401.7,50,79,0
+3739,0,5,onset,A,1,0,,unclear,0.201867,1,1,1,0,0,0,0,2607.0,103,79,0
+3739,0,5,onset,A,2,1,Monitor and adjust the water pressure in the distribution network based on real-time sensor data.,monitor,0.201867,1,1,1,0,1,0,0,2486.2,79,79,0
+3739,0,5,onset,A,3,0,,unclear,0.201867,1,1,1,0,0,0,0,2386.0,54,79,0
+3739,0,5,onset,A,4,0,,unclear,0.201867,1,1,1,0,0,0,0,2372.9,46,79,0
+3739,0,5,onset,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.201867,1,1,1,0,1,0,0,2489.5,72,79,0
+3739,0,5,onset,A,6,1,Monitor sensor data for pressure and flow anomalies,monitor,0.201867,1,1,1,0,1,0,0,2518.4,78,79,0
+3739,0,5,onset,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.201867,1,1,1,0,1,0,0,2388.1,50,79,0
+3739,0,5,onset,A,8,1,Monitor sensor data for potential failures,monitor,0.201867,1,1,1,0,1,0,0,2416.2,58,79,0
+3739,0,5,onset,A,9,1,Monitor the water pressure in the distribution lines,monitor,0.201867,1,1,1,0,1,0,0,2367.5,51,79,0
+3740,0,5,onset,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.220710,1,1,1,0,1,0,0,2394.3,48,79,0
+3740,0,5,onset,A,1,0,,unclear,0.220710,1,1,1,0,0,0,0,2512.6,83,79,0
+3740,0,5,onset,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.220710,1,1,1,0,1,0,0,2343.8,32,79,0
+3740,0,5,onset,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.220710,1,1,1,0,1,0,0,2354.0,45,79,0
+3740,0,5,onset,A,4,1,Monitor and adjust the flow rate of the water distribution network based on sensor data,monitor,0.220710,1,1,1,0,1,0,0,2348.0,38,79,0
+3740,0,5,onset,A,5,1,Monitor the water flow rate and pressure in the distribution network using the current sensor data.,monitor,0.220710,1,1,1,0,1,0,0,2477.2,56,79,0
+3740,0,5,onset,A,6,1,Check for low water pressure in the distribution network,monitor,0.220710,1,1,1,0,1,0,0,2328.2,39,79,0
+3740,0,5,onset,A,7,0,,unclear,0.220710,1,1,1,0,0,0,0,2420.2,50,79,0
+3740,0,5,onset,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.220710,1,1,1,0,1,0,0,2499.9,76,79,0
+3740,0,5,onset,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.220710,1,1,1,0,1,0,0,2462.2,67,79,0
+3808,1,5,recovery,A,0,1,Monitor and adjust water flow rates based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2417.2,43,79,0
+3808,1,5,recovery,A,1,0,,unclear,0.244512,1,1,1,0,0,0,0,2623.5,110,79,0
+3808,1,5,recovery,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2364.8,48,79,0
+3808,1,5,recovery,A,3,0,,unclear,0.244512,1,1,1,0,0,0,0,2520.6,75,79,0
+3808,1,5,recovery,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2458.2,49,79,0
+3808,1,5,recovery,A,5,0,,unclear,0.244512,1,1,1,0,0,0,0,2430.1,55,79,0
+3808,1,5,recovery,A,6,0,,unclear,0.244512,1,1,1,0,0,0,0,2528.9,77,79,0
+3808,1,5,recovery,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2365.2,46,79,0
+3808,1,5,recovery,A,8,1,Monitor the water flow and pressure in the distribution network to detect any anomalies,monitor,0.244512,1,1,1,0,0,0,1,2660.1,96,79,0
+3808,1,5,recovery,A,9,1,Monitor and adjust water flow rates based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2466.4,69,79,0
+3809,1,5,recovery,A,0,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2448.6,59,79,0
+3809,1,5,recovery,A,1,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.244512,1,1,1,0,0,0,1,2365.0,58,79,0
+3809,1,5,recovery,A,2,1,Monitor sensor data for leaks or pressure issues,monitor,0.244512,1,1,1,0,0,0,1,2445.1,63,79,0
+3809,1,5,recovery,A,3,1,Monitor the water pressure in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2315.3,43,79,0
+3809,1,5,recovery,A,4,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.244512,1,1,1,0,0,0,1,2480.1,64,79,0
+3809,1,5,recovery,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244512,1,1,1,0,0,0,1,2448.3,79,79,0
+3809,1,5,recovery,A,6,0,,unclear,0.244512,1,1,1,0,0,0,0,14228.7,4096,79,0
+3809,1,5,recovery,A,7,0,,unclear,0.244512,1,1,1,0,0,0,0,2480.9,54,79,0
+3809,1,5,recovery,A,8,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2434.5,72,79,0
+3809,1,5,recovery,A,9,1,Monitor sensor data for leaks and pressure changes,monitor,0.244512,1,1,1,0,0,0,1,2384.1,64,79,0
+3810,1,5,recovery,A,0,0,,unclear,0.244512,1,1,1,0,0,0,0,2505.0,89,79,0
+3810,1,5,recovery,A,1,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.244512,1,1,1,0,0,0,1,2442.4,64,79,0
+3810,1,5,recovery,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244512,1,1,1,0,0,0,1,2381.6,46,79,0
+3810,1,5,recovery,A,3,0,,unclear,0.244512,1,1,1,0,0,0,0,2408.5,52,79,0
+3810,1,5,recovery,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244512,1,1,1,0,0,0,1,2517.7,83,79,0
+3810,1,5,recovery,A,5,1,Monitor sensor status for pressure and flow parameters,monitor,0.244512,1,1,1,0,0,0,1,2380.9,51,79,0
+3810,1,5,recovery,A,6,1,Monitor the water pressure in the distribution lines and identify any leaks or pressure drops.,monitor,0.244512,1,1,1,0,0,0,1,2390.7,68,79,0
+3810,1,5,recovery,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2336.6,53,79,0
+3810,1,5,recovery,A,8,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2428.8,62,79,0
+3810,1,5,recovery,A,9,0,,unclear,0.244512,1,1,1,0,0,0,0,2359.2,53,79,0
+3811,1,5,recovery,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244512,1,1,1,0,0,0,1,2389.8,48,79,0
+3811,1,5,recovery,A,1,1,Monitor and adjust water flow based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2404.3,46,79,0
+3811,1,5,recovery,A,2,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2445.3,64,79,0
+3811,1,5,recovery,A,3,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.244512,1,1,1,0,0,0,1,2359.4,54,79,0
+3811,1,5,recovery,A,4,0,,unclear,0.244512,1,1,1,0,0,0,0,2386.6,50,79,0
+3811,1,5,recovery,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2408.0,50,79,0
+3811,1,5,recovery,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.244512,1,1,1,0,0,0,1,2378.2,45,79,0
+3811,1,5,recovery,A,7,1,Monitor for system instability and trigger alert if detected,safety,0.244512,1,1,1,1,0,0,0,2450.6,59,79,0
+3811,1,5,recovery,A,8,0,,unclear,0.244512,1,1,1,0,0,0,0,2383.0,53,79,0
+3811,1,5,recovery,A,9,0,,unclear,0.244512,1,1,1,0,0,0,0,2383.7,55,79,0
+3812,1,5,recovery,A,0,0,,unclear,0.244512,1,1,1,0,0,0,0,2492.1,81,79,0
+3812,1,5,recovery,A,1,0,,unclear,0.244512,1,1,1,0,0,0,0,2436.4,52,79,0
+3812,1,5,recovery,A,2,0,,unclear,0.244512,1,1,1,0,0,0,0,2495.7,65,79,0
+3812,1,5,recovery,A,3,0,,unclear,0.244512,1,1,1,0,0,0,0,2466.9,82,79,0
+3812,1,5,recovery,A,4,1,Monitor for high water pressure and detect leaks,monitor,0.244512,1,1,1,0,0,0,1,2477.7,75,79,0
+3812,1,5,recovery,A,5,1,Monitor sensor data for leaks and pressure changes,monitor,0.244512,1,1,1,0,0,0,1,2463.9,61,79,0
+3812,1,5,recovery,A,6,0,,unclear,0.244512,1,1,1,0,0,0,0,2370.9,49,79,0
+3812,1,5,recovery,A,7,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.244512,1,1,1,0,0,0,1,2424.3,64,79,0
+3812,1,5,recovery,A,8,0,,unclear,0.244512,1,1,1,0,0,0,0,2603.0,130,79,0
+3812,1,5,recovery,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244512,1,1,1,0,0,0,1,2352.8,48,79,0
+144,0,,normal_baseline,A,0,0,,unclear,0.150880,1,1,1,0,0,0,0,2520.2,84,79,0
+144,0,,normal_baseline,A,1,0,,unclear,0.150880,1,1,1,0,0,0,0,2454.6,61,79,0
+144,0,,normal_baseline,A,2,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.150880,1,1,1,0,1,0,0,2474.2,56,79,0
+144,0,,normal_baseline,A,3,0,,unclear,0.150880,1,1,1,0,0,0,0,2483.1,85,79,0
+144,0,,normal_baseline,A,4,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.150880,1,1,1,0,1,0,0,2519.9,70,79,0
+144,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.150880,1,1,1,0,1,0,0,2366.8,49,79,0
+144,0,,normal_baseline,A,6,1,Monitor and adjust water pressure in the distribution system based on sensor readings,monitor,0.150880,1,1,1,0,1,0,0,2454.7,71,79,0
+144,0,,normal_baseline,A,7,0,,unclear,0.150880,1,1,1,0,0,0,0,2344.1,54,79,0
+144,0,,normal_baseline,A,8,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.150880,1,1,1,0,1,0,0,2461.6,68,79,0
+144,0,,normal_baseline,A,9,1,Monitor sensor data for potential failures or anomalies,monitor,0.150880,1,1,1,0,1,0,0,2545.3,77,79,0
+2086,0,,normal_baseline,A,0,1,Monitor the water flow rate and pressure in the distribution network,monitor,0.148647,1,1,1,0,1,0,0,2408.3,66,79,0
+2086,0,,normal_baseline,A,1,0,,unclear,0.148647,1,1,1,0,0,0,0,2504.4,93,79,0
+2086,0,,normal_baseline,A,2,0,,unclear,0.148647,1,1,1,0,0,0,0,2530.8,89,79,0
+2086,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.148647,1,1,1,0,1,0,0,2480.5,70,79,0
+2086,0,,normal_baseline,A,4,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.148647,1,1,1,0,1,0,0,2522.1,73,79,0
+2086,0,,normal_baseline,A,5,1,Monitor the water pressure in the distribution system and adjust the pump accordingly,monitor,0.148647,1,1,1,0,1,0,0,2491.8,59,79,0
+2086,0,,normal_baseline,A,6,1,Monitor the water flow and pressure in the distribution network using real-time sensors.,monitor,0.148647,1,1,1,0,1,0,0,2531.0,83,79,0
+2086,0,,normal_baseline,A,7,0,,unclear,0.148647,1,1,1,0,0,0,0,2401.0,48,79,0
+2086,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.148647,1,1,1,0,1,0,0,2543.0,66,79,0
+2086,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2355.8,50,79,0
+0,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate to ensure optimal distribution,monitor,0.298679,1,1,1,0,1,0,0,2506.8,80,79,0
+0,0,,normal_baseline,A,1,1,Monitor the water pressure in the distribution lines,monitor,0.298679,1,1,1,0,1,0,0,2451.8,51,79,0
+0,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.298679,1,1,1,0,1,0,0,2404.2,47,79,0
+0,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.298679,1,1,1,0,1,0,0,2400.9,42,79,0
+0,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.298679,1,1,1,0,1,0,0,2495.9,68,79,0
+0,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures or anomalies,monitor,0.298679,1,1,1,0,1,0,0,2496.0,72,79,0
+0,0,,normal_baseline,A,6,1,Monitor sensor status and trigger maintenance if critical conditions are detected.,monitor,0.298679,1,1,1,0,1,0,0,2435.1,61,79,0
+0,0,,normal_baseline,A,7,0,,unclear,0.298679,1,1,1,0,0,0,0,2501.1,87,79,0
+0,0,,normal_baseline,A,8,1,Monitor and adjust water flow rate based on sensor data,monitor,0.298679,1,1,1,0,1,0,0,2372.0,49,79,0
+0,0,,normal_baseline,A,9,0,,unclear,0.298679,1,1,1,0,0,0,0,2584.8,76,79,0
+3015,0,,normal_baseline,A,0,0,,unclear,0.211965,1,1,1,0,0,0,0,2544.0,129,79,0
+3015,0,,normal_baseline,A,1,1,Monitor the water pressure in the distribution network and adjust the pump accordingly.,monitor,0.211965,1,1,1,0,1,0,0,2416.7,68,79,0
+3015,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.211965,1,1,1,0,1,0,0,2385.5,50,79,0
+3015,0,,normal_baseline,A,3,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.211965,1,1,1,0,1,0,0,2447.6,70,79,0
+3015,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.211965,1,1,1,0,1,0,0,2429.9,48,79,0
+3015,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.211965,1,1,1,0,1,0,0,2474.8,50,79,0
+3015,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.211965,1,1,1,0,1,0,0,2405.1,50,79,0
+3015,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.211965,1,1,1,0,1,0,0,2442.0,50,79,0
+3015,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.211965,1,1,1,0,1,0,0,2460.3,75,79,0
+3015,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.211965,1,1,1,0,1,0,0,2376.7,66,79,0
+4031,0,,normal_baseline,A,0,1,Monitor and adjust flow rate based on sensor data,monitor,0.199234,1,1,1,0,1,0,0,2339.0,48,79,0
+4031,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.199234,1,1,1,0,1,0,0,2399.2,48,79,0
+4031,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.199234,1,1,1,0,1,0,0,2400.1,48,79,0
+4031,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network.,monitor,0.199234,1,1,1,0,1,0,0,2456.7,68,79,0
+4031,0,,normal_baseline,A,4,1,Monitor and adjust the flow rate of the water distribution network based on real-time sensor data.,monitor,0.199234,1,1,1,0,1,0,0,2414.6,72,79,0
+4031,0,,normal_baseline,A,5,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.199234,1,1,1,0,1,0,0,2435.1,57,79,0
+4031,0,,normal_baseline,A,6,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.199234,1,1,1,0,1,0,0,2565.1,74,79,0
+4031,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.199234,1,1,1,0,1,0,0,2379.5,48,79,0
+4031,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.199234,1,1,1,0,1,0,0,2356.5,48,79,0
+4031,0,,normal_baseline,A,9,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.199234,1,1,1,0,1,0,0,2429.4,57,79,0
+545,0,,normal_baseline,A,0,0,,unclear,0.193466,1,1,1,0,0,0,0,2395.7,55,79,0
+545,0,,normal_baseline,A,1,1,Monitor the water pressure and flow rate in the distribution network using real-time sensors.,monitor,0.193466,1,1,1,0,1,0,0,2482.3,84,79,0
+545,0,,normal_baseline,A,2,1,Monitor water pressure and flow rate in the distribution network,monitor,0.193466,1,1,1,0,1,0,0,2457.1,50,79,0
+545,0,,normal_baseline,A,3,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.193466,1,1,1,0,1,0,0,2429.4,51,79,0
+545,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.193466,1,1,1,0,1,0,0,2456.0,65,79,0
+545,0,,normal_baseline,A,5,1,Check for low water pressure in the distribution network,monitor,0.193466,1,1,1,0,1,0,0,2323.8,37,79,0
+545,0,,normal_baseline,A,6,1,Monitor the water pressure in the distribution network and adjust the pump accordingly.,monitor,0.193466,1,1,1,0,1,0,0,2431.4,50,79,0
+545,0,,normal_baseline,A,7,0,,unclear,0.193466,1,1,1,0,0,0,0,14165.2,4096,79,0
+545,0,,normal_baseline,A,8,1,Check for water pressure in the distribution system,monitor,0.193466,1,1,1,0,1,0,0,2554.8,45,79,0
+545,0,,normal_baseline,A,9,1,Monitor and adjust water flow rates based on sensor data,monitor,0.193466,1,1,1,0,1,0,0,2434.9,49,79,0
+598,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2406.3,47,79,0
+598,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2548.5,96,79,0
+598,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2309.3,45,79,0
+598,0,,normal_baseline,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.212174,1,1,1,0,1,0,0,2553.2,61,79,0
+598,0,,normal_baseline,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2463.8,74,79,0
+598,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2391.5,62,79,0
+598,0,,normal_baseline,A,6,1,Monitor the water pressure and flow rate in the distribution network using real-time sensors.,monitor,0.212174,1,1,1,0,1,0,0,2440.1,61,79,0
+598,0,,normal_baseline,A,7,1,Monitor sensor status and trigger maintenance if any critical conditions are detected.,monitor,0.212174,1,1,1,0,1,0,0,2530.9,62,79,0
+598,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2346.7,49,79,0
+598,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.212174,1,1,1,0,1,0,0,2420.6,50,79,0
+1525,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.180662,1,1,1,0,1,0,0,2498.5,81,79,0
+1525,0,,normal_baseline,A,1,1,Monitor the water flow and pressure in the distribution network,monitor,0.180662,1,1,1,0,1,0,0,2472.8,58,79,0
+1525,0,,normal_baseline,A,2,1,Monitor sensor data for potential failures or anomalies,monitor,0.180662,1,1,1,0,1,0,0,2341.8,29,79,0
+1525,0,,normal_baseline,A,3,0,,unclear,0.180662,1,1,1,0,0,0,0,2455.5,55,79,0
+1525,0,,normal_baseline,A,4,0,,unclear,0.180662,1,1,1,0,0,0,0,13892.4,4096,79,0
+1525,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.180662,1,1,1,0,1,0,0,2542.0,48,79,0
+1525,0,,normal_baseline,A,6,1,Monitor the water pressure and flow rate in the distribution network to ensure it meets safety standards.,monitor,0.180662,1,1,1,0,1,0,0,2427.2,66,79,0
+1525,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.180662,1,1,1,0,1,0,0,2325.9,42,79,0
+1525,0,,normal_baseline,A,8,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.180662,1,1,1,0,1,0,0,2500.2,80,79,0
+1525,0,,normal_baseline,A,9,0,,unclear,0.180662,1,1,1,0,0,0,0,2404.4,49,79,0
+568,0,,normal_baseline,A,0,1,Monitor sensor data for potential failures or anomalies,monitor,0.159081,1,1,1,0,1,0,0,2625.7,87,79,0
+568,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.159081,1,1,1,0,1,0,0,2426.8,48,79,0
+568,0,,normal_baseline,A,2,1,Monitor sensor data for leaks or pressure issues,monitor,0.159081,1,1,1,0,1,0,0,2498.5,62,79,0
+568,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.159081,1,1,1,0,1,0,0,2386.6,50,79,0
+568,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution lines,monitor,0.159081,1,1,1,0,1,0,0,2393.7,50,79,0
+568,0,,normal_baseline,A,5,0,,unclear,0.159081,1,1,1,0,0,0,0,2464.6,75,79,0
+568,0,,normal_baseline,A,6,0,,unclear,0.159081,1,1,1,0,0,0,0,2436.4,49,79,0
+568,0,,normal_baseline,A,7,0,,unclear,0.159081,1,1,1,0,0,0,0,2613.5,114,79,0
+568,0,,normal_baseline,A,8,1,Monitor the water pressure in the distribution lines,monitor,0.159081,1,1,1,0,1,0,0,2395.7,50,79,0
+568,0,,normal_baseline,A,9,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.159081,1,1,1,0,1,0,0,2522.3,63,79,0
+25,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.238194,1,1,1,0,1,0,0,2580.0,71,79,0
+25,0,,normal_baseline,A,1,1,Monitor the water pressure and flow rate in the distribution network to ensure it meets safety standards.,monitor,0.238194,1,1,1,0,1,0,0,2477.0,76,79,0
+25,0,,normal_baseline,A,2,1,Monitor the water temperature and flow rate in the distribution network using the current sensor data.,monitor,0.238194,1,1,1,0,1,0,0,2437.2,65,79,0
+25,0,,normal_baseline,A,3,1,Monitor and adjust flow rate based on sensor data,monitor,0.238194,1,1,1,0,1,0,0,2421.8,45,79,0
+25,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.238194,1,1,1,0,1,0,0,2413.3,50,79,0
+25,0,,normal_baseline,A,5,1,Monitor the water pressure in the distribution system using the pressure sensor and compare it to the threshold value.,monitor,0.238194,1,1,1,0,1,0,0,2487.2,71,79,0
+25,0,,normal_baseline,A,6,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.238194,1,1,1,0,1,0,0,2393.2,51,79,0
+25,0,,normal_baseline,A,7,1,Monitor the water flow and pressure in the distribution network,monitor,0.238194,1,1,1,0,1,0,0,2320.4,43,79,0
+25,0,,normal_baseline,A,8,1,Monitor sensor data for potential failures or anomalies,monitor,0.238194,1,1,1,0,1,0,0,2391.6,42,79,0
+25,0,,normal_baseline,A,9,0,,unclear,0.238194,1,1,1,0,0,0,0,2513.3,76,79,0
+985,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.150880,1,1,1,0,1,0,0,2437.3,67,79,0
+985,0,,normal_baseline,A,1,1,Monitor and adjust water flow based on sensor data,monitor,0.150880,1,1,1,0,1,0,0,2439.4,48,79,0
+985,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.150880,1,1,1,0,1,0,0,2464.2,62,79,0
+985,0,,normal_baseline,A,3,0,,unclear,0.150880,1,1,1,0,0,0,0,2378.8,56,79,0
+985,0,,normal_baseline,A,4,0,,unclear,0.150880,1,1,1,0,0,0,0,2728.9,162,79,0
+985,0,,normal_baseline,A,5,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.150880,1,1,1,0,1,0,0,2451.3,70,79,0
+985,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.150880,1,1,1,0,1,0,0,2389.9,49,79,0
+985,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.150880,1,1,1,0,1,0,0,2393.8,48,79,0
+985,0,,normal_baseline,A,8,1,Monitor the water flow and pressure in the distribution network,monitor,0.150880,1,1,1,0,1,0,0,2436.3,57,79,0
+985,0,,normal_baseline,A,9,0,,unclear,0.150880,1,1,1,0,0,0,0,2421.5,70,79,0
+1281,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and pressure fluctuations.,monitor,0.181975,1,1,1,0,1,0,0,2409.2,66,79,0
+1281,0,,normal_baseline,A,1,1,Monitor sensor data for potential failures,monitor,0.181975,1,1,1,0,1,0,0,2403.3,69,79,0
+1281,0,,normal_baseline,A,2,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.181975,1,1,1,0,1,0,0,2458.6,66,79,0
+1281,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.181975,1,1,1,0,1,0,0,2576.0,85,79,0
+1281,0,,normal_baseline,A,4,1,Monitor sensor data for leaks or pressure issues,monitor,0.181975,1,1,1,0,1,0,0,2459.4,62,79,0
+1281,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.181975,1,1,1,0,1,0,0,2520.3,73,79,0
+1281,0,,normal_baseline,A,6,1,Monitor sensor data for leaks and water quality,monitor,0.181975,1,1,1,0,1,0,0,2445.4,49,79,0
+1281,0,,normal_baseline,A,7,0,,unclear,0.181975,1,1,1,0,0,0,0,2414.1,44,79,0
+1281,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.181975,1,1,1,0,1,0,0,2481.1,59,79,0
+1281,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.181975,1,1,1,0,1,0,0,2367.3,48,79,0
+1270,0,,normal_baseline,A,0,1,Monitor the water pressure in the distribution lines,monitor,0.140668,1,1,1,0,1,0,0,2426.9,52,79,0
+1270,0,,normal_baseline,A,1,1,Monitor the water quality and pressure in the distribution network,monitor,0.140668,1,1,1,0,1,0,0,2326.2,38,79,0
+1270,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor readings,monitor,0.140668,1,1,1,0,1,0,0,2441.9,50,79,0
+1270,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.140668,1,1,1,0,1,0,0,2378.9,46,79,0
+1270,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution lines,monitor,0.140668,1,1,1,0,1,0,0,2443.0,54,79,0
+1270,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.140668,1,1,1,0,1,0,0,2385.4,51,79,0
+1270,0,,normal_baseline,A,6,1,Monitor and adjust the flow rate of the water distribution system based on sensor data,monitor,0.140668,1,1,1,0,1,0,0,2412.2,57,79,0
+1270,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.140668,1,1,1,0,1,0,0,2355.2,47,79,0
+1270,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.140668,1,1,1,0,1,0,0,2483.0,71,79,0
+1270,0,,normal_baseline,A,9,1,Monitor and adjust the flow rate of the water distribution network based on sensor readings.,monitor,0.140668,1,1,1,0,1,0,0,2382.3,63,79,0
+1970,0,,normal_baseline,A,0,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.153996,1,1,1,0,1,0,0,2392.4,62,79,0
+1970,0,,normal_baseline,A,1,1,Monitor and adjust water flow based on sensor data,monitor,0.153996,1,1,1,0,1,0,0,2366.8,48,79,0
+1970,0,,normal_baseline,A,2,0,,unclear,0.153996,1,1,1,0,0,0,0,14109.5,4096,79,0
+1970,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.153996,1,1,1,0,1,0,0,2615.0,89,79,0
+1970,0,,normal_baseline,A,4,0,,unclear,0.153996,1,1,1,0,0,0,0,2366.4,52,79,0
+1970,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.153996,1,1,1,0,1,0,0,2452.8,51,79,0
+1970,0,,normal_baseline,A,6,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.153996,1,1,1,0,1,0,0,2464.7,64,79,0
+1970,0,,normal_baseline,A,7,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.153996,1,1,1,0,1,0,0,2410.7,59,79,0
+1970,0,,normal_baseline,A,8,0,,unclear,0.153996,1,1,1,0,0,0,0,2429.8,69,79,0
+1970,0,,normal_baseline,A,9,0,,unclear,0.153996,1,1,1,0,0,0,0,2434.6,78,79,0
+206,0,,normal_baseline,A,0,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.153661,1,1,1,0,1,0,0,2424.8,65,79,0
+206,0,,normal_baseline,A,1,1,Monitor sensor data for potential failures or anomalies,monitor,0.153661,1,1,1,0,1,0,0,2466.4,58,79,0
+206,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.153661,1,1,1,0,1,0,0,2407.6,48,79,0
+206,0,,normal_baseline,A,3,1,Monitor sensor data for potential failures or anomalies,monitor,0.153661,1,1,1,0,1,0,0,2523.1,90,79,0
+206,0,,normal_baseline,A,4,1,Monitor and adjust flow rates based on sensor data,monitor,0.153661,1,1,1,0,1,0,0,2322.2,47,79,0
+206,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures or anomalies,monitor,0.153661,1,1,1,0,1,0,0,2436.5,74,79,0
+206,0,,normal_baseline,A,6,0,,unclear,0.153661,1,1,1,0,0,0,0,2678.9,146,79,0
+206,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.153661,1,1,1,0,1,0,0,2387.0,50,79,0
+206,0,,normal_baseline,A,8,1,Monitor sensor data for potential failures or anomalies,monitor,0.153661,1,1,1,0,1,0,0,2669.8,114,79,0
+206,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.153661,1,1,1,0,1,0,0,2356.5,48,79,0
+1501,0,,normal_baseline,A,0,1,Monitor and adjust pressure in the distribution network based on sensor readings,monitor,0.188719,1,1,1,0,1,0,0,2503.3,77,79,0
+1501,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.188719,1,1,1,0,1,0,0,2441.4,93,79,0
+1501,0,,normal_baseline,A,2,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.188719,1,1,1,0,1,0,0,2405.7,62,79,0
+1501,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network.,monitor,0.188719,1,1,1,0,1,0,0,2524.4,72,79,0
+1501,0,,normal_baseline,A,4,1,Monitor sensor data for leaks or pressure anomalies,monitor,0.188719,1,1,1,0,1,0,0,2364.4,60,79,0
+1501,0,,normal_baseline,A,5,0,,unclear,0.188719,1,1,1,0,0,0,0,2444.9,64,79,0
+1501,0,,normal_baseline,A,6,1,Monitor and adjust water flow rates based on sensor data,monitor,0.188719,1,1,1,0,1,0,0,2590.8,94,79,0
+1501,0,,normal_baseline,A,7,1,Monitor and adjust water flow rate based on sensor data,monitor,0.188719,1,1,1,0,1,0,0,2325.3,46,79,0
+1501,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.188719,1,1,1,0,1,0,0,2409.6,52,79,0
+1501,0,,normal_baseline,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.188719,1,1,1,0,1,0,0,2393.4,46,79,0
+1850,0,,normal_baseline,A,0,1,Check for pressure drop in the distribution lines and initiate maintenance if necessary.,monitor,0.133023,1,1,1,0,1,0,0,2437.5,60,79,0
+1850,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and pressure drops,monitor,0.133023,1,1,1,0,1,0,0,2395.0,64,79,0
+1850,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.133023,1,1,1,0,1,0,0,2382.4,53,79,0
+1850,0,,normal_baseline,A,3,1,Monitor sensor data for pressure and flow anomalies,monitor,0.133023,1,1,1,0,1,0,0,2349.7,39,79,0
+1850,0,,normal_baseline,A,4,1,Monitor sensor data for pressure and flow anomalies,monitor,0.133023,1,1,1,0,1,0,0,2466.7,66,79,0
+1850,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and water pressure,monitor,0.133023,1,1,1,0,1,0,0,2365.6,52,79,0
+1850,0,,normal_baseline,A,6,0,,unclear,0.133023,1,1,1,0,0,0,0,2437.8,57,79,0
+1850,0,,normal_baseline,A,7,1,Monitor sensor data for leaks and pressure changes,monitor,0.133023,1,1,1,0,1,0,0,2502.1,103,79,0
+1850,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure drops,monitor,0.133023,1,1,1,0,1,0,0,2360.6,48,79,0
+1850,0,,normal_baseline,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.133023,1,1,1,0,1,0,0,2573.8,72,79,0
+361,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.133641,1,1,1,0,1,0,0,2461.9,64,79,0
+361,0,,normal_baseline,A,1,0,,unclear,0.133641,1,1,1,0,0,0,0,2423.0,46,79,0
+361,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor readings,monitor,0.133641,1,1,1,0,1,0,0,2491.1,67,79,0
+361,0,,normal_baseline,A,3,1,Monitor the water pressure in the distribution lines,monitor,0.133641,1,1,1,0,1,0,0,2370.9,51,79,0
+361,0,,normal_baseline,A,4,1,Monitor and adjust the flow rate of the water distribution network based on sensor data.,monitor,0.133641,1,1,1,0,1,0,0,2383.8,54,79,0
+361,0,,normal_baseline,A,5,0,,unclear,0.133641,1,1,1,0,0,0,0,14282.2,4096,79,0
+361,0,,normal_baseline,A,6,1,Monitor and adjust water pressure in the distribution network based on sensor data.,monitor,0.133641,1,1,1,0,1,0,0,2621.3,88,79,0
+361,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.133641,1,1,1,0,1,0,0,2368.5,53,79,0
+361,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.133641,1,1,1,0,1,0,0,2381.8,72,79,0
+361,0,,normal_baseline,A,9,1,Monitor and adjust water flow based on sensor readings,monitor,0.133641,1,1,1,0,1,0,0,2387.3,66,79,0
+561,0,,normal_baseline,A,0,1,Monitor and adjust water pressure in the distribution system based on sensor data,monitor,0.153589,1,1,1,0,1,0,0,2443.9,79,79,0
+561,0,,normal_baseline,A,1,0,,unclear,0.153589,1,1,1,0,0,0,0,2438.7,64,79,0
+561,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and pressure changes,monitor,0.153589,1,1,1,0,1,0,0,2492.7,60,79,0
+561,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.153589,1,1,1,0,1,0,0,2354.6,48,79,0
+561,0,,normal_baseline,A,4,0,,unclear,0.153589,1,1,1,0,0,0,0,2508.5,78,79,0
+561,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.153589,1,1,1,0,1,0,0,2333.4,46,79,0
+561,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.153589,1,1,1,0,1,0,0,2373.9,50,79,0
+561,0,,normal_baseline,A,7,0,,unclear,0.153589,1,1,1,0,0,0,0,2365.1,49,79,0
+561,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.153589,1,1,1,0,1,0,0,2387.8,45,79,0
+561,0,,normal_baseline,A,9,0,,unclear,0.153589,1,1,1,0,0,0,0,2486.4,64,79,0
+3265,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.200937,1,1,1,0,1,0,0,2414.3,74,79,0
+3265,0,,normal_baseline,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.200937,1,1,1,0,1,0,0,2548.0,88,79,0
+3265,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and ensure compliance with safety standards,monitor,0.200937,1,1,1,0,1,0,0,2466.1,80,79,0
+3265,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.200937,1,1,1,0,1,0,0,2403.2,56,79,0
+3265,0,,normal_baseline,A,4,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.200937,1,1,1,0,1,0,0,2553.3,70,79,0
+3265,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.200937,1,1,1,0,1,0,0,2358.1,48,79,0
+3265,0,,normal_baseline,A,6,1,Monitor sensor data for potential failures or anomalies,monitor,0.200937,1,1,1,0,1,0,0,2420.8,63,79,0
+3265,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.200937,1,1,1,0,1,0,0,2383.6,48,79,0
+3265,0,,normal_baseline,A,8,0,,unclear,0.200937,1,1,1,0,0,0,0,2413.5,54,79,0
+3265,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure changes,monitor,0.200937,1,1,1,0,1,0,0,2404.1,56,79,0
+615,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.195863,1,1,1,0,1,0,0,2380.8,47,79,0
+615,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.195863,1,1,1,0,1,0,0,2389.8,47,79,0
+615,0,,normal_baseline,A,2,1,Monitor the water pressure in the distribution network,monitor,0.195863,1,1,1,0,1,0,0,2399.8,50,79,0
+615,0,,normal_baseline,A,3,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.195863,1,1,1,0,1,0,0,2447.5,60,79,0
+615,0,,normal_baseline,A,4,1,Monitor the water flow and pressure in the distribution network,monitor,0.195863,1,1,1,0,1,0,0,2307.0,42,79,0
+615,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.195863,1,1,1,0,1,0,0,2567.3,85,79,0
+615,0,,normal_baseline,A,6,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.195863,1,1,1,0,1,0,0,2490.7,84,79,0
+615,0,,normal_baseline,A,7,1,Monitor the water flow and pressure in the distribution network,monitor,0.195863,1,1,1,0,1,0,0,2445.2,71,79,0
+615,0,,normal_baseline,A,8,1,Monitor sensor data for leaks and pressure changes,monitor,0.195863,1,1,1,0,1,0,0,2487.6,72,79,0
+615,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.195863,1,1,1,0,1,0,0,2420.6,51,79,0
+1187,0,,normal_baseline,A,0,0,,unclear,0.143319,1,1,1,0,0,0,0,2428.4,53,79,0
+1187,0,,normal_baseline,A,1,1,Monitor and adjust water flow based on sensor readings,monitor,0.143319,1,1,1,0,1,0,0,2512.8,90,79,0
+1187,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.143319,1,1,1,0,1,0,0,2552.2,88,79,0
+1187,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.143319,1,1,1,0,1,0,0,2542.2,75,79,0
+1187,0,,normal_baseline,A,4,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.143319,1,1,1,0,1,0,0,2392.3,54,79,0
+1187,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.143319,1,1,1,0,1,0,0,2461.5,69,79,0
+1187,0,,normal_baseline,A,6,0,,unclear,0.143319,1,1,1,0,0,0,0,2395.6,49,79,0
+1187,0,,normal_baseline,A,7,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.143319,1,1,1,0,1,0,0,2545.8,60,79,0
+1187,0,,normal_baseline,A,8,0,,unclear,0.143319,1,1,1,0,0,0,0,2553.0,109,79,0
+1187,0,,normal_baseline,A,9,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.143319,1,1,1,0,1,0,0,2413.0,65,79,0
+3284,0,,normal_baseline,A,0,0,,unclear,0.116103,1,1,1,0,0,0,0,2474.5,67,79,0
+3284,0,,normal_baseline,A,1,1,Monitor and adjust the flow rate of water distribution pipes based on sensor data.,monitor,0.116103,1,1,1,0,1,0,0,2407.7,52,79,0
+3284,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.116103,1,1,1,0,1,0,0,2487.4,45,79,0
+3284,0,,normal_baseline,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.116103,1,1,1,0,1,0,0,2508.6,79,79,0
+3284,0,,normal_baseline,A,4,0,,unclear,0.116103,1,1,1,0,0,0,0,2502.9,52,79,0
+3284,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.116103,1,1,1,0,1,0,0,2447.5,64,79,0
+3284,0,,normal_baseline,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.116103,1,1,1,0,1,0,0,2387.0,48,79,0
+3284,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.116103,1,1,1,0,1,0,0,2500.6,74,79,0
+3284,0,,normal_baseline,A,8,0,,unclear,0.116103,1,1,1,0,0,0,0,2466.8,48,79,0
+3284,0,,normal_baseline,A,9,0,,unclear,0.116103,1,1,1,0,0,0,0,2482.6,59,79,0
+4176,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.218662,1,1,1,0,1,0,0,2435.2,50,79,0
+4176,0,,normal_baseline,A,1,0,,unclear,0.218662,1,1,1,0,0,0,0,2454.6,54,79,0
+4176,0,,normal_baseline,A,2,0,,unclear,0.218662,1,1,1,0,0,0,0,2451.1,52,79,0
+4176,0,,normal_baseline,A,3,1,Monitor the water pressure in the distribution network,monitor,0.218662,1,1,1,0,1,0,0,2393.1,51,79,0
+4176,0,,normal_baseline,A,4,1,Monitor the water pressure and flow rate in the distribution network using real-time sensors.,monitor,0.218662,1,1,1,0,1,0,0,2494.1,70,79,0
+4176,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and ensure compliance with safety standards.,monitor,0.218662,1,1,1,0,1,0,0,2500.9,76,79,0
+4176,0,,normal_baseline,A,6,1,Check for pressure leaks in the distribution lines,monitor,0.218662,1,1,1,0,1,0,0,2403.0,53,79,0
+4176,0,,normal_baseline,A,7,1,Monitor the water flow rate and pressure in the distribution network using real-time sensors.,monitor,0.218662,1,1,1,0,1,0,0,2550.4,94,79,0
+4176,0,,normal_baseline,A,8,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.218662,1,1,1,0,1,0,0,2523.7,76,79,0
+4176,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.218662,1,1,1,0,1,0,0,2457.4,50,79,0
+394,0,,normal_baseline,A,0,1,Monitor the water pressure in the distribution lines,monitor,0.133721,1,1,1,0,1,0,0,2458.1,54,79,0
+394,0,,normal_baseline,A,1,1,Monitor and adjust water flow based on sensor readings,monitor,0.133721,1,1,1,0,1,0,0,2518.1,81,79,0
+394,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.133721,1,1,1,0,1,0,0,2406.2,48,79,0
+394,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.133721,1,1,1,0,1,0,0,2547.3,71,79,0
+394,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.133721,1,1,1,0,1,0,0,2325.2,48,79,0
+394,0,,normal_baseline,A,5,0,,unclear,0.133721,1,1,1,0,0,0,0,2449.1,58,79,0
+394,0,,normal_baseline,A,6,1,Monitor sensor data for potential failures,monitor,0.133721,1,1,1,0,1,0,0,2383.0,52,79,0
+394,0,,normal_baseline,A,7,0,,unclear,0.133721,1,1,1,0,0,0,0,2383.5,51,79,0
+394,0,,normal_baseline,A,8,0,,unclear,0.133721,1,1,1,0,0,0,0,2489.7,79,79,0
+394,0,,normal_baseline,A,9,1,Monitor and adjust water flow rates based on sensor data,monitor,0.133721,1,1,1,0,1,0,0,2470.5,52,79,0
+1113,0,,normal_baseline,A,0,0,,unclear,0.191917,1,1,1,0,0,0,0,2475.2,60,79,0
+1113,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.191917,1,1,1,0,1,0,0,2357.3,47,79,0
+1113,0,,normal_baseline,A,2,0,,unclear,0.191917,1,1,1,0,0,0,0,2409.9,50,79,0
+1113,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.191917,1,1,1,0,1,0,0,2554.8,105,79,0
+1113,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.191917,1,1,1,0,1,0,0,2353.4,48,79,0
+1113,0,,normal_baseline,A,5,1,Monitor the water flow and pressure in the distribution network,monitor,0.191917,1,1,1,0,1,0,0,2513.0,61,79,0
+1113,0,,normal_baseline,A,6,1,Monitor and adjust flow rates based on sensor data,monitor,0.191917,1,1,1,0,1,0,0,2350.8,48,79,0
+1113,0,,normal_baseline,A,7,1,Monitor and adjust the water pressure in the distribution network based on sensor readings.,monitor,0.191917,1,1,1,0,1,0,0,2488.2,70,79,0
+1113,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.191917,1,1,1,0,1,0,0,2311.6,48,79,0
+1113,0,,normal_baseline,A,9,1,Monitor and adjust water flow based on sensor data,monitor,0.191917,1,1,1,0,1,0,0,2512.9,81,79,0
+595,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.202933,1,1,1,0,1,0,0,2375.4,43,79,0
+595,0,,normal_baseline,A,1,0,,unclear,0.202933,1,1,1,0,0,0,0,2545.1,64,79,0
+595,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.202933,1,1,1,0,1,0,0,2351.4,45,79,0
+595,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor readings,monitor,0.202933,1,1,1,0,1,0,0,2414.5,49,79,0
+595,0,,normal_baseline,A,4,0,,unclear,0.202933,1,1,1,0,0,0,0,2486.5,73,79,0
+595,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.202933,1,1,1,0,1,0,0,2465.2,48,79,0
+595,0,,normal_baseline,A,6,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.202933,1,1,1,0,1,0,0,2462.6,61,79,0
+595,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.202933,1,1,1,0,1,0,0,2473.6,75,79,0
+595,0,,normal_baseline,A,8,0,,unclear,0.202933,1,1,1,0,0,0,0,2501.1,91,79,0
+595,0,,normal_baseline,A,9,0,,unclear,0.202933,1,1,1,0,0,0,0,2412.2,54,79,0
+3261,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2551.7,98,79,0
+3261,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and ensure compliance with water quality standards.,monitor,0.148647,1,1,1,0,1,0,0,2378.5,51,79,0
+3261,0,,normal_baseline,A,2,0,,unclear,0.148647,1,1,1,0,0,0,0,2590.1,91,79,0
+3261,0,,normal_baseline,A,3,0,,unclear,0.148647,1,1,1,0,0,0,0,2397.7,49,79,0
+3261,0,,normal_baseline,A,4,1,Monitor and adjust water flow distribution based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2526.7,73,79,0
+3261,0,,normal_baseline,A,5,0,,unclear,0.148647,1,1,1,0,0,0,0,2352.8,52,79,0
+3261,0,,normal_baseline,A,6,1,Monitor system temperature and pressure,monitor,0.148647,1,1,1,0,1,0,0,2403.2,50,79,0
+3261,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2465.6,75,79,0
+3261,0,,normal_baseline,A,8,1,Monitor the water flow and pressure in the distribution network using real-time sensors.,monitor,0.148647,1,1,1,0,1,0,0,2420.1,41,79,0
+3261,0,,normal_baseline,A,9,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.148647,1,1,1,0,1,0,0,2521.2,74,79,0
+1267,0,,normal_baseline,A,0,1,Monitor and adjust water flow rates based on sensor data,monitor,0.068247,1,1,1,0,1,0,0,2376.9,53,79,0
+1267,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.068247,1,1,1,0,1,0,0,2460.2,70,79,0
+1267,0,,normal_baseline,A,2,0,,unclear,0.068247,1,1,1,0,0,0,0,2349.8,53,79,0
+1267,0,,normal_baseline,A,3,1,Monitor the water flow and pressure in the distribution network,monitor,0.068247,1,1,1,0,1,0,0,2320.1,32,79,0
+1267,0,,normal_baseline,A,4,1,"Monitor the water pressure in the distribution network using the pressure sensor and compare it to the threshold value set by the system. If the pressure is below the threshold, initiate a pressure relief valve operation.",monitor,0.068247,1,1,1,0,1,0,0,2574.9,91,79,0
+1267,0,,normal_baseline,A,5,0,,unclear,0.068247,1,1,1,0,0,0,0,2506.2,85,79,0
+1267,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.068247,1,1,1,0,1,0,0,2379.0,48,79,0
+1267,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.068247,1,1,1,0,1,0,0,2559.5,97,79,0
+1267,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.068247,1,1,1,0,1,0,0,2419.3,46,79,0
+1267,0,,normal_baseline,A,9,0,,unclear,0.068247,1,1,1,0,0,0,0,2477.1,70,79,0
+1584,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.216889,1,1,1,0,1,0,0,2318.5,42,79,0
+1584,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and pressure changes,monitor,0.216889,1,1,1,0,1,0,0,2454.7,61,79,0
+1584,0,,normal_baseline,A,2,1,Monitor and adjust water flow rates based on sensor data,monitor,0.216889,1,1,1,0,1,0,0,2372.6,47,79,0
+1584,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.216889,1,1,1,0,1,0,0,2402.0,48,79,0
+1584,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.216889,1,1,1,0,1,0,0,2428.4,57,79,0
+1584,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor readings,monitor,0.216889,1,1,1,0,1,0,0,2339.3,46,79,0
+1584,0,,normal_baseline,A,6,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.216889,1,1,1,0,1,0,0,2466.0,65,79,0
+1584,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.216889,1,1,1,0,1,0,0,2412.8,71,79,0
+1584,0,,normal_baseline,A,8,0,,unclear,0.216889,1,1,1,0,0,0,0,2493.4,99,79,0
+1584,0,,normal_baseline,A,9,0,,unclear,0.216889,1,1,1,0,0,0,0,2368.9,47,79,0
+1666,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.186903,1,1,1,0,1,0,0,2433.3,45,79,0
+1666,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.186903,1,1,1,0,1,0,0,2389.4,48,79,0
+1666,0,,normal_baseline,A,2,0,,unclear,0.186903,1,1,1,0,0,0,0,2448.4,53,79,0
+1666,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.186903,1,1,1,0,1,0,0,2403.6,52,79,0
+1666,0,,normal_baseline,A,4,0,,unclear,0.186903,1,1,1,0,0,0,0,2523.0,85,79,0
+1666,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.186903,1,1,1,0,1,0,0,2355.1,48,79,0
+1666,0,,normal_baseline,A,6,1,Monitor and report sensor status,monitor,0.186903,1,1,1,0,1,0,0,2499.0,52,79,0
+1666,0,,normal_baseline,A,7,1,Monitor and adjust the water distribution system pressure,monitor,0.186903,1,1,1,0,1,0,0,2443.2,63,79,0
+1666,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor readings,monitor,0.186903,1,1,1,0,1,0,0,2477.6,82,79,0
+1666,0,,normal_baseline,A,9,0,,unclear,0.186903,1,1,1,0,0,0,0,2457.9,48,79,0
+20,0,,normal_baseline,A,0,0,,unclear,0.179283,1,1,1,0,0,0,0,2527.0,75,79,0
+20,0,,normal_baseline,A,1,0,,unclear,0.179283,1,1,1,0,0,0,0,2433.3,53,79,0
+20,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.179283,1,1,1,0,1,0,0,2400.3,46,79,0
+20,0,,normal_baseline,A,3,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.179283,1,1,1,0,1,0,0,2519.5,63,79,0
+20,0,,normal_baseline,A,4,0,,unclear,0.179283,1,1,1,0,0,0,0,2349.8,53,79,0
+20,0,,normal_baseline,A,5,0,,unclear,0.179283,1,1,1,0,0,0,0,2584.7,111,79,0
+20,0,,normal_baseline,A,6,1,Monitor the water pressure in the distribution network and adjust the pump accordingly.,monitor,0.179283,1,1,1,0,1,0,0,2463.5,76,79,0
+20,0,,normal_baseline,A,7,0,,unclear,0.179283,1,1,1,0,0,0,0,2349.5,52,79,0
+20,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor data,monitor,0.179283,1,1,1,0,1,0,0,2404.8,47,79,0
+20,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.179283,1,1,1,0,1,0,0,2463.8,70,79,0
+1479,0,,normal_baseline,A,0,1,Monitor and adjust water pressure in the distribution network based on real-time sensor data.,monitor,0.166125,1,1,1,0,1,0,0,2609.2,88,79,0
+1479,0,,normal_baseline,A,1,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.166125,1,1,1,0,1,0,0,2479.1,67,79,0
+1479,0,,normal_baseline,A,2,1,Monitor sensor data for pressure and flow anomalies,monitor,0.166125,1,1,1,0,1,0,0,2391.4,44,79,0
+1479,0,,normal_baseline,A,3,0,,unclear,0.166125,1,1,1,0,0,0,0,2437.9,50,79,0
+1479,0,,normal_baseline,A,4,0,,unclear,0.166125,1,1,1,0,0,0,0,2433.1,54,79,0
+1479,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.166125,1,1,1,0,1,0,0,2398.0,56,79,0
+1479,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.166125,1,1,1,0,1,0,0,2371.8,49,79,0
+1479,0,,normal_baseline,A,7,0,,unclear,0.166125,1,1,1,0,0,0,0,2506.8,84,79,0
+1479,0,,normal_baseline,A,8,1,Monitor the water pressure in the distribution lines,monitor,0.166125,1,1,1,0,1,0,0,2334.3,51,79,0
+1479,0,,normal_baseline,A,9,0,,unclear,0.166125,1,1,1,0,0,0,0,2354.7,47,79,0
+1151,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.188655,1,1,1,0,1,0,0,2393.7,50,79,0
+1151,0,,normal_baseline,A,1,1,Monitor and adjust pressure distribution,monitor,0.188655,1,1,1,0,1,0,0,2412.1,53,79,0
+1151,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.188655,1,1,1,0,1,0,0,2348.3,42,79,0
+1151,0,,normal_baseline,A,3,1,Monitor sensor data for potential failures or anomalies,monitor,0.188655,1,1,1,0,1,0,0,2577.5,96,79,0
+1151,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.188655,1,1,1,0,1,0,0,2536.0,90,79,0
+1151,0,,normal_baseline,A,5,1,Monitor the water pressure and flow rate in the distribution network.,monitor,0.188655,1,1,1,0,1,0,0,2376.5,65,79,0
+1151,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.188655,1,1,1,0,1,0,0,2359.5,50,79,0
+1151,0,,normal_baseline,A,7,1,Monitor the water pressure in the distribution lines,monitor,0.188655,1,1,1,0,1,0,0,2422.2,58,79,0
+1151,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor readings,monitor,0.188655,1,1,1,0,1,0,0,2364.6,47,79,0
+1151,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure changes,monitor,0.188655,1,1,1,0,1,0,0,2482.6,67,79,0
+3110,0,,normal_baseline,A,0,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.172633,1,1,1,0,1,0,0,2547.9,69,79,0
+3110,0,,normal_baseline,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.172633,1,1,1,0,1,0,0,2465.6,75,79,0
+3110,0,,normal_baseline,A,2,0,,unclear,0.172633,1,1,1,0,0,0,0,2369.9,50,79,0
+3110,0,,normal_baseline,A,3,0,,unclear,0.172633,1,1,1,0,0,0,0,2448.9,86,79,0
+3110,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution network and identify any anomalies,monitor,0.172633,1,1,1,0,1,0,0,2420.7,56,79,0
+3110,0,,normal_baseline,A,5,0,,unclear,0.172633,1,1,1,0,0,0,0,2457.2,53,79,0
+3110,0,,normal_baseline,A,6,1,Monitor the water pressure in the distribution lines,monitor,0.172633,1,1,1,0,1,0,0,2395.2,50,79,0
+3110,0,,normal_baseline,A,7,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.172633,1,1,1,0,1,0,0,2506.5,84,79,0
+3110,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.172633,1,1,1,0,1,0,0,2352.5,50,79,0
+3110,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and water quality anomalies,monitor,0.172633,1,1,1,0,1,0,0,2516.4,100,79,0
+3155,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.134701,1,1,1,0,1,0,0,2358.5,48,79,0
+3155,0,,normal_baseline,A,1,0,,unclear,0.134701,1,1,1,0,0,0,0,2516.6,66,79,0
+3155,0,,normal_baseline,A,2,1,Monitor system status and sensor data,monitor,0.134701,1,1,1,0,1,0,0,2344.2,50,79,0
+3155,0,,normal_baseline,A,3,0,,unclear,0.134701,1,1,1,0,0,0,0,2504.0,80,79,0
+3155,0,,normal_baseline,A,4,0,,unclear,0.134701,1,1,1,0,0,0,0,2547.1,81,79,0
+3155,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.134701,1,1,1,0,1,0,0,2343.5,50,79,0
+3155,0,,normal_baseline,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.134701,1,1,1,0,1,0,0,2351.9,32,79,0
+3155,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate according to sensor readings,monitor,0.134701,1,1,1,0,1,0,0,2394.8,48,79,0
+3155,0,,normal_baseline,A,8,1,Monitor the water pressure and flow rate in the distribution network using real-time sensors.,monitor,0.134701,1,1,1,0,1,0,0,2560.5,81,79,0
+3155,0,,normal_baseline,A,9,1,Monitor the water quality in the distribution network for contamination or contamination risks.,monitor,0.134701,1,1,1,0,1,0,0,2465.8,60,79,0
+3377,0,,normal_baseline,A,0,1,Monitor the water pressure and flow rate in the distribution network using the current sensor data.,monitor,0.116511,1,1,1,0,1,0,0,2419.1,53,79,0
+3377,0,,normal_baseline,A,1,1,Monitor the water pressure in the distribution lines,monitor,0.116511,1,1,1,0,1,0,0,2411.0,50,79,0
+3377,0,,normal_baseline,A,2,1,Monitor sensor data for pressure and flow anomalies,monitor,0.116511,1,1,1,0,1,0,0,2375.3,49,79,0
+3377,0,,normal_baseline,A,3,0,,unclear,0.116511,1,1,1,0,0,0,0,2432.4,55,79,0
+3377,0,,normal_baseline,A,4,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.116511,1,1,1,0,1,0,0,2447.8,72,79,0
+3377,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.116511,1,1,1,0,1,0,0,2337.7,48,79,0
+3377,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.116511,1,1,1,0,1,0,0,2395.1,51,79,0
+3377,0,,normal_baseline,A,7,1,Monitor the water pressure in the distribution network using the pressure sensor,monitor,0.116511,1,1,1,0,1,0,0,2419.0,57,79,0
+3377,0,,normal_baseline,A,8,1,Monitor for system instability and initiate maintenance if necessary,monitor,0.116511,1,1,1,0,1,0,0,2390.6,52,79,0
+3377,0,,normal_baseline,A,9,1,Monitor and adjust the flow rate of the water distribution network based on sensor data,monitor,0.116511,1,1,1,0,1,0,0,2404.0,55,79,0
+503,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.171379,1,1,1,0,1,0,0,2380.5,47,79,0
+503,0,,normal_baseline,A,1,0,,unclear,0.171379,1,1,1,0,0,0,0,2402.3,49,79,0
+503,0,,normal_baseline,A,2,1,Check for low water pressure in the distribution network,monitor,0.171379,1,1,1,0,1,0,0,2379.1,48,79,0
+503,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.171379,1,1,1,0,1,0,0,2382.6,42,79,0
+503,0,,normal_baseline,A,4,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.171379,1,1,1,0,1,0,0,2423.3,60,79,0
+503,0,,normal_baseline,A,5,1,Monitor the water pressure in the distribution lines,monitor,0.171379,1,1,1,0,1,0,0,2343.7,31,79,0
+503,0,,normal_baseline,A,6,1,Monitor sensor data for leaks or pressure issues,monitor,0.171379,1,1,1,0,1,0,0,2438.1,59,79,0
+503,0,,normal_baseline,A,7,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.171379,1,1,1,0,1,0,0,2403.6,48,79,0
+503,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.171379,1,1,1,0,1,0,0,2404.4,48,79,0
+503,0,,normal_baseline,A,9,0,,unclear,0.171379,1,1,1,0,0,0,0,2539.6,84,79,0
+3078,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.175152,1,1,1,0,1,0,0,2391.3,53,79,0
+3078,0,,normal_baseline,A,1,0,,unclear,0.175152,1,1,1,0,0,0,0,2457.8,48,79,0
+3078,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.175152,1,1,1,0,1,0,0,2388.9,48,79,0
+3078,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.175152,1,1,1,0,1,0,0,2534.4,71,79,0
+3078,0,,normal_baseline,A,4,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.175152,1,1,1,0,1,0,0,2495.9,55,79,0
+3078,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and detect potential issues,monitor,0.175152,1,1,1,0,1,0,0,2489.7,76,79,0
+3078,0,,normal_baseline,A,6,0,,unclear,0.175152,1,1,1,0,0,0,0,13533.2,4096,79,0
+3078,0,,normal_baseline,A,7,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.175152,1,1,1,0,1,0,0,2561.1,58,79,0
+3078,0,,normal_baseline,A,8,1,Monitor system pressure and flow rate,monitor,0.175152,1,1,1,0,1,0,0,2361.8,38,79,0
+3078,0,,normal_baseline,A,9,0,,unclear,0.175152,1,1,1,0,0,0,0,2518.5,80,79,0
+803,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and ensure system integrity,monitor,0.164699,1,1,1,0,1,0,0,2353.2,31,79,0
+803,0,,normal_baseline,A,1,0,,unclear,0.164699,1,1,1,0,0,0,0,2518.0,91,79,0
+803,0,,normal_baseline,A,2,1,Check for low water pressure in the distribution network,monitor,0.164699,1,1,1,0,1,0,0,2346.2,39,79,0
+803,0,,normal_baseline,A,3,1,Monitor the water pressure in the distribution network and initiate a maintenance alert if it exceeds the safe threshold.,safety,0.164699,1,1,1,0,0,1,0,2583.3,74,79,0
+803,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.164699,1,1,1,0,1,0,0,2322.0,48,79,0
+803,0,,normal_baseline,A,5,1,Monitor the water flow and pressure in the distribution network,monitor,0.164699,1,1,1,0,1,0,0,2417.3,47,79,0
+803,0,,normal_baseline,A,6,0,,unclear,0.164699,1,1,1,0,0,0,0,2409.2,50,79,0
+803,0,,normal_baseline,A,7,0,,unclear,0.164699,1,1,1,0,0,0,0,2398.1,50,79,0
+803,0,,normal_baseline,A,8,1,Monitor and adjust water flow based on sensor readings,monitor,0.164699,1,1,1,0,1,0,0,2443.5,67,79,0
+803,0,,normal_baseline,A,9,1,Monitor and adjust the water pressure distribution system based on sensor readings.,monitor,0.164699,1,1,1,0,1,0,0,2423.3,74,79,0
+2937,0,,normal_baseline,A,0,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.192488,1,1,1,0,1,0,0,2398.0,56,79,0
+2937,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and ensure proper flow,monitor,0.192488,1,1,1,0,1,0,0,2446.7,40,79,0
+2937,0,,normal_baseline,A,2,1,Monitor water quality and flow rate,monitor,0.192488,1,1,1,0,1,0,0,2405.9,39,79,0
+2937,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.192488,1,1,1,0,1,0,0,2523.1,71,79,0
+2937,0,,normal_baseline,A,4,0,,unclear,0.192488,1,1,1,0,0,0,0,2360.2,58,79,0
+2937,0,,normal_baseline,A,5,1,Monitor and adjust the water pressure in the distribution network based on real-time sensor data.,monitor,0.192488,1,1,1,0,1,0,0,2426.9,63,79,0
+2937,0,,normal_baseline,A,6,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.192488,1,1,1,0,1,0,0,2555.2,68,79,0
+2937,0,,normal_baseline,A,7,0,,unclear,0.192488,1,1,1,0,0,0,0,2536.2,90,79,0
+2937,0,,normal_baseline,A,8,0,,unclear,0.192488,1,1,1,0,0,0,0,2394.7,49,79,0
+2937,0,,normal_baseline,A,9,1,Monitor sensor data for signs of leakage or pressure drop,monitor,0.192488,1,1,1,0,1,0,0,2506.0,63,79,0
+2035,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.244982,1,1,1,0,1,0,0,2326.4,45,79,0
+2035,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and pressure fluctuations.,monitor,0.244982,1,1,1,0,1,0,0,2482.3,65,79,0
+2035,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.244982,1,1,1,0,1,0,0,2379.0,64,79,0
+2035,0,,normal_baseline,A,3,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.244982,1,1,1,0,1,0,0,2396.4,60,79,0
+2035,0,,normal_baseline,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.244982,1,1,1,0,1,0,0,2320.1,45,79,0
+2035,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures,monitor,0.244982,1,1,1,0,1,0,0,2480.7,68,79,0
+2035,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.244982,1,1,1,0,1,0,0,2333.4,47,79,0
+2035,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.244982,1,1,1,0,1,0,0,2420.1,48,79,0
+2035,0,,normal_baseline,A,8,1,Monitor the water pressure in the distribution lines using the pressure sensor,monitor,0.244982,1,1,1,0,1,0,0,2438.5,61,79,0
+2035,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.244982,1,1,1,0,1,0,0,2423.3,63,79,0
+2634,0,,normal_baseline,A,0,0,,unclear,0.171369,1,1,1,0,0,0,0,14314.0,4096,79,0
+2634,0,,normal_baseline,A,1,1,Monitor and adjust water flow based on sensor data,monitor,0.171369,1,1,1,0,1,0,0,2462.8,43,79,0
+2634,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and ensure compliance with water distribution standards.,monitor,0.171369,1,1,1,0,1,0,0,2433.4,66,79,0
+2634,0,,normal_baseline,A,3,0,,unclear,0.171369,1,1,1,0,0,0,0,14334.5,4096,79,0
+2634,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.171369,1,1,1,0,1,0,0,2575.9,49,79,0
+2634,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures,monitor,0.171369,1,1,1,0,1,0,0,2468.1,71,79,0
+2634,0,,normal_baseline,A,6,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.171369,1,1,1,0,1,0,0,2455.0,83,79,0
+2634,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor data,monitor,0.171369,1,1,1,0,1,0,0,2509.5,74,79,0
+2634,0,,normal_baseline,A,8,1,Check for low water pressure in the distribution network,monitor,0.171369,1,1,1,0,1,0,0,2404.9,55,79,0
+2634,0,,normal_baseline,A,9,1,Monitor and adjust water pressure in the distribution network based on sensor data,monitor,0.171369,1,1,1,0,1,0,0,2430.4,71,79,0
+1843,0,,normal_baseline,A,0,1,Monitor the water pressure in the distribution lines,monitor,0.144482,1,1,1,0,1,0,0,2359.6,51,79,0
+1843,0,,normal_baseline,A,1,0,,unclear,0.144482,1,1,1,0,0,0,0,2379.4,48,79,0
+1843,0,,normal_baseline,A,2,1,Monitor and adjust water flow based on sensor data,monitor,0.144482,1,1,1,0,1,0,0,2372.8,42,79,0
+1843,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.144482,1,1,1,0,1,0,0,2400.9,47,79,0
+1843,0,,normal_baseline,A,4,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.144482,1,1,1,0,1,0,0,2380.7,45,79,0
+1843,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures or anomalies,monitor,0.144482,1,1,1,0,1,0,0,2485.4,60,79,0
+1843,0,,normal_baseline,A,6,1,Monitor sensor data for leaks and ensure compliance with water quality standards.,monitor,0.144482,1,1,1,0,1,0,0,2447.5,76,79,0
+1843,0,,normal_baseline,A,7,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.144482,1,1,1,0,1,0,0,2362.2,50,79,0
+1843,0,,normal_baseline,A,8,1,Monitor and adjust flow rates based on sensor data,monitor,0.144482,1,1,1,0,1,0,0,2322.3,42,79,0
+1843,0,,normal_baseline,A,9,1,Monitor sensor data for potential failures or anomalies,monitor,0.144482,1,1,1,0,1,0,0,2401.6,46,79,0
+3259,0,,normal_baseline,A,0,0,,unclear,0.148647,1,1,1,0,0,0,0,2497.5,77,79,0
+3259,0,,normal_baseline,A,1,1,Monitor the water pressure in the distribution lines using real-time sensors.,monitor,0.148647,1,1,1,0,1,0,0,2491.3,86,79,0
+3259,0,,normal_baseline,A,2,1,Monitor sensor data for leaks and pressure changes,monitor,0.148647,1,1,1,0,1,0,0,2476.5,75,79,0
+3259,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.148647,1,1,1,0,1,0,0,2469.8,87,79,0
+3259,0,,normal_baseline,A,4,1,Monitor the water pressure in the distribution lines,monitor,0.148647,1,1,1,0,1,0,0,2332.6,49,79,0
+3259,0,,normal_baseline,A,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.148647,1,1,1,0,1,0,0,2335.4,48,79,0
+3259,0,,normal_baseline,A,6,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2393.9,52,79,0
+3259,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.148647,1,1,1,0,1,0,0,2387.6,46,79,0
+3259,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.148647,1,1,1,0,1,0,0,2374.1,44,79,0
+3259,0,,normal_baseline,A,9,1,Monitor sensor data for leaks and pressure changes,monitor,0.148647,1,1,1,0,1,0,0,2496.9,66,79,0
+1638,0,,normal_baseline,A,0,1,Monitor and adjust water flow based on sensor data,monitor,0.124536,1,1,1,0,1,0,0,2316.7,42,79,0
+1638,0,,normal_baseline,A,1,1,Monitor sensor data for leaks and pressure changes,monitor,0.124536,1,1,1,0,1,0,0,2431.3,56,79,0
+1638,0,,normal_baseline,A,2,0,,unclear,0.124536,1,1,1,0,0,0,0,2486.1,83,79,0
+1638,0,,normal_baseline,A,3,0,,unclear,0.124536,1,1,1,0,0,0,0,2370.7,49,79,0
+1638,0,,normal_baseline,A,4,1,Monitor and adjust water flow based on sensor data,monitor,0.124536,1,1,1,0,1,0,0,2400.6,66,79,0
+1638,0,,normal_baseline,A,5,1,Monitor sensor data for leaks and pressure fluctuations,monitor,0.124536,1,1,1,0,1,0,0,2473.7,64,79,0
+1638,0,,normal_baseline,A,6,1,Monitor sensor data for potential failures,monitor,0.124536,1,1,1,0,1,0,0,2372.4,29,79,0
+1638,0,,normal_baseline,A,7,1,Monitor and adjust pressure in the distribution network based on real-time sensor data,monitor,0.124536,1,1,1,0,1,0,0,2522.0,64,79,0
+1638,0,,normal_baseline,A,8,0,,unclear,0.124536,1,1,1,0,0,0,0,2392.7,55,79,0
+1638,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.124536,1,1,1,0,1,0,0,2509.1,89,79,0
+145,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.161274,1,1,1,0,1,0,0,2438.0,48,79,0
+145,0,,normal_baseline,A,1,1,Monitor and adjust water pressure in the distribution network based on sensor readings.,monitor,0.161274,1,1,1,0,1,0,0,2567.7,94,79,0
+145,0,,normal_baseline,A,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.161274,1,1,1,0,1,0,0,2384.5,48,79,0
+145,0,,normal_baseline,A,3,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.161274,1,1,1,0,1,0,0,2489.9,60,79,0
+145,0,,normal_baseline,A,4,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.161274,1,1,1,0,1,0,0,2348.0,41,79,0
+145,0,,normal_baseline,A,5,1,Monitor and adjust water flow based on sensor data,monitor,0.161274,1,1,1,0,1,0,0,2414.1,48,79,0
+145,0,,normal_baseline,A,6,1,Monitor and adjust water flow based on sensor data,monitor,0.161274,1,1,1,0,1,0,0,2393.2,50,79,0
+145,0,,normal_baseline,A,7,1,Monitor and adjust water flow based on sensor readings,monitor,0.161274,1,1,1,0,1,0,0,2410.2,49,79,0
+145,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.161274,1,1,1,0,1,0,0,2396.1,52,79,0
+145,0,,normal_baseline,A,9,1,Monitor and adjust water flow based on sensor readings,monitor,0.161274,1,1,1,0,1,0,0,2458.7,72,79,0
+4010,0,,normal_baseline,A,0,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.162699,1,1,1,0,1,0,0,2309.2,45,79,0
+4010,0,,normal_baseline,A,1,1,Monitor and adjust the water pressure in the distribution network based on sensor readings,monitor,0.162699,1,1,1,0,1,0,0,2477.3,70,79,0
+4010,0,,normal_baseline,A,2,0,,unclear,0.162699,1,1,1,0,0,0,0,2338.3,49,79,0
+4010,0,,normal_baseline,A,3,1,Monitor sensor data for leaks and pressure changes,monitor,0.162699,1,1,1,0,1,0,0,2457.8,60,79,0
+4010,0,,normal_baseline,A,4,0,,unclear,0.162699,1,1,1,0,0,0,0,2455.2,81,79,0
+4010,0,,normal_baseline,A,5,1,Check for system failures and prioritize critical components,monitor,0.162699,1,1,1,0,1,0,0,2264.1,29,79,0
+4010,0,,normal_baseline,A,6,1,Monitor and adjust the water flow distribution system based on real-time sensor data.,monitor,0.162699,1,1,1,0,1,0,0,2474.7,55,79,0
+4010,0,,normal_baseline,A,7,0,,unclear,0.162699,1,1,1,0,0,0,0,13582.4,4096,79,0
+4010,0,,normal_baseline,A,8,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.162699,1,1,1,0,1,0,0,2521.3,50,79,0
+4010,0,,normal_baseline,A,9,1,Monitor the water pressure in the distribution lines,monitor,0.162699,1,1,1,0,1,0,0,2420.7,52,79,0
+3228,0,,normal_baseline,A,0,0,,unclear,0.120538,1,1,1,0,0,0,0,2422.4,57,79,0
+3228,0,,normal_baseline,A,1,0,,unclear,0.120538,1,1,1,0,0,0,0,2401.4,56,79,0
+3228,0,,normal_baseline,A,2,1,Monitor the water pressure in the distribution system,monitor,0.120538,1,1,1,0,1,0,0,2388.8,54,79,0
+3228,0,,normal_baseline,A,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.120538,1,1,1,0,1,0,0,2391.6,45,79,0
+3228,0,,normal_baseline,A,4,0,,unclear,0.120538,1,1,1,0,0,0,0,2493.9,77,79,0
+3228,0,,normal_baseline,A,5,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.120538,1,1,1,0,1,0,0,2403.3,72,79,0
+3228,0,,normal_baseline,A,6,1,Monitor system temperature and pressure sensors,monitor,0.120538,1,1,1,0,1,0,0,2281.4,35,79,0
+3228,0,,normal_baseline,A,7,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.120538,1,1,1,0,1,0,0,2420.9,48,79,0
+3228,0,,normal_baseline,A,8,1,Monitor and adjust the flow rate of the water distribution network based on real-time sensor data.,monitor,0.120538,1,1,1,0,1,0,0,2520.5,84,79,0
+3228,0,,normal_baseline,A,9,1,Monitor sensor status and trigger maintenance alert if critical conditions are detected.,safety,0.120538,1,1,1,0,0,1,0,2406.0,60,79,0
+2580,0,,normal_baseline,A,0,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.161905,1,1,1,0,1,0,0,2537.5,74,79,0
+2580,0,,normal_baseline,A,1,1,Monitor the water pressure in the distribution lines and identify any anomalies,monitor,0.161905,1,1,1,0,1,0,0,2358.1,53,79,0
+2580,0,,normal_baseline,A,2,1,Monitor the water pressure and flow rate in the distribution network,monitor,0.161905,1,1,1,0,1,0,0,2488.0,72,79,0
+2580,0,,normal_baseline,A,3,1,Monitor and adjust water flow based on sensor data,monitor,0.161905,1,1,1,0,1,0,0,2329.9,47,79,0
+2580,0,,normal_baseline,A,4,0,,unclear,0.161905,1,1,1,0,0,0,0,2516.7,83,79,0
+2580,0,,normal_baseline,A,5,1,Monitor sensor data for potential failures or anomalies,monitor,0.161905,1,1,1,0,1,0,0,2506.2,71,79,0
+2580,0,,normal_baseline,A,6,1,Check for low water pressure in the distribution lines,monitor,0.161905,1,1,1,0,1,0,0,2315.8,36,79,0
+2580,0,,normal_baseline,A,7,1,Monitor sensor data for leaks and pressure anomalies,monitor,0.161905,1,1,1,0,1,0,0,2483.6,61,79,0
+2580,0,,normal_baseline,A,8,1,Monitor and adjust water pressure in the distribution network based on sensor readings,monitor,0.161905,1,1,1,0,1,0,0,2403.6,62,79,0
+2580,0,,normal_baseline,A,9,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.161905,1,1,1,0,1,0,0,2469.3,48,79,0
+1726,0,1,onset,B,0,0,,unclear,0.163468,1,1,1,0,0,0,0,2577.5,83,182,0
+1726,0,1,onset,B,1,1,Monitor and adjust water flow rates based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2631.0,116,182,0
+1726,0,1,onset,B,2,0,,unclear,0.163468,1,1,1,0,0,0,0,2526.0,80,182,0
+1726,0,1,onset,B,3,1,Monitor and adjust the water flow rates in the distribution network based on sensor readings,monitor,0.163468,1,1,1,0,1,0,0,2469.0,82,182,0
+1726,0,1,onset,B,4,0,,unclear,0.163468,1,1,1,0,0,0,0,2951.0,235,182,0
+1726,0,1,onset,B,5,1,Monitor and adjust water flow based on sensor data,monitor,0.163468,1,1,1,0,1,0,0,2823.4,177,182,0
+1726,0,1,onset,B,6,1,Stop water pumping at P_J14 and P_J306,safety,0.163468,1,1,1,0,0,1,0,2642.4,122,182,0
+1726,0,1,onset,B,7,1,Monitor the pressure readings and adjust the distribution system accordingly,monitor,0.163468,1,1,1,0,1,0,0,2649.9,124,182,0
+1726,0,1,onset,B,8,1,Stop the water distribution system for safety checks,safety,0.163468,1,1,1,0,0,1,0,2585.4,127,182,0
+1726,0,1,onset,B,9,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.163468,1,1,1,0,1,0,0,2432.2,66,182,0
+1727,0,1,onset,B,0,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.193190,1,1,1,0,1,0,0,2507.4,79,185,0
+1727,0,1,onset,B,1,1,Monitor and adjust water flow rates based on sensor data,monitor,0.193190,1,1,1,0,1,0,0,2490.8,78,185,0
+1727,0,1,onset,B,2,1,Monitor and adjust the flow rate of the water distribution network based on sensor readings,monitor,0.193190,1,1,1,0,1,0,0,2489.7,84,185,0
+1727,0,1,onset,B,3,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.193190,1,1,1,0,1,0,0,2497.8,79,185,0
+1727,0,1,onset,B,4,1,Adjust water flow to maintain pressure and flow rates within acceptable limits,unclear,0.193190,1,1,1,0,0,0,0,2673.3,158,185,0
+1727,0,1,onset,B,5,1,Adjust water flow rates based on sensor data,unclear,0.193190,1,1,1,0,0,0,0,2637.7,117,185,0
+1727,0,1,onset,B,6,1,Monitor and adjust the water flow rates based on sensor data,monitor,0.193190,1,1,1,0,1,0,0,2505.5,82,185,0
+1727,0,1,onset,B,7,1,Adjust the water flow rate at the distribution point based on sensor readings,unclear,0.193190,1,1,1,0,0,0,0,2567.2,124,185,0
+1727,0,1,onset,B,8,1,Monitor and adjust the water distribution system pressure to ensure optimal flow and safety,monitor,0.193190,1,1,1,0,1,0,0,2559.8,108,185,0
+1727,0,1,onset,B,9,1,Monitor the flow rate of the water distribution network to ensure it meets the required flow rates and avoid overflows.,monitor,0.193190,1,1,1,0,1,0,0,2777.3,172,185,0
+1728,0,1,onset,B,0,1,Stop water pumping,safety,0.215938,1,1,1,0,0,1,0,2763.5,160,184,0
+1728,0,1,onset,B,1,1,Stop the water distribution system,safety,0.215938,1,1,1,0,0,1,0,2640.0,122,184,0
+1728,0,1,onset,B,2,1,Monitor and adjust the pressure settings of the water distribution network based on the current sensor readings,monitor,0.215938,1,1,1,0,1,0,0,2777.7,186,184,0
+1728,0,1,onset,B,3,1,Stop water distribution at the P_J317 and P_J422 sensors to prevent overpressure and potential leaks.,safety,0.215938,1,1,1,0,0,1,0,2889.8,194,184,0
+1728,0,1,onset,B,4,1,Monitor sensor readings for potential issues in water distribution network,monitor,0.215938,1,1,1,0,1,0,0,2464.0,81,184,0
+1728,0,1,onset,B,5,1,Monitor and adjust water flow based on sensor data,monitor,0.215938,1,1,1,0,1,0,0,2685.8,127,184,0
+1728,0,1,onset,B,6,1,Monitor sensor readings and assess network stability,monitor,0.215938,1,1,1,0,1,0,0,2408.0,56,184,0
+1728,0,1,onset,B,7,1,Monitor and adjust pressure settings based on sensor readings,monitor,0.215938,1,1,1,0,1,0,0,2555.9,81,184,0
+1728,0,1,onset,B,8,1,Monitor and adjust pressure levels,monitor,0.215938,1,1,1,0,1,0,0,2483.6,67,184,0
+1728,0,1,onset,B,9,1,Monitor the pressure readings and check for any anomalies,monitor,0.215938,1,1,1,0,1,0,0,2442.4,62,184,0
+1729,0,1,onset,B,0,0,,unclear,0.226855,1,1,1,0,0,0,0,2518.9,105,184,0
+1729,0,1,onset,B,1,1,Stop the water distribution system,safety,0.226855,1,1,1,0,0,1,0,2759.2,160,184,0
+1729,0,1,onset,B,2,0,,unclear,0.226855,1,1,1,0,0,0,0,2710.0,162,184,0
+1729,0,1,onset,B,3,1,Stop the water distribution system,safety,0.226855,1,1,1,0,0,1,0,2750.5,160,184,0
+1729,0,1,onset,B,4,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.226855,1,1,1,0,1,0,0,2441.1,68,184,0
+1729,0,1,onset,B,5,1,Monitor and adjust flow rates accordingly,monitor,0.226855,1,1,1,0,1,0,0,2568.4,114,184,0
+1729,0,1,onset,B,6,1,Stop the water distribution system,safety,0.226855,1,1,1,0,0,1,0,2670.9,161,184,0
+1729,0,1,onset,B,7,1,Stop the water distribution system,safety,0.226855,1,1,1,0,0,1,0,2643.2,124,184,0
+1729,0,1,onset,B,8,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.226855,1,1,1,0,1,0,0,2566.7,105,184,0
+1729,0,1,onset,B,9,1,Monitor and adjust pressure levels in the distribution network to ensure safety and optimal flow,monitor,0.226855,1,1,1,0,1,0,0,2822.7,204,184,0
+1730,0,1,onset,B,0,1,Stop the distribution system,safety,0.214445,1,1,1,0,0,1,0,2665.7,124,185,0
+1730,0,1,onset,B,1,1,Stop the water distribution system at the P_J14 sensor to prevent overflows and ensure safety,safety,0.214445,1,1,1,0,0,1,0,2372.7,50,185,0
+1730,0,1,onset,B,2,1,Stop the distribution system,safety,0.214445,1,1,1,0,0,1,0,2618.5,111,185,0
+1730,0,1,onset,B,3,1,Stop the water distribution system,safety,0.214445,1,1,1,0,0,1,0,2734.1,161,185,0
+1730,0,1,onset,B,4,1,Stop the water distribution system,safety,0.214445,1,1,1,0,0,1,0,2725.7,161,185,0
+1730,0,1,onset,B,5,1,"Monitor and adjust the water flow rate based on sensor readings, ensuring the distribution network meets safety and efficiency standards.",monitor,0.214445,1,1,1,0,1,0,0,2490.7,91,185,0
+1730,0,1,onset,B,6,0,,unclear,0.214445,1,1,1,0,0,0,0,2658.9,130,185,0
+1730,0,1,onset,B,7,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.214445,1,1,1,0,1,0,0,2640.3,130,185,0
+1730,0,1,onset,B,8,1,Stop the distribution system,safety,0.214445,1,1,1,0,0,1,0,2595.7,131,185,0
+1730,0,1,onset,B,9,1,Stop water distribution,safety,0.214445,1,1,1,0,0,1,0,2554.5,118,185,0
+1767,1,1,recovery,B,0,1,Stop the water distribution system at P_J317 and P_J307 to prevent overflow and ensure safety,safety,0.244128,1,1,1,1,0,0,0,2611.1,116,186,0
+1767,1,1,recovery,B,1,0,,unclear,0.244128,1,1,1,0,0,0,0,2765.9,177,186,0
+1767,1,1,recovery,B,2,0,,unclear,0.244128,1,1,1,0,0,0,0,2902.1,242,186,0
+1767,1,1,recovery,B,3,1,Monitor and adjust water flow rates based on sensor data,monitor,0.244128,1,1,1,0,0,0,1,2636.8,120,186,0
+1767,1,1,recovery,B,4,1,Pause the water distribution system to prevent further flow disruptions,unclear,0.244128,1,1,1,0,0,0,0,2652.9,128,186,0
+1767,1,1,recovery,B,5,0,,unclear,0.244128,1,1,1,0,0,0,0,2610.9,140,186,0
+1767,1,1,recovery,B,6,0,,unclear,0.244128,1,1,1,0,0,0,0,2843.8,219,186,0
+1767,1,1,recovery,B,7,1,Stop the water distribution system to prevent further contamination,safety,0.244128,1,1,1,1,0,0,0,2591.4,122,186,0
+1767,1,1,recovery,B,8,1,Monitor and adjust the water distribution system pressure to ensure optimal flow and safety.,monitor,0.244128,1,1,1,0,0,0,1,2637.5,144,186,0
+1767,1,1,recovery,B,9,1,Stop the water distribution system,safety,0.244128,1,1,1,1,0,0,0,2652.4,162,186,0
+1768,1,1,recovery,B,0,0,,unclear,0.245169,1,1,1,0,0,0,0,2492.3,83,184,0
+1768,1,1,recovery,B,1,1,Monitor and adjust the water pressure in the distribution network to ensure optimal flow and efficiency.,monitor,0.245169,1,1,1,0,0,0,1,2710.7,169,184,0
+1768,1,1,recovery,B,2,1,Monitor and adjust pressure levels in the distribution network to ensure optimal flow and pressure distribution.,monitor,0.245169,1,1,1,0,0,0,1,2665.0,128,184,0
+1768,1,1,recovery,B,3,1,Monitor and adjust pressure levels in the distribution network to ensure optimal flow and safety,monitor,0.245169,1,1,1,0,0,0,1,2467.4,78,184,0
+1768,1,1,recovery,B,4,1,Monitor the pressure readings and adjust the distribution system as needed.,monitor,0.245169,1,1,1,0,0,0,1,2555.3,114,184,0
+1768,1,1,recovery,B,5,1,Monitor and adjust pressure levels in the distribution network to maintain optimal flow and pressure,monitor,0.245169,1,1,1,0,0,0,1,2554.7,110,184,0
+1768,1,1,recovery,B,6,1,Monitor the pressure and flow rates of the distribution lines to ensure they meet safety standards and optimize water distribution efficiency.,monitor,0.245169,1,1,1,0,0,0,1,2520.6,80,184,0
+1768,1,1,recovery,B,7,1,Stop the distribution pump at P_J317 and P_J280,safety,0.245169,1,1,1,1,0,0,0,2800.9,184,184,0
+1768,1,1,recovery,B,8,1,"Check for pressure anomalies in P_J317 and P_J280, and monitor F_V2 for flow rate. If any pressure readings exceed safe thresholds, initiate system maintenance. If F_V2 is consistently high, consider upgrading the flow meter or pipeline.",monitor,0.245169,1,1,1,0,0,0,1,2461.6,60,184,0
+1768,1,1,recovery,B,9,1,Monitor the pressure at P_J317 and P_J280 to ensure they remain within safe limits for distribution systems.,monitor,0.245169,1,1,1,0,0,0,1,2763.4,157,184,0
+1769,1,1,recovery,B,0,1,Adjust the water distribution system pressure to match the sensor readings,unclear,0.244799,1,1,1,0,0,0,0,2592.3,100,184,0
+1769,1,1,recovery,B,1,0,,unclear,0.244799,1,1,1,0,0,0,0,2998.0,246,184,0
+1769,1,1,recovery,B,2,1,Monitor the pressure and flow rates of all sensors to ensure network stability and compliance with safety standards.,monitor,0.244799,1,1,1,0,0,0,1,2776.9,176,184,0
+1769,1,1,recovery,B,3,1,Close the main valve to prevent water accumulation,safety,0.244799,1,1,1,1,0,0,0,2576.0,94,184,0
+1769,1,1,recovery,B,4,1,Monitor sensor readings and assess water distribution system integrity,monitor,0.244799,1,1,1,0,0,0,1,2441.2,77,184,0
+1769,1,1,recovery,B,5,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.244799,1,1,1,0,0,0,1,2459.7,66,184,0
+1769,1,1,recovery,B,6,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.244799,1,1,1,0,0,0,1,2707.3,140,184,0
+1769,1,1,recovery,B,7,1,Stop the water distribution system,safety,0.244799,1,1,1,1,0,0,0,2770.4,173,184,0
+1769,1,1,recovery,B,8,1,Stop water distribution system,safety,0.244799,1,1,1,1,0,0,0,2662.5,157,184,0
+1769,1,1,recovery,B,9,1,Monitor and adjust pressure levels in the distribution network based on sensor readings,monitor,0.244799,1,1,1,0,0,0,1,2839.6,208,184,0
+1770,1,1,recovery,B,0,1,Stop the water distribution system at P_J317 and P_J280 to prevent overpressure and potential damage,safety,0.244111,1,1,1,1,0,0,0,2605.6,109,184,0
+1770,1,1,recovery,B,1,1,Adjust pump flow rate to maintain pressure and water quality,unclear,0.244111,1,1,1,0,0,0,0,2503.0,94,184,0
+1770,1,1,recovery,B,2,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.244111,1,1,1,0,0,0,1,2523.7,110,184,0
+1770,1,1,recovery,B,3,1,Monitor the pressure of P_J317 and P_J280 to ensure they are within safe limits and initiate maintenance if necessary.,monitor,0.244111,1,1,1,0,0,0,1,2553.1,105,184,0
+1770,1,1,recovery,B,4,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.244111,1,1,1,0,0,0,1,2648.6,128,184,0
+1770,1,1,recovery,B,5,1,Adjust the water pressure at P_J317 and P_J280 to ensure optimal flow and pressure distribution,unclear,0.244111,1,1,1,0,0,0,0,2851.1,219,184,0
+1770,1,1,recovery,B,6,1,Adjust the water flow rate at the distribution point based on sensor readings,unclear,0.244111,1,1,1,0,0,0,0,2561.6,122,184,0
+1770,1,1,recovery,B,7,1,Adjust the water flow rate to ensure adequate distribution and prevent overfilling,unclear,0.244111,1,1,1,0,0,0,0,2580.8,123,184,0
+1770,1,1,recovery,B,8,1,Stop water distribution at the P_J317 and P_J280 sensors to prevent overpressure and potential leaks,safety,0.244111,1,1,1,1,0,0,0,2739.1,177,184,0
+1770,1,1,recovery,B,9,1,Adjust the water flow rate to ensure optimal distribution and prevent overflows,unclear,0.244111,1,1,1,0,0,0,0,2629.1,122,184,0
+1771,1,1,recovery,B,0,1,Monitor the pressure and flow rates of the distribution lines to ensure they meet safety standards and optimize water distribution efficiency.,monitor,0.250663,1,1,1,0,0,0,1,2517.3,79,183,0
+1771,1,1,recovery,B,1,1,Monitor the water flow rate and pressure to ensure safety and compliance with distribution standards,monitor,0.250663,1,1,1,0,0,0,1,2648.1,125,183,0
+1771,1,1,recovery,B,2,1,Monitor the pressure readings and ensure they are within safe limits for the distribution system.,monitor,0.250663,1,1,1,0,0,0,1,2590.6,111,183,0
+1771,1,1,recovery,B,3,0,,unclear,0.250663,1,1,1,0,0,0,0,2504.3,83,183,0
+1771,1,1,recovery,B,4,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.250663,1,1,1,0,0,0,1,2596.6,120,183,0
+1771,1,1,recovery,B,5,0,,unclear,0.250663,1,1,1,0,0,0,0,2476.0,79,183,0
+1771,1,1,recovery,B,6,1,Stop water distribution at L_T1 and F_V2,safety,0.250663,1,1,1,1,0,0,0,2454.4,54,183,0
+1771,1,1,recovery,B,7,1,Monitor and adjust water flow distribution based on sensor readings,monitor,0.250663,1,1,1,0,0,0,1,2778.6,179,183,0
+1771,1,1,recovery,B,8,1,Monitor the water flow rate and pressure to ensure compliance with network standards and safety requirements.,monitor,0.250663,1,1,1,0,0,0,1,2534.4,85,183,0
+1771,1,1,recovery,B,9,1,Monitor the water flow rate and pressure to ensure compliance with network standards.,monitor,0.250663,1,1,1,0,0,0,1,2400.2,69,183,0
+2332,0,2,onset,B,0,1,Stop the water distribution system,safety,0.158074,1,1,1,0,0,1,0,2725.4,121,183,0
+2332,0,2,onset,B,1,1,Stop the water distribution system,safety,0.158074,1,1,1,0,0,1,0,2910.9,252,183,0
+2332,0,2,onset,B,2,1,Monitor the water pressure and flow rates to ensure they meet the network's operational requirements.,monitor,0.158074,1,1,1,0,1,0,0,2480.9,72,183,0
+2332,0,2,onset,B,3,1,Close the distribution pipe for the L_T6 sensor to prevent overflow,safety,0.158074,1,1,1,0,0,1,0,2405.9,50,183,0
+2332,0,2,onset,B,4,1,Stop the water distribution system,safety,0.158074,1,1,1,0,0,1,0,2729.1,159,183,0
+2332,0,2,onset,B,5,1,Monitor the pressure readings and adjust the water supply system accordingly.,monitor,0.158074,1,1,1,0,1,0,0,2474.2,80,183,0
+2332,0,2,onset,B,6,1,Stop water distribution system,safety,0.158074,1,1,1,0,0,1,0,2481.8,76,183,0
+2332,0,2,onset,B,7,1,Stop the water distribution system,safety,0.158074,1,1,1,0,0,1,0,2745.9,159,183,0
+2332,0,2,onset,B,8,1,Stop the distribution system,safety,0.158074,1,1,1,0,0,1,0,2559.7,120,183,0
+2332,0,2,onset,B,9,1,Stop the water distribution system,safety,0.158074,1,1,1,0,0,1,0,2682.0,159,183,0
+2333,0,2,onset,B,0,1,Stop the water distribution system,safety,0.175286,1,1,1,0,0,1,0,2702.4,171,182,0
+2333,0,2,onset,B,1,1,Monitor and adjust water flow rates based on sensor data,monitor,0.175286,1,1,1,0,1,0,0,2434.4,68,182,0
+2333,0,2,onset,B,2,1,Stop distribution system,safety,0.175286,1,1,1,0,0,1,0,2649.1,147,182,0
+2333,0,2,onset,B,3,1,Stop water distribution system,safety,0.175286,1,1,1,0,0,1,0,2736.1,157,182,0
+2333,0,2,onset,B,4,1,Stop the water distribution system to prevent further contamination,safety,0.175286,1,1,1,0,0,1,0,2595.2,117,182,0
+2333,0,2,onset,B,5,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.175286,1,1,1,0,1,0,0,2433.2,69,182,0
+2333,0,2,onset,B,6,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.175286,1,1,1,0,1,0,0,2924.4,222,182,0
+2333,0,2,onset,B,7,1,Stop the water distribution system,safety,0.175286,1,1,1,0,0,1,0,2726.3,158,182,0
+2333,0,2,onset,B,8,1,Stop water distribution,safety,0.175286,1,1,1,0,0,1,0,2641.4,131,182,0
+2333,0,2,onset,B,9,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.175286,1,1,1,0,1,0,0,2550.5,115,182,0
+2334,0,2,onset,B,0,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2936.5,227,184,0
+2334,0,2,onset,B,1,1,"Monitor the flow rate of the PPU10 and PPU1 sensors to ensure they are within acceptable limits for the water distribution network. If any of the sensors show abnormal flow rates, immediate intervention may be required.",monitor,0.191065,1,1,1,0,1,0,0,2694.3,160,184,0
+2334,0,2,onset,B,2,1,Monitor and adjust the water flow rate in the distribution network based on sensor readings,monitor,0.191065,1,1,1,0,1,0,0,2865.3,229,184,0
+2334,0,2,onset,B,3,0,,unclear,0.191065,1,1,1,0,0,0,0,2802.9,208,184,0
+2334,0,2,onset,B,4,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.191065,1,1,1,0,1,0,0,2635.5,126,184,0
+2334,0,2,onset,B,5,0,,unclear,0.191065,1,1,1,0,0,0,0,2476.2,82,184,0
+2334,0,2,onset,B,6,0,,unclear,0.191065,1,1,1,0,0,0,0,2746.2,156,184,0
+2334,0,2,onset,B,7,1,Monitor the flow rate of the PPU10 and PPU1 sensors to ensure they are within safe limits.,monitor,0.191065,1,1,1,0,1,0,0,2876.6,241,184,0
+2334,0,2,onset,B,8,1,Monitor the water level in the distribution network and assess the pressure conditions,monitor,0.191065,1,1,1,0,1,0,0,2535.9,79,184,0
+2334,0,2,onset,B,9,1,Monitor the water flow and pressure levels to ensure they meet safety standards and optimize the distribution system.,monitor,0.191065,1,1,1,0,1,0,0,2466.0,86,184,0
+2335,0,2,onset,B,0,1,Stop the water distribution system,safety,0.210778,1,1,1,0,0,1,0,2631.4,121,183,0
+2335,0,2,onset,B,1,1,Monitor and adjust water flow based on sensor readings,monitor,0.210778,1,1,1,0,1,0,0,2662.4,138,183,0
+2335,0,2,onset,B,2,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.210778,1,1,1,0,1,0,0,2463.3,80,183,0
+2335,0,2,onset,B,3,1,Stop the water distribution system at L_T1 and F_PU10 to prevent overflow and ensure safety,safety,0.210778,1,1,1,0,0,1,0,2729.9,154,183,0
+2335,0,2,onset,B,4,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.210778,1,1,1,0,1,0,0,2483.5,72,183,0
+2335,0,2,onset,B,5,1,Stop the water distribution system,safety,0.210778,1,1,1,0,0,1,0,2644.3,122,183,0
+2335,0,2,onset,B,6,1,Stop water distribution system,safety,0.210778,1,1,1,0,0,1,0,2604.8,120,183,0
+2335,0,2,onset,B,7,1,Stop water distribution at affected areas,safety,0.210778,1,1,1,0,0,1,0,2620.9,123,183,0
+2335,0,2,onset,B,8,1,Adjust the water pressure at P_J307 and P_J302 to ensure optimal distribution,unclear,0.210778,1,1,1,0,0,0,0,2573.8,109,183,0
+2335,0,2,onset,B,9,1,Monitor the pressure at P_J307 and P_J302 to ensure they are within safe limits and initiate maintenance if necessary.,monitor,0.210778,1,1,1,0,1,0,0,2642.3,128,183,0
+2336,0,2,onset,B,0,1,Stop water distribution system due to high flow rate detected in F_PU1 and P_J14,safety,0.150594,1,1,1,0,0,1,0,2748.7,185,182,0
+2336,0,2,onset,B,1,1,Check for leaks in the distribution system,monitor,0.150594,1,1,1,0,1,0,0,2683.9,129,182,0
+2336,0,2,onset,B,2,0,,unclear,0.150594,1,1,1,0,0,0,0,2723.6,181,182,0
+2336,0,2,onset,B,3,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.150594,1,1,1,0,1,0,0,2570.4,104,182,0
+2336,0,2,onset,B,4,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.150594,1,1,1,0,1,0,0,2485.4,70,182,0
+2336,0,2,onset,B,5,1,Stop the water distribution system,safety,0.150594,1,1,1,0,0,1,0,2702.5,158,182,0
+2336,0,2,onset,B,6,1,Stop the water distribution system,safety,0.150594,1,1,1,0,0,1,0,2742.3,158,182,0
+2336,0,2,onset,B,7,0,,unclear,0.150594,1,1,1,0,0,0,0,2798.2,220,182,0
+2336,0,2,onset,B,8,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.150594,1,1,1,0,1,0,0,2535.8,80,182,0
+2336,0,2,onset,B,9,1,Monitor and adjust pump flow rate based on sensor values,monitor,0.150594,1,1,1,0,1,0,0,2605.9,118,182,0
+2391,1,2,recovery,B,0,1,Adjust the water flow rate to match the load,unclear,0.179318,1,1,1,0,0,0,0,2640.9,132,185,0
+2391,1,2,recovery,B,1,1,Adjust the water flow rate to maintain pressure and prevent leaks,unclear,0.179318,1,1,1,0,0,0,0,2561.7,120,185,0
+2391,1,2,recovery,B,2,1,Monitor and adjust the water flow rate to maintain optimal distribution,monitor,0.179318,1,1,1,0,0,0,1,2570.5,120,185,0
+2391,1,2,recovery,B,3,1,Stop the water distribution system,safety,0.179318,1,1,1,1,0,0,0,2709.8,161,185,0
+2391,1,2,recovery,B,4,1,Monitor and adjust the water flow rate for the distribution network,monitor,0.179318,1,1,1,0,0,0,1,2644.0,121,185,0
+2391,1,2,recovery,B,5,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.179318,1,1,1,0,0,0,1,2496.0,78,185,0
+2391,1,2,recovery,B,6,1,Monitor and adjust the water flow rate for the distribution network,monitor,0.179318,1,1,1,0,0,0,1,2591.7,127,185,0
+2391,1,2,recovery,B,7,1,Stop the distribution pump at P_J302 and P_J307 to prevent overpressure and potential damage,safety,0.179318,1,1,1,1,0,0,0,2780.1,195,185,0
+2391,1,2,recovery,B,8,1,Adjust the water pressure at P_J302 and P_J307 to ensure optimal flow and pressure distribution in the distribution network.,unclear,0.179318,1,1,1,0,0,0,0,2843.2,219,185,0
+2391,1,2,recovery,B,9,1,Monitor the flow rate of the water distribution network to ensure it meets the required standards,monitor,0.179318,1,1,1,0,0,0,1,2501.0,86,185,0
+2392,1,2,recovery,B,0,1,Monitor and adjust flow rates based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2521.6,75,185,0
+2392,1,2,recovery,B,1,1,Adjust water pressure in the distribution network to ensure consistent flow and prevent leaks.,unclear,0.167899,1,1,1,0,0,0,0,2469.7,66,185,0
+2392,1,2,recovery,B,2,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.167899,1,1,1,0,0,0,1,2983.0,227,185,0
+2392,1,2,recovery,B,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2686.6,129,185,0
+2392,1,2,recovery,B,4,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.167899,1,1,1,0,0,0,1,2605.3,129,185,0
+2392,1,2,recovery,B,5,1,Monitor and adjust water flow rates based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2635.3,140,185,0
+2392,1,2,recovery,B,6,0,,unclear,0.167899,1,1,1,0,0,0,0,3090.0,272,185,0
+2392,1,2,recovery,B,7,1,Monitor and adjust the water flow rates based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2514.8,77,185,0
+2392,1,2,recovery,B,8,1,Monitor and adjust water flow rates based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2593.1,140,185,0
+2392,1,2,recovery,B,9,1,Monitor and adjust water flow rates based on sensor data,monitor,0.167899,1,1,1,0,0,0,1,2562.2,128,185,0
+2393,1,2,recovery,B,0,1,Stop the water distribution system to prevent further contamination and ensure safety,safety,0.126926,1,1,1,1,0,0,0,2726.9,172,184,0
+2393,1,2,recovery,B,1,1,Monitor and adjust the water distribution system pressure and flow rates to ensure optimal performance and safety,monitor,0.126926,1,1,1,0,0,0,1,2593.5,115,184,0
+2393,1,2,recovery,B,2,1,Monitor and adjust water flow rates based on sensor data,monitor,0.126926,1,1,1,0,0,0,1,2497.3,76,184,0
+2393,1,2,recovery,B,3,1,Stop the water distribution system,safety,0.126926,1,1,1,1,0,0,0,2682.2,156,184,0
+2393,1,2,recovery,B,4,1,Adjust the water flow rate to maintain pressure and ensure network stability,unclear,0.126926,1,1,1,0,0,0,0,2652.2,123,184,0
+2393,1,2,recovery,B,5,1,Stop the water distribution system to prevent further contamination,safety,0.126926,1,1,1,1,0,0,0,2713.1,167,184,0
+2393,1,2,recovery,B,6,1,Stop the water distribution system,safety,0.126926,1,1,1,1,0,0,0,2594.8,107,184,0
+2393,1,2,recovery,B,7,1,Check for overflow in the F_PU4 sensor to determine if it needs to be monitored or replaced,monitor,0.126926,1,1,1,0,0,0,1,2428.1,63,184,0
+2393,1,2,recovery,B,8,1,Stop the water distribution system,safety,0.126926,1,1,1,1,0,0,0,2670.5,122,184,0
+2393,1,2,recovery,B,9,1,Stop water distribution system,safety,0.126926,1,1,1,1,0,0,0,2667.2,159,184,0
+2394,1,2,recovery,B,0,1,Close the distribution valve at P_J415 to prevent overpressure,safety,0.135480,1,1,1,1,0,0,0,2378.1,57,184,0
+2394,1,2,recovery,B,1,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.135480,1,1,1,0,0,0,1,2700.5,169,184,0
+2394,1,2,recovery,B,2,0,,unclear,0.135480,1,1,1,0,0,0,0,2596.3,115,184,0
+2394,1,2,recovery,B,3,1,Stop the water distribution system,safety,0.135480,1,1,1,1,0,0,0,2613.8,119,184,0
+2394,1,2,recovery,B,4,1,Monitor the pressure readings and adjust the distribution system accordingly,monitor,0.135480,1,1,1,0,0,0,1,2444.9,72,184,0
+2394,1,2,recovery,B,5,1,Stop the water distribution system to prevent further contamination and ensure safety,safety,0.135480,1,1,1,1,0,0,0,2780.7,181,184,0
+2394,1,2,recovery,B,6,1,Stop the water distribution system at the P_J415 sensor due to high pressure and potential safety issues,safety,0.135480,1,1,1,1,0,0,0,2489.9,87,184,0
+2394,1,2,recovery,B,7,1,Monitor the water flow rate and pressure to ensure compliance with network standards,monitor,0.135480,1,1,1,0,0,0,1,2503.0,75,184,0
+2394,1,2,recovery,B,8,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.135480,1,1,1,0,0,0,1,2511.6,72,184,0
+2394,1,2,recovery,B,9,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.135480,1,1,1,0,0,0,1,2426.8,80,184,0
+2395,1,2,recovery,B,0,1,Stop the water distribution system to prevent further contamination,safety,0.105680,1,1,1,1,0,0,0,2809.3,169,184,0
+2395,1,2,recovery,B,1,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.105680,1,1,1,0,0,0,1,2492.9,80,184,0
+2395,1,2,recovery,B,2,1,Stop the water distribution system,safety,0.105680,1,1,1,1,0,0,0,2609.9,122,184,0
+2395,1,2,recovery,B,3,1,Monitor and adjust water distribution system pressure and flow rates based on sensor data,monitor,0.105680,1,1,1,0,0,0,1,2611.6,125,184,0
+2395,1,2,recovery,B,4,1,Check for overflows in the distribution network and adjust the flow rates accordingly.,monitor,0.105680,1,1,1,0,0,0,1,2456.6,84,184,0
+2395,1,2,recovery,B,5,1,Monitor the water flow rate and pressure to ensure compliance with distribution standards and safety requirements.,monitor,0.105680,1,1,1,0,0,0,1,2522.2,83,184,0
+2395,1,2,recovery,B,6,0,,unclear,0.105680,1,1,1,0,0,0,0,2731.1,169,184,0
+2395,1,2,recovery,B,7,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.105680,1,1,1,0,0,0,1,2734.1,167,184,0
+2395,1,2,recovery,B,8,1,Monitor the pressure and flow rates to ensure network stability and safety,monitor,0.105680,1,1,1,0,0,0,1,2406.1,76,184,0
+2395,1,2,recovery,B,9,1,Monitor the water flow rate and pressure to ensure compliance with distribution standards.,monitor,0.105680,1,1,1,0,0,0,1,2536.3,74,184,0
+2846,0,3,onset,B,0,1,Monitor and adjust pressure levels in P_J14 and P_J302 to ensure compliance with safety standards,monitor,0.203021,1,1,1,0,1,0,0,2585.3,123,183,0
+2846,0,3,onset,B,1,1,Adjust the water flow rate to ensure consistent distribution and avoid overfilling or underflowing the distribution network,unclear,0.203021,1,1,1,0,0,0,0,2601.3,129,183,0
+2846,0,3,onset,B,2,1,Adjust the water flow rate to maintain optimal pressure and flow rates in the distribution network,unclear,0.203021,1,1,1,0,0,0,0,2572.0,126,183,0
+2846,0,3,onset,B,3,1,Adjust water flow control system to maintain optimal pressure and flow rates,unclear,0.203021,1,1,1,0,0,0,0,2516.3,83,183,0
+2846,0,3,onset,B,4,1,Monitor the water level in the distribution system to ensure it meets safety standards and adjust the pump accordingly.,monitor,0.203021,1,1,1,0,1,0,0,2504.4,86,183,0
+2846,0,3,onset,B,5,0,,unclear,0.203021,1,1,1,0,0,0,0,2478.8,78,183,0
+2846,0,3,onset,B,6,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.203021,1,1,1,0,1,0,0,2392.5,77,183,0
+2846,0,3,onset,B,7,1,Adjust the water flow rate to match the demand,unclear,0.203021,1,1,1,0,0,0,0,2596.5,116,183,0
+2846,0,3,onset,B,8,1,"Adjust the water flow control valve for the highest pressure sensor, P_J302, to ensure optimal distribution.",unclear,0.203021,1,1,1,0,0,0,0,2664.9,131,183,0
+2846,0,3,onset,B,9,1,Adjust water flow control valves to maintain optimal pressure and flow rates,unclear,0.203021,1,1,1,0,0,0,0,2621.7,119,183,0
+2847,0,3,onset,B,0,1,Close the distribution pipe at P_J14 and P_J302 to prevent overflow and ensure safety,safety,0.184852,1,1,1,0,0,1,0,2759.0,174,185,0
+2847,0,3,onset,B,1,1,Stop the water distribution system to prevent further contamination,safety,0.184852,1,1,1,0,0,1,0,2703.0,168,185,0
+2847,0,3,onset,B,2,1,Monitor the pressure readings and adjust the distribution system accordingly,monitor,0.184852,1,1,1,0,1,0,0,2619.6,140,185,0
+2847,0,3,onset,B,3,1,Monitor and adjust water flow rates based on sensor data,monitor,0.184852,1,1,1,0,1,0,0,2559.0,129,185,0
+2847,0,3,onset,B,4,1,Monitor and adjust water flow rates based on sensor data,monitor,0.184852,1,1,1,0,1,0,0,2450.9,71,185,0
+2847,0,3,onset,B,5,1,Stop water pumping from P_J14 and F_V2,safety,0.184852,1,1,1,0,0,1,0,2711.1,123,185,0
+2847,0,3,onset,B,6,1,Adjust water flow control to maintain optimal pressure and flow rates,unclear,0.184852,1,1,1,0,0,0,0,2452.9,82,185,0
+2847,0,3,onset,B,7,1,Adjust water pressure at P_J302 to ensure it meets safety standards,unclear,0.184852,1,1,1,0,0,0,0,2398.0,61,185,0
+2847,0,3,onset,B,8,1,Monitor and adjust the water flow rate for the distribution network,monitor,0.184852,1,1,1,0,1,0,0,2558.2,122,185,0
+2847,0,3,onset,B,9,1,"Monitor and adjust the water distribution system based on sensor readings, prioritize the P_J14 and P_J302 pressures, and ensure the flow rate is maintained within acceptable limits.",monitor,0.184852,1,1,1,0,1,0,0,2670.5,146,185,0
+2848,0,3,onset,B,0,1,Adjust the water distribution system pressure to match the expected flow rate,unclear,0.173905,1,1,1,0,0,0,0,2764.0,154,186,0
+2848,0,3,onset,B,1,1,Monitor and adjust water flow rates based on sensor data,monitor,0.173905,1,1,1,0,1,0,0,2580.4,120,186,0
+2848,0,3,onset,B,2,1,Adjust the water pressure at P_J269 and P_J302 to ensure optimal distribution and prevent leaks.,unclear,0.173905,1,1,1,0,0,0,0,2656.2,146,186,0
+2848,0,3,onset,B,3,1,Stop the distribution system at P_J269 and P_J302 to prevent overpressure and ensure safety,safety,0.173905,1,1,1,0,0,1,0,2505.8,110,186,0
+2848,0,3,onset,B,4,1,Monitor the flow rate of the water distribution network and adjust the pump or valve accordingly,monitor,0.173905,1,1,1,0,1,0,0,2617.1,129,186,0
+2848,0,3,onset,B,5,1,Stop the water distribution system for safety and maintenance,safety,0.173905,1,1,1,0,0,1,0,2436.6,71,186,0
+2848,0,3,onset,B,6,1,Stop the distribution system for safety,safety,0.173905,1,1,1,0,0,1,0,2559.1,103,186,0
+2848,0,3,onset,B,7,1,Adjust the water flow rate to ensure adequate distribution,unclear,0.173905,1,1,1,0,0,0,0,2601.6,122,186,0
+2848,0,3,onset,B,8,1,Adjust water flow rate based on sensor data,unclear,0.173905,1,1,1,0,0,0,0,2549.3,106,186,0
+2848,0,3,onset,B,9,1,Stop the distribution system,safety,0.173905,1,1,1,0,0,1,0,2584.4,108,186,0
+2849,0,3,onset,B,0,1,Monitor the flow rate of the water distribution network to ensure it meets the required standards.,monitor,0.186867,1,1,1,0,1,0,0,2533.0,84,185,0
+2849,0,3,onset,B,1,1,Monitor and adjust the water flow rate to ensure optimal distribution,monitor,0.186867,1,1,1,0,1,0,0,2542.4,123,185,0
+2849,0,3,onset,B,2,1,Adjust pump flow rate to maintain stable water distribution,unclear,0.186867,1,1,1,0,0,0,0,2594.6,119,185,0
+2849,0,3,onset,B,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.186867,1,1,1,0,1,0,0,2576.7,120,185,0
+2849,0,3,onset,B,4,1,Stop the distribution system if any sensor readings are below the threshold for safety,safety,0.186867,1,1,1,0,0,1,0,2448.2,70,185,0
+2849,0,3,onset,B,5,1,"Adjust the water pump settings based on the flow rate and pressure readings. If the flow rate is low (e.g., F_PU2: 0.00 L/s), the pump may need to be adjusted to increase the flow rate. If the pressure is high (e.g., P_J14: 30.50 kPa), the pump may need to be adjusted to reduce pressure. If the flow rate is high and pressure is low, the pump may need to be adjusted to maintain pressure and flow rate.",unclear,0.186867,1,1,1,0,0,0,0,2555.8,115,185,0
+2849,0,3,onset,B,6,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.186867,1,1,1,0,1,0,0,2498.2,77,185,0
+2849,0,3,onset,B,7,1,Adjust water flow rate to maintain pressure and avoid overflow,unclear,0.186867,1,1,1,0,0,0,0,2644.2,119,185,0
+2849,0,3,onset,B,8,1,Stop the distribution system,safety,0.186867,1,1,1,0,0,1,0,2617.0,123,185,0
+2849,0,3,onset,B,9,1,Stop the water distribution system,safety,0.186867,1,1,1,0,0,1,0,2651.3,136,185,0
+2850,0,3,onset,B,0,1,Monitor the flow rate of water distribution system components and adjust accordingly,monitor,0.198521,1,1,1,0,1,0,0,2501.3,79,185,0
+2850,0,3,onset,B,1,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.198521,1,1,1,0,1,0,0,2544.9,80,185,0
+2850,0,3,onset,B,2,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.198521,1,1,1,0,1,0,0,2498.4,106,185,0
+2850,0,3,onset,B,3,1,Monitor and adjust the water flow rate based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2611.3,129,185,0
+2850,0,3,onset,B,4,0,,unclear,0.198521,1,1,1,0,0,0,0,2553.6,101,185,0
+2850,0,3,onset,B,5,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.198521,1,1,1,0,1,0,0,2650.9,140,185,0
+2850,0,3,onset,B,6,1,Monitor and adjust the water distribution system pressure to ensure optimal flow and pressure regulation.,monitor,0.198521,1,1,1,0,1,0,0,2587.3,112,185,0
+2850,0,3,onset,B,7,1,Close the distribution valve at P_J269 to prevent overpressure and ensure safe flow,safety,0.198521,1,1,1,0,0,1,0,2610.1,120,185,0
+2850,0,3,onset,B,8,1,Monitor and adjust water flow rates based on sensor data,monitor,0.198521,1,1,1,0,1,0,0,2619.8,129,185,0
+2850,0,3,onset,B,9,1,Stop the water distribution system,safety,0.198521,1,1,1,0,0,1,0,2700.3,161,185,0
+2882,1,3,recovery,B,0,0,,unclear,0.141483,1,1,1,0,0,0,0,2651.3,118,185,0
+2882,1,3,recovery,B,1,1,Stop the water distribution system,safety,0.141483,1,1,1,1,0,0,0,2456.9,71,185,0
+2882,1,3,recovery,B,2,1,Monitor and adjust the water distribution system pressure and flow rates based on sensor readings,monitor,0.141483,1,1,1,0,0,0,1,2577.9,102,185,0
+2882,1,3,recovery,B,3,1,Adjust the water flow rate to meet demand based on sensor readings,unclear,0.141483,1,1,1,0,0,0,0,2596.4,123,185,0
+2882,1,3,recovery,B,4,1,Adjust water flow rate to maintain pressure and avoid overfilling,unclear,0.141483,1,1,1,0,0,0,0,2496.3,80,185,0
+2882,1,3,recovery,B,5,1,Adjust water flow rate based on sensor data,unclear,0.141483,1,1,1,0,0,0,0,2662.9,118,185,0
+2882,1,3,recovery,B,6,1,Close the distribution valve at P_J256 to prevent overpressure,safety,0.141483,1,1,1,1,0,0,0,2583.4,99,185,0
+2882,1,3,recovery,B,7,0,,unclear,0.141483,1,1,1,0,0,0,0,14247.3,4096,185,0
+2882,1,3,recovery,B,8,1,Adjust the water flow rate to ensure the distribution network meets the demand and maintains optimal pressure levels.,unclear,0.141483,1,1,1,0,0,0,0,2797.5,131,185,0
+2882,1,3,recovery,B,9,1,Adjust water flow control valve positions to optimize distribution efficiency and prevent overflows.,unclear,0.141483,1,1,1,0,0,0,0,2605.7,127,185,0
+2883,1,3,recovery,B,0,1,Stop water distribution system,safety,0.134475,1,1,1,1,0,0,0,2744.2,173,183,0
+2883,1,3,recovery,B,1,1,Adjust the water flow rate to ensure safety and efficiency,unclear,0.134475,1,1,1,0,0,0,0,2628.4,118,183,0
+2883,1,3,recovery,B,2,1,Stop the water distribution system,safety,0.134475,1,1,1,1,0,0,0,2690.6,159,183,0
+2883,1,3,recovery,B,3,1,Stop water distribution at the affected area,safety,0.134475,1,1,1,1,0,0,0,2420.4,68,183,0
+2883,1,3,recovery,B,4,1,Stop the water distribution system,safety,0.134475,1,1,1,1,0,0,0,2465.4,91,183,0
+2883,1,3,recovery,B,5,1,Stop water distribution system,safety,0.134475,1,1,1,1,0,0,0,2526.2,94,183,0
+2883,1,3,recovery,B,6,1,Stop the water distribution system,safety,0.134475,1,1,1,1,0,0,0,2536.2,121,183,0
+2883,1,3,recovery,B,7,1,Stop the water distribution system to prevent further contamination,safety,0.134475,1,1,1,1,0,0,0,2690.9,164,183,0
+2883,1,3,recovery,B,8,1,Stop the water distribution system,safety,0.134475,1,1,1,1,0,0,0,2785.3,171,183,0
+2883,1,3,recovery,B,9,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.134475,1,1,1,0,0,0,1,2616.5,97,183,0
+2884,1,3,recovery,B,0,1,Stop distribution system for safety checks,safety,0.175417,1,1,1,1,0,0,0,2782.6,162,184,0
+2884,1,3,recovery,B,1,1,Monitor the water flow rate from the distribution network and adjust the pump accordingly,monitor,0.175417,1,1,1,0,0,0,1,2681.3,125,184,0
+2884,1,3,recovery,B,2,1,Activate water pump at P_J289 and P_J300 to maintain pressure,unclear,0.175417,1,1,1,0,0,0,0,2609.9,106,184,0
+2884,1,3,recovery,B,3,1,Stop water distribution system,safety,0.175417,1,1,1,1,0,0,0,2630.2,121,184,0
+2884,1,3,recovery,B,4,1,Stop the water distribution system,safety,0.175417,1,1,1,1,0,0,0,2614.6,123,184,0
+2884,1,3,recovery,B,5,1,Stop the water distribution system,safety,0.175417,1,1,1,1,0,0,0,2667.8,161,184,0
+2884,1,3,recovery,B,6,1,Stop the water distribution system to prevent further contamination,safety,0.175417,1,1,1,1,0,0,0,2659.5,128,184,0
+2884,1,3,recovery,B,7,1,Monitor the flow rate of the water distribution network and adjust the pump accordingly,monitor,0.175417,1,1,1,0,0,0,1,2647.1,125,184,0
+2884,1,3,recovery,B,8,1,Monitor water quality and flow rate for potential leaks or contamination,monitor,0.175417,1,1,1,0,0,0,1,2718.2,166,184,0
+2884,1,3,recovery,B,9,0,,unclear,0.175417,1,1,1,0,0,0,0,2732.2,159,184,0
+2885,1,3,recovery,B,0,0,,unclear,0.186659,1,1,1,0,0,0,0,2578.1,125,183,0
+2885,1,3,recovery,B,1,1,Monitor the pressure readings and ensure they are within safe limits for water distribution,monitor,0.186659,1,1,1,0,0,0,1,2426.7,68,183,0
+2885,1,3,recovery,B,2,1,Stop the water distribution system,safety,0.186659,1,1,1,1,0,0,0,2669.7,172,183,0
+2885,1,3,recovery,B,3,1,Monitor the pressure readings and ensure they are within safe limits for the distribution system.,monitor,0.186659,1,1,1,0,0,0,1,2569.5,92,183,0
+2885,1,3,recovery,B,4,0,,unclear,0.186659,1,1,1,0,0,0,0,2638.7,117,183,0
+2885,1,3,recovery,B,5,1,Monitor the pressure readings and adjust the distribution system accordingly,monitor,0.186659,1,1,1,0,0,0,1,2467.0,87,183,0
+2885,1,3,recovery,B,6,0,,unclear,0.186659,1,1,1,0,0,0,0,2478.2,82,183,0
+2885,1,3,recovery,B,7,1,Monitor and adjust pressure levels,monitor,0.186659,1,1,1,0,0,0,1,2551.8,124,183,0
+2885,1,3,recovery,B,8,1,Stop the water distribution system,safety,0.186659,1,1,1,1,0,0,0,2569.4,121,183,0
+2885,1,3,recovery,B,9,1,Monitor and adjust pressure levels,monitor,0.186659,1,1,1,0,0,0,1,2485.1,84,183,0
+2886,1,3,recovery,B,0,1,Monitor and adjust the pressure at P_J302 and P_J307 to ensure safety and optimal flow rate,monitor,0.206542,1,1,1,0,0,0,1,2767.4,184,184,0
+2886,1,3,recovery,B,1,0,,unclear,0.206542,1,1,1,0,0,0,0,2442.8,84,184,0
+2886,1,3,recovery,B,2,0,,unclear,0.206542,1,1,1,0,0,0,0,2699.9,168,184,0
+2886,1,3,recovery,B,3,0,,unclear,0.206542,1,1,1,0,0,0,0,2480.5,80,184,0
+2886,1,3,recovery,B,4,1,Stop water distribution system,safety,0.206542,1,1,1,1,0,0,0,2732.2,156,184,0
+2886,1,3,recovery,B,5,1,Monitor the pressure readings and adjust the distribution system accordingly,monitor,0.206542,1,1,1,0,0,0,1,2510.6,98,184,0
+2886,1,3,recovery,B,6,0,,unclear,0.206542,1,1,1,0,0,0,0,13831.6,4096,184,0
+2886,1,3,recovery,B,7,1,Monitor the pressure readings and adjust the water distribution system accordingly,monitor,0.206542,1,1,1,0,0,0,1,2605.3,83,184,0
+2886,1,3,recovery,B,8,1,Monitor the pressure readings and ensure they remain within safe limits for the distribution system.,monitor,0.206542,1,1,1,0,0,0,1,2636.0,138,184,0
+2886,1,3,recovery,B,9,1,Stop the water distribution system at the P_J302 and P_J307 locations to prevent overpressure and potential flooding,safety,0.206542,1,1,1,1,0,0,0,2479.7,83,184,0
+3503,0,4,onset,B,0,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.213360,1,1,1,0,1,0,0,2528.8,81,184,0
+3503,0,4,onset,B,1,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.213360,1,1,1,0,1,0,0,2839.7,226,184,0
+3503,0,4,onset,B,2,1,Monitor and adjust water flow rates based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2992.9,258,184,0
+3503,0,4,onset,B,3,1,Monitor and adjust flow rates based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2538.3,117,184,0
+3503,0,4,onset,B,4,1,Monitor and adjust water flow rates based on sensor data,monitor,0.213360,1,1,1,0,1,0,0,2607.4,126,184,0
+3503,0,4,onset,B,5,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.213360,1,1,1,0,1,0,0,2592.4,131,184,0
+3503,0,4,onset,B,6,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.213360,1,1,1,0,1,0,0,2609.6,126,184,0
+3503,0,4,onset,B,7,1,Adjust the water flow rate to maintain optimal distribution,unclear,0.213360,1,1,1,0,0,0,0,2558.7,117,184,0
+3503,0,4,onset,B,8,1,Monitor the water flow rate and pressure sensors to ensure compliance with network standards and safety requirements,monitor,0.213360,1,1,1,0,1,0,0,2468.6,85,184,0
+3503,0,4,onset,B,9,1,Monitor and adjust the water distribution system based on sensor readings,monitor,0.213360,1,1,1,0,1,0,0,2635.7,140,184,0
+3504,0,4,onset,B,0,1,Stop the water distribution system to prevent further contamination and ensure safety,safety,0.203050,1,1,1,0,0,1,0,2559.2,128,185,0
+3504,0,4,onset,B,1,1,Stop the water distribution system,safety,0.203050,1,1,1,0,0,1,0,2658.7,161,185,0
+3504,0,4,onset,B,2,1,Stop the water distribution system at the L_T4 sensor to prevent overloading,safety,0.203050,1,1,1,0,0,1,0,2417.9,51,185,0
+3504,0,4,onset,B,3,1,Stop water distribution system,safety,0.203050,1,1,1,0,0,1,0,2788.1,162,185,0
+3504,0,4,onset,B,4,1,Adjust the water pressure in the distribution system to ensure consistent flow and prevent leaks.,unclear,0.203050,1,1,1,0,0,0,0,2809.5,211,185,0
+3504,0,4,onset,B,5,1,Monitor and adjust water flow based on sensor data,monitor,0.203050,1,1,1,0,1,0,0,2637.0,127,185,0
+3504,0,4,onset,B,6,1,Adjust the water flow rate to maintain optimal pressure and flow in the distribution network,unclear,0.203050,1,1,1,0,0,0,0,2603.4,126,185,0
+3504,0,4,onset,B,7,1,Close the distribution pipe for the affected area to prevent further flow and ensure safety,safety,0.203050,1,1,1,0,0,1,0,2405.6,60,185,0
+3504,0,4,onset,B,8,1,Close the distribution valve at P_J415 to prevent overflow and ensure safety,safety,0.203050,1,1,1,0,0,1,0,2673.7,130,185,0
+3504,0,4,onset,B,9,1,Monitor and adjust water flow rates based on sensor data,monitor,0.203050,1,1,1,0,1,0,0,2454.2,82,185,0
+3505,0,4,onset,B,0,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.189691,1,1,1,0,1,0,0,2522.9,78,185,0
+3505,0,4,onset,B,1,0,,unclear,0.189691,1,1,1,0,0,0,0,2501.0,84,185,0
+3505,0,4,onset,B,2,1,Monitor and adjust the water flow rate based on sensor readings,monitor,0.189691,1,1,1,0,1,0,0,2620.7,129,185,0
+3505,0,4,onset,B,3,1,Adjust water flow rate based on sensor data,unclear,0.189691,1,1,1,0,0,0,0,2612.5,118,185,0
+3505,0,4,onset,B,4,1,Stop water delivery to affected areas,safety,0.189691,1,1,1,0,0,1,0,2733.9,175,185,0
+3505,0,4,onset,B,5,1,Monitor and adjust water flow rates based on sensor data,monitor,0.189691,1,1,1,0,1,0,0,2619.4,128,185,0
+3505,0,4,onset,B,6,1,Monitor and adjust pressure levels for critical distribution points,monitor,0.189691,1,1,1,0,1,0,0,2445.9,71,185,0
+3505,0,4,onset,B,7,1,Monitor and adjust water flow rates based on sensor data,monitor,0.189691,1,1,1,0,1,0,0,2519.3,77,185,0
+3505,0,4,onset,B,8,1,Monitor the water flow rate and pressure to ensure safety and efficiency,monitor,0.189691,1,1,1,0,1,0,0,2666.4,178,185,0
+3505,0,4,onset,B,9,1,Monitor and adjust flow rate for P_J415 and P_J256 to ensure safety and efficiency,monitor,0.189691,1,1,1,0,1,0,0,2519.4,94,185,0
+3506,0,4,onset,B,0,0,,unclear,0.141036,1,1,1,0,0,0,0,2781.0,180,184,0
+3506,0,4,onset,B,1,1,Close the distribution pipe at the P_J256 sensor to prevent overflow,safety,0.141036,1,1,1,0,0,1,0,2496.2,69,184,0
+3506,0,4,onset,B,2,1,Monitor and adjust water flow based on sensor readings,monitor,0.141036,1,1,1,0,1,0,0,2675.7,126,184,0
