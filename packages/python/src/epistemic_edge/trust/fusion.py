@@ -3,6 +3,9 @@ Subjective Logic fusion via jsonld-ex compliance algebra.
 
 Wraps jsonld_ex.confidence_algebra to resolve conflicting sensor readings
 into a single (b, d, u) opinion with deterministic conflict handling.
+
+Reference:
+    Jøsang (2016), Subjective Logic, §12.3 — Cumulative Fusion.
 """
 
 from __future__ import annotations
@@ -56,32 +59,48 @@ class SLFusion:
 
     def fuse_pair(self, a: FusedState, b: FusedState) -> FusedState:
         """
-        Combine two fused states using cumulative fusion (Josang).
+        Combine two fused states using Jøsang cumulative fusion (§12.3).
 
-        Delegates to jsonld-ex when available, falls back to direct calculation.
+        Uses jsonld_ex.confidence_algebra.cumulative_fuse which implements
+        the exact formula:
+            κ = u_A + u_B − u_A · u_B
+            b = (b_A · u_B + b_B · u_A) / κ
+            d = (d_A · u_B + d_B · u_A) / κ
+            u = (u_A · u_B) / κ
+
+        Properties:
+            - Commutativity:  A ⊕ B = B ⊕ A
+            - Associativity:  (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C)
+            - Identity:       A ⊕ vacuous = A
+            - Uncertainty reduction: u_{A⊕B} < min(u_A, u_B)
+              when both are non-dogmatic
+
+        Raises:
+            ImportError: If jsonld-ex is not installed. No silent fallback
+                to averaging — incorrect fusion is worse than a loud failure.
         """
-        try:
-            from jsonld_ex.confidence_algebra import cumulative_fusion
+        from jsonld_ex.confidence_algebra import cumulative_fuse, Opinion
 
-            result = cumulative_fusion(
-                {"belief": a.belief, "disbelief": a.disbelief, "uncertainty": a.uncertainty},
-                {"belief": b.belief, "disbelief": b.disbelief, "uncertainty": b.uncertainty},
-            )
-            return FusedState(
-                payload={**a.payload, **b.payload},
-                belief=result["belief"],
-                disbelief=result["disbelief"],
-                uncertainty=result["uncertainty"],
-                base_rate=(a.base_rate + b.base_rate) / 2,
-                sources=a.sources + b.sources,
-            )
-        except ImportError:
-            logger.warning("jsonld-ex cumulative_fusion not available; using simple average.")
-            return FusedState(
-                payload={**a.payload, **b.payload},
-                belief=(a.belief + b.belief) / 2,
-                disbelief=(a.disbelief + b.disbelief) / 2,
-                uncertainty=(a.uncertainty + b.uncertainty) / 2,
-                base_rate=(a.base_rate + b.base_rate) / 2,
-                sources=a.sources + b.sources,
-            )
+        op_a = Opinion(
+            belief=a.belief,
+            disbelief=a.disbelief,
+            uncertainty=a.uncertainty,
+            base_rate=a.base_rate,
+        )
+        op_b = Opinion(
+            belief=b.belief,
+            disbelief=b.disbelief,
+            uncertainty=b.uncertainty,
+            base_rate=b.base_rate,
+        )
+
+        result = cumulative_fuse(op_a, op_b)
+
+        return FusedState(
+            payload={**a.payload, **b.payload},
+            belief=result.belief,
+            disbelief=result.disbelief,
+            uncertainty=result.uncertainty,
+            base_rate=result.base_rate,
+            sources=a.sources + b.sources,
+        )

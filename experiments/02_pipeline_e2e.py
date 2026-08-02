@@ -35,6 +35,8 @@ Usage:
     python 02_pipeline_e2e.py --model-name bonsai-8B --reps 5 --conditions C D F
     python 02_pipeline_e2e.py --model-name qwen3-8b-q4 --reps 10 --disable-thinking
     python 02_pipeline_e2e.py --model-name phi-3.5-mini-q4 --reps 10 --port 8080
+    python 02_pipeline_e2e.py --model-name deepseek-r1-8b --model-id deepseek-r1:8b --reps 10
+    python 02_pipeline_e2e.py --model-name qwen3.5-122b-cloud --model-id qwen3.5:122b --reps 10 --timeout 300
 """
 
 from __future__ import annotations
@@ -44,6 +46,7 @@ import json
 import os
 import subprocess
 import time
+import re
 import urllib.request
 import urllib.error
 from dataclasses import dataclass, field
@@ -69,6 +72,11 @@ from epistemic_edge.memory.cache import DecayConfig
 from epistemic_edge.trust.fusion import SLFusion
 
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
+
+# Module-level model identifier for Ollama (set in main())
+_MODEL_ID: str | None = None
+_HTTP_TIMEOUT: int = 120
+_MAX_TOKENS: int = 128
 
 
 def _now() -> datetime:
@@ -279,20 +287,36 @@ SCENARIOS = [
 def infer_http(
     base_url: str,
     prompt: str,
-    max_tokens: int = 128,
-) -> tuple[str, float, int, int]:
+    max_tokens: int | None = None,
+) -> tuple[str, float, int, int, int]:
     """
-    Send a chat completion request to llama-server.
+    Send a chat completion request to llama-server or Ollama.
 
-    Returns (response_text, latency_ms, completion_tokens, prompt_tokens).
+    Returns:
+        (response_text, latency_ms, completion_tokens, prompt_tokens, reasoning_tokens)
+
+    reasoning_tokens is the number of tokens consumed by thinking/reasoning chains:
+      - Ollama: read from message.reasoning field directly (token count estimated
+        by word count × 1.3, the OpenAI-standard ratio)
+      - llama-server: extracted from <think>...</think> or <reasoning>...</reasoning>
+        blocks in the content field
+      - Non-thinking models: always 0
+
+    Note: completion_tokens from usage INCLUDES reasoning_tokens (they are a subset).
+    The ratio reasoning_tokens / completion_tokens gives the "reasoning overhead".
     """
-    payload = json.dumps({
+    if max_tokens is None:
+        max_tokens = _MAX_TOKENS
+    payload_dict: dict = {
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": max_tokens,
         "temperature": 0.3,
         "top_p": 0.85,
         "top_k": 20,
-    }).encode("utf-8")
+    }
+    if _MODEL_ID is not None:
+        payload_dict["model"] = _MODEL_ID
+    payload = json.dumps(payload_dict).encode("utf-8")
 
     req = urllib.request.Request(
         f"{base_url}/v1/chat/completions",
@@ -302,15 +326,118 @@ def infer_http(
     )
 
     t0 = time.perf_counter()
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=_HTTP_TIMEOUT) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     elapsed = (time.perf_counter() - t0) * 1000
 
-    text = data["choices"][0]["message"]["content"].strip()
-    completion_tokens = data.get("usage", {}).get("completion_tokens", len(text.split()))
+    message = data["choices"][0]["message"]
+    raw_content = message.get("content", "").strip() if message.get("content") else ""
+    reasoning_field = message.get("reasoning", "") or ""
+
+    # Count reasoning tokens
+    reasoning_tokens = _count_reasoning_tokens(raw_content, reasoning_field)
+
+    completion_tokens = data.get("usage", {}).get(
+        "completion_tokens", len(raw_content.split()) if raw_content else 0
+    )
     prompt_tokens = data.get("usage", {}).get("prompt_tokens", 0)
 
-    return text, elapsed, completion_tokens, prompt_tokens
+    # Robust extraction: handle all known model output formats
+    text = _extract_json_response(raw_content)
+
+    return text, elapsed, completion_tokens, prompt_tokens, reasoning_tokens
+
+
+def _count_reasoning_tokens(content: str, reasoning_field: str) -> int:
+    """Estimate token count consumed by reasoning/thinking.
+
+    Handles two formats:
+      1. Ollama: reasoning is in a separate 'reasoning' field
+      2. llama-server: reasoning is wrapped in <think>...</think> tags in content
+
+    Uses word_count × 1.3 as the standard OpenAI-compatible estimator when
+    the API does not provide a separate reasoning_tokens field.
+    """
+    total_chars = 0
+
+    # Ollama-style: dedicated reasoning field
+    if reasoning_field:
+        total_chars += len(reasoning_field)
+
+    # llama-server-style: <think>...</think> blocks in content
+    for pattern in (r"<think>(.*?)</think>", r"<reasoning>(.*?)</reasoning>",
+                    r"<thought>(.*?)</thought>"):
+        for match in re.finditer(pattern, content, flags=re.DOTALL):
+            total_chars += len(match.group(1))
+
+    if total_chars == 0:
+        return 0
+
+    # Estimate tokens: ~4 chars per token (OpenAI rule of thumb)
+    # Then multiply by 1.0 since we're counting chars not words
+    estimated_tokens = int(total_chars / 4)
+    return estimated_tokens
+
+
+def _extract_json_response(raw: str) -> str:
+    """Extract a JSON object from potentially wrapped/decorated LLM output.
+
+    Handles all known model output formats:
+      1. Clean JSON: {"action": "..."}
+      2. <think>...</think> wrapping (DeepSeek-R1 via llama-server)
+      3. <reasoning>...</reasoning> wrapping
+      4. Markdown code fences: ```json ... ```
+      5. Preamble text before JSON: "Here is the response:\n{...}"
+      6. Trailing text after JSON: {...}\nHope this helps!
+      7. Combinations of the above
+
+    Returns the extracted JSON string, or the original text if no
+    JSON object can be found (let the caller's JSON parser report the error).
+    """
+    if not raw:
+        return raw
+
+    text = raw
+
+    # Step 1: Strip XML-style thinking/reasoning blocks
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+    text = re.sub(r"<reasoning>.*?</reasoning>", "", text, flags=re.DOTALL).strip()
+    text = re.sub(r"<thought>.*?</thought>", "", text, flags=re.DOTALL).strip()
+
+    # Step 2: Strip markdown code fences (```json ... ``` or ``` ... ```)
+    fence_match = re.search(r"```(?:json|JSON)?\s*\n?(.*?)```", text, flags=re.DOTALL)
+    if fence_match:
+        text = fence_match.group(1).strip()
+
+    # Step 3: If text is now valid JSON, return it
+    if text.startswith("{") and text.endswith("}"):
+        return text
+
+    # Step 4: Extract first {...} block from surrounding text
+    brace_match = re.search(r"\{[^{}]*\}", text, flags=re.DOTALL)
+    if brace_match:
+        candidate = brace_match.group(0)
+        # Verify it's plausibly JSON (contains quotes and colons)
+        if '"' in candidate and ":" in candidate:
+            return candidate
+
+    # Step 5: Try nested braces (for JSON with nested parameters:{})
+    depth = 0
+    start = None
+    for i, ch in enumerate(text):
+        if ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0 and start is not None:
+                candidate = text[start : i + 1]
+                if '"' in candidate and ":" in candidate:
+                    return candidate
+
+    # Nothing found — return stripped text and let caller handle the parse failure
+    return text
 
 
 # ── Prompt Builders ─────────────────────────────────────────────────────────
@@ -568,6 +695,7 @@ class TrialResult:
     llm_latency_ms: float
     pipeline_latency_ms: float
     completion_tokens: int
+    reasoning_tokens: int  # Tokens consumed by <think>/reasoning chains (subset of completion)
     tok_s: float
 
     # GPU metrics (sampled during inference)
@@ -615,6 +743,7 @@ class TrialResult:
             "llm_latency_ms": round(self.llm_latency_ms, 1),
             "pipeline_latency_ms": round(self.pipeline_latency_ms, 1),
             "completion_tokens": self.completion_tokens,
+            "reasoning_tokens": self.reasoning_tokens,
             "tok_s": round(self.tok_s, 1),
             "gpu_memory_used_mb": self.gpu_memory_used_mb,
             "gpu_power_draw_w": self.gpu_power_draw_w,
@@ -631,24 +760,24 @@ class TrialResult:
 # ── Condition Runners ───────────────────────────────────────────────────────
 #
 # Each runner returns:
-#   (raw_output, llm_latency_ms, completion_tokens, prompt_tokens,
+#   (raw_output, llm_latency_ms, completion_tokens, prompt_tokens, reasoning_tokens,
 #    facts_before, facts_after, facts_decayed, max_uncertainty, prompt)
 
-RunnerResult = tuple[str, float, int, int, int, int, int, float, str]
+RunnerResult = tuple[str, float, int, int, int, int, int, int, float, str]
 
 
 def _run_condition_A(scenario: dict, base_url: str) -> RunnerResult:
     """Bare LLM: query only, no pipeline."""
     prompt = build_prompt_bare(scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, 0, 0, 0, 1.0, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, 0, 0, 0, 1.0, prompt
 
 
 def _run_condition_B(scenario: dict, base_url: str) -> RunnerResult:
     """Raw payloads: query + sensor values, no SL or decay."""
     prompt = build_prompt_raw_payloads(scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, 0, 0, 0, 1.0, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, 0, 0, 0, 1.0, prompt
 
 
 def _run_condition_C(scenario: dict, base_url: str) -> RunnerResult:
@@ -666,8 +795,8 @@ def _run_condition_C(scenario: dict, base_url: str) -> RunnerResult:
     max_u = node.state.max_uncertainty()
 
     prompt = build_prompt_fused_state(node.state.facts, scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, facts_before, facts_after, pruned, max_u, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, facts_before, facts_after, pruned, max_u, prompt
 
 
 def _run_condition_D(scenario: dict, base_url: str) -> RunnerResult:
@@ -683,8 +812,8 @@ def _run_condition_D(scenario: dict, base_url: str) -> RunnerResult:
 
     # NO sweep — stale data retained
     prompt = build_prompt_fused_state(node.state.facts, scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, facts_count, facts_count, 0, max_u, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, facts_count, facts_count, 0, max_u, prompt
 
 
 def _run_condition_E1(scenario: dict, base_url: str) -> RunnerResult:
@@ -704,8 +833,8 @@ def _run_condition_E1(scenario: dict, base_url: str) -> RunnerResult:
     max_u = node.state.max_uncertainty()
 
     prompt = build_prompt_vacuous(scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, facts_before, facts_after, pruned, max_u, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, facts_before, facts_after, pruned, max_u, prompt
 
 
 def _run_condition_E2(scenario: dict, base_url: str) -> RunnerResult:
@@ -724,8 +853,8 @@ def _run_condition_E2(scenario: dict, base_url: str) -> RunnerResult:
     max_u = node.state.max_uncertainty()
 
     prompt = build_prompt_passthrough(scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
-    return raw, latency, tokens, ptokens, facts_before, facts_after, pruned, max_u, prompt
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
+    return raw, latency, tokens, ptokens, rtokens, facts_before, facts_after, pruned, max_u, prompt
 
 
 def _run_condition_F(scenario: dict, base_url: str) -> RunnerResult:
@@ -737,9 +866,9 @@ def _run_condition_F(scenario: dict, base_url: str) -> RunnerResult:
 def _run_condition_G(scenario: dict, base_url: str) -> RunnerResult:
     """No epistemic layers: raw payloads + guardrails (vacuous uncertainty)."""
     prompt = build_prompt_raw_payloads(scenario)
-    raw, latency, tokens, ptokens = infer_http(base_url, prompt)
+    raw, latency, tokens, ptokens, rtokens = infer_http(base_url, prompt)
     # Guardrails will operate on vacuous uncertainty (1.0)
-    return raw, latency, tokens, ptokens, 0, 0, 0, 1.0, prompt
+    return raw, latency, tokens, ptokens, rtokens, 0, 0, 0, 1.0, prompt
 
 
 CONDITION_RUNNERS = {
@@ -772,7 +901,7 @@ def run_trial(
     t0 = time.perf_counter()
 
     runner = CONDITION_RUNNERS[condition]
-    raw, llm_latency, tokens, ptokens, facts_before, facts_after, pruned, max_u, prompt = runner(
+    raw, llm_latency, tokens, ptokens, rtokens, facts_before, facts_after, pruned, max_u, prompt = runner(
         scenario, base_url
     )
 
@@ -859,6 +988,7 @@ def run_trial(
         llm_latency_ms=llm_latency,
         pipeline_latency_ms=pipeline_latency,
         completion_tokens=tokens,
+        reasoning_tokens=rtokens,
         tok_s=tok_s,
         gpu_memory_used_mb=gpu.get("gpu_memory_used_mb"),
         gpu_power_draw_w=gpu.get("gpu_power_draw_w"),
@@ -993,6 +1123,16 @@ def aggregate_condition(trials: list[TrialResult]) -> dict[str, Any]:
         ) if any(t.energy_per_token_mwh is not None for t in trials) else None,
         "avg_prompt_tokens": round(
             sum(t.prompt_tokens for t in trials) / n, 1
+        ) if n else 0,
+        "avg_completion_tokens": round(
+            sum(t.completion_tokens for t in trials) / n, 1
+        ) if n else 0,
+        "avg_reasoning_tokens": round(
+            sum(t.reasoning_tokens for t in trials) / n, 1
+        ) if n else 0,
+        "reasoning_ratio": round(
+            sum(t.reasoning_tokens for t in trials)
+            / max(1, sum(t.completion_tokens for t in trials)), 4
         ) if n else 0,
         "ddev": _compute_ddev([t.energy_per_token_mwh for t in trials
                                if t.energy_per_token_mwh is not None]),
@@ -1240,24 +1380,71 @@ Examples:
         "--precision-bits", type=float, default=None,
         help="Effective weight precision in bits (e.g., 1.0 for Bonsai 1-bit, 4.0 for Q4_K_M).",
     )
-    parser.add_argument("--port", type=int, default=8080, help="llama-server port")
+    parser.add_argument("--port", type=int, default=None, help="Server port (default: 8080 for llama-server, 11434 for ollama)")
     parser.add_argument("--reps", type=int, default=5, help="Repetitions per scenario per condition")
     parser.add_argument(
         "--conditions", nargs="+", default=ALL_CONDITIONS,
         choices=ALL_CONDITIONS,
         help="Which conditions to run (default: all)",
     )
+    parser.add_argument(
+        "--model-id", type=str, default=None,
+        help="Ollama model identifier (e.g., 'deepseek-r1:8b'). Enables Ollama mode.",
+    )
+    parser.add_argument(
+        "--base-url", type=str, default=None,
+        help="Override base URL (e.g., 'http://localhost:11434' for Ollama, or a cloud URL).",
+    )
+    parser.add_argument(
+        "--timeout", type=int, default=120,
+        help="HTTP timeout in seconds (increase for cloud models, default: 120).",
+    )
+    parser.add_argument(
+        "--max-tokens", type=int, default=128,
+        help="Max tokens per LLM call (increase for thinking models, default: 128).",
+    )
     args = parser.parse_args()
 
-    base_url = f"http://localhost:{args.port}"
+    # Determine backend mode and base URL
+    is_ollama = args.model_id is not None
+    if args.base_url:
+        base_url = args.base_url
+    elif is_ollama:
+        port = args.port or 11434
+        base_url = f"http://localhost:{port}"
+    else:
+        port = args.port or 8080
+        base_url = f"http://localhost:{port}"
+
+    # Set global model ID for infer_http
+    if is_ollama:
+        global _MODEL_ID
+        _MODEL_ID = args.model_id
+
+    # Set global timeout
+    global _HTTP_TIMEOUT
+    _HTTP_TIMEOUT = args.timeout
+
+    # Set global max tokens
+    global _MAX_TOKENS
+    _MAX_TOKENS = args.max_tokens
 
     # Verify server is reachable
     try:
-        urllib.request.urlopen(f"{base_url}/health", timeout=5)
+        if is_ollama:
+            # Ollama health: GET to base URL returns "Ollama is running"
+            health_url = base_url.rstrip("/")
+            urllib.request.urlopen(health_url, timeout=5)
+        else:
+            urllib.request.urlopen(f"{base_url}/health", timeout=5)
     except Exception:
-        print(f"ERROR: Cannot reach llama-server at {base_url}")
-        print(f"Start it first:")
-        print(f"  llama-server.exe -m <model>.gguf --port {args.port} -ngl 99")
+        if is_ollama:
+            print(f"ERROR: Cannot reach Ollama at {base_url}")
+            print(f"Start it first:  ollama serve")
+        else:
+            print(f"ERROR: Cannot reach llama-server at {base_url}")
+            print(f"Start it first:")
+            print(f"  llama-server.exe -m <model>.gguf --port {port} -ngl 99")
         return
 
     # Apply thinking mode control globally

@@ -454,3 +454,217 @@ class TestTimeWindow:
             end_time=NOW,
         )
         assert tw.num_observations == 2
+
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# TDD: Strategy applicability signaling (fix for composite weighting bug)
+# ═══════════════════════════════════════════════════════════════════════════
+
+
+class TestStrategyApplicability:
+    """Tests for the is_applicable() method that strategies must provide.
+
+    A strategy is 'applicable' when it has sufficient context to produce
+    an informative opinion. When not applicable, it should signal this so
+    CompositeStrategy can skip it and renormalize weights over the applicable
+    strategies only.
+
+    This prevents constant-noise fallbacks from dragging down the composite
+    average when most sensors lack the required context (e.g., SensorAgreement
+    returning (0.6, 0.1, 0.3) for sensors without related_readings).
+    """
+
+    def test_sensor_agreement_not_applicable_without_related(self):
+        """SensorAgreementStrategy should report not-applicable when no
+        related_readings are available (only returns constant fallback)."""
+        strat = SensorAgreementStrategy()
+        ctx = _ctx(related_readings=None)
+        assert strat.is_applicable(ctx) is False, (
+            "SensorAgreementStrategy must signal not-applicable without related "
+            "readings — otherwise its constant (0.6, 0.1, 0.3) fallback drags down "
+            "composite averages."
+        )
+
+    def test_sensor_agreement_applicable_with_related(self):
+        """SensorAgreementStrategy IS applicable when related_readings exist."""
+        strat = SensorAgreementStrategy()
+        ctx = _ctx(related_readings={"other_sensor": 25.1})
+        assert strat.is_applicable(ctx) is True
+
+    def test_historical_not_applicable_without_stats(self):
+        """HistoricalDeviationStrategy needs historical_mean and historical_std."""
+        strat = HistoricalDeviationStrategy()
+        ctx = _ctx(historical_mean=None, historical_std=None)
+        assert strat.is_applicable(ctx) is False
+
+    def test_historical_applicable_with_stats(self):
+        strat = HistoricalDeviationStrategy()
+        ctx = _ctx(historical_mean=25.0, historical_std=2.0)
+        assert strat.is_applicable(ctx) is True
+
+    def test_historical_not_applicable_with_zero_std(self):
+        """Zero std means no variance in calibration data — strategy can still
+        produce a meaningful opinion (exact match vs deviation), so IS applicable."""
+        strat = HistoricalDeviationStrategy()
+        ctx = _ctx(historical_mean=25.0, historical_std=0.0)
+        # Zero std is a valid-but-edge case: still produces meaningful output
+        assert strat.is_applicable(ctx) is True
+
+    def test_physics_not_applicable_without_bounds(self):
+        """PhysicsBoundsStrategy needs physical_min and physical_max.
+
+        NOTE: Current implementation falls back to HistoricalDeviation when
+        bounds are missing. For applicability purposes, physics is NOT applicable
+        if the physics-specific logic isn't used.
+        """
+        strat = PhysicsBoundsStrategy()
+        ctx = _ctx(physical_min=None, physical_max=None)
+        assert strat.is_applicable(ctx) is False
+
+    def test_physics_applicable_with_bounds(self):
+        strat = PhysicsBoundsStrategy()
+        ctx = _ctx(physical_min=0.0, physical_max=100.0)
+        assert strat.is_applicable(ctx) is True
+
+    def test_physics_not_applicable_degenerate_bounds(self):
+        """Degenerate bounds (min >= max) are not applicable."""
+        strat = PhysicsBoundsStrategy()
+        ctx = _ctx(physical_min=10.0, physical_max=10.0)
+        assert strat.is_applicable(ctx) is False
+
+
+class TestCompositeSkipsNonApplicable:
+    """Tests verifying CompositeStrategy skips non-applicable strategies and
+    renormalizes weights over those that apply."""
+
+    def test_composite_uses_only_applicable_strategies(self):
+        """When only historical is applicable, composite output must equal
+        historical output (not an average with fallback noise)."""
+        composite = CompositeStrategy(strategies=[
+            (HistoricalDeviationStrategy(), 0.5),
+            (PhysicsBoundsStrategy(), 0.3),
+            (SensorAgreementStrategy(), 0.2),
+        ])
+
+        # Historical can work (has stats); others cannot (no bounds, no related)
+        ctx = _ctx(
+            reading=30.0,
+            historical_mean=25.0,
+            historical_std=2.0,
+            physical_min=None,
+            physical_max=None,
+            related_readings=None,
+        )
+
+        # What historical alone would produce
+        hist_only = HistoricalDeviationStrategy().assign(ctx)
+        # What composite produces
+        comp_result = composite.assign(ctx)
+
+        # Should be essentially identical (composite = historical when others skip)
+        assert comp_result[0] == pytest.approx(hist_only[0], abs=1e-4), (
+            f"Composite should produce historical's output when only historical "
+            f"is applicable. Got composite b={comp_result[0]:.4f}, "
+            f"historical b={hist_only[0]:.4f}"
+        )
+        assert comp_result[1] == pytest.approx(hist_only[1], abs=1e-4)
+        assert comp_result[2] == pytest.approx(hist_only[2], abs=1e-4)
+
+    def test_composite_fallback_to_vacuous_when_nothing_applicable(self):
+        """When NO strategies are applicable, composite returns vacuous (0,0,1)."""
+        composite = CompositeStrategy(strategies=[
+            (HistoricalDeviationStrategy(), 0.5),
+            (PhysicsBoundsStrategy(), 0.3),
+            (SensorAgreementStrategy(), 0.2),
+        ])
+
+        # Nothing applicable: no history, no bounds, no related
+        ctx = _ctx(
+            historical_mean=None,
+            historical_std=None,
+            physical_min=None,
+            physical_max=None,
+            related_readings=None,
+        )
+        b, d, u, a = composite.assign(ctx)
+
+        assert b == pytest.approx(0.0, abs=1e-6)
+        assert d == pytest.approx(0.0, abs=1e-6)
+        assert u == pytest.approx(1.0, abs=1e-6)
+
+    def test_composite_weights_renormalize_over_applicable(self):
+        """When only 2 of 3 strategies are applicable, their weights must
+        renormalize to sum to 1.0 (not stay at original fraction)."""
+        composite = CompositeStrategy(strategies=[
+            (HistoricalDeviationStrategy(), 0.5),
+            (PhysicsBoundsStrategy(), 0.3),
+            (SensorAgreementStrategy(), 0.2),
+        ])
+
+        # Historical and Physics applicable; Agreement is not
+        ctx = _ctx(
+            reading=50.0,
+            historical_mean=50.0,
+            historical_std=5.0,
+            physical_min=0.0,
+            physical_max=100.0,
+            related_readings=None,
+        )
+
+        hist = HistoricalDeviationStrategy().assign(ctx)
+        phys = PhysicsBoundsStrategy().assign(ctx)
+        comp = composite.assign(ctx)
+
+        # Composite should weight historical by 0.5/(0.5+0.3)=0.625 and physics by 0.375
+        expected_b = hist[0] * (0.5 / 0.8) + phys[0] * (0.3 / 0.8)
+        assert comp[0] == pytest.approx(expected_b, abs=1e-4), (
+            f"Weights should renormalize over applicable strategies. "
+            f"Expected b={expected_b:.4f}, got {comp[0]:.4f}"
+        )
+
+    def test_composite_backward_compat_all_applicable(self):
+        """When ALL strategies are applicable, composite behaves as before
+        (weighted average over all three)."""
+        composite = CompositeStrategy(strategies=[
+            (HistoricalDeviationStrategy(), 1.0),
+            (PhysicsBoundsStrategy(), 1.0),
+            (SensorAgreementStrategy(), 1.0),
+        ])
+
+        ctx = _ctx(
+            reading=25.0,
+            historical_mean=25.0,
+            historical_std=2.0,
+            physical_min=0.0,
+            physical_max=100.0,
+            related_readings={"other": 25.2},
+        )
+
+        hist = HistoricalDeviationStrategy().assign(ctx)
+        phys = PhysicsBoundsStrategy().assign(ctx)
+        agr = SensorAgreementStrategy().assign(ctx)
+        comp = composite.assign(ctx)
+
+        expected_b = (hist[0] + phys[0] + agr[0]) / 3
+        assert comp[0] == pytest.approx(expected_b, abs=1e-4)
+
+    def test_composite_is_applicable_if_any_substrategy_is(self):
+        """Composite itself is applicable if at least one sub-strategy is."""
+        composite = CompositeStrategy(strategies=[
+            (HistoricalDeviationStrategy(), 0.5),
+            (PhysicsBoundsStrategy(), 0.3),
+            (SensorAgreementStrategy(), 0.2),
+        ])
+
+        # Only historical applicable
+        ctx_hist = _ctx(historical_mean=25.0, historical_std=2.0,
+                        physical_min=None, physical_max=None,
+                        related_readings=None)
+        assert composite.is_applicable(ctx_hist) is True
+
+        # Nothing applicable
+        ctx_none = _ctx(historical_mean=None, historical_std=None,
+                        physical_min=None, physical_max=None,
+                        related_readings=None)
+        assert composite.is_applicable(ctx_none) is False

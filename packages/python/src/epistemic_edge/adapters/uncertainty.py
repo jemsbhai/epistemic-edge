@@ -48,6 +48,17 @@ class UncertaintyStrategy(ABC):
         """
         ...
 
+    def is_applicable(self, context: SensorContext) -> bool:
+        """Return True if this strategy has sufficient context to produce an
+        informative opinion for the given sensor.
+
+        Default: True. Strategies that rely on optional fields (related_readings,
+        historical_mean/std, physical_min/max) should override this to return
+        False when those fields are unavailable, so CompositeStrategy can skip
+        them instead of averaging in their uninformative fallback output.
+        """
+        return True
+
     def _clamp_and_normalize(
         self, b: float, d: float, u: float, a: float = 0.5
     ) -> tuple[float, float, float, float]:
@@ -89,6 +100,11 @@ class SensorAgreementStrategy(UncertaintyStrategy):
         self.agreement_threshold = agreement_threshold
         self.high_belief = high_belief
         self.disagreement_uncertainty = disagreement_uncertainty
+
+    def is_applicable(self, context: SensorContext) -> bool:
+        """Applicable only when related_readings exist — without them, this
+        strategy returns a constant fallback that contaminates composite averages."""
+        return bool(context.related_readings)
 
     def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if not context.related_readings:
@@ -158,6 +174,14 @@ class HistoricalDeviationStrategy(UncertaintyStrategy):
     ) -> None:
         self.sigma_warn, self.sigma_critical = sigma_thresholds
 
+    def is_applicable(self, context: SensorContext) -> bool:
+        """Applicable when historical_mean and historical_std are available.
+        Zero std is considered applicable (produces meaningful exact-match logic)."""
+        return (
+            context.historical_mean is not None
+            and context.historical_std is not None
+        )
+
     def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if context.historical_mean is None or context.historical_std is None:
             # No history — vacuous opinion
@@ -220,6 +244,15 @@ class PhysicsBoundsStrategy(UncertaintyStrategy):
     def __init__(self, boundary_margin: float = 0.1) -> None:
         self.boundary_margin = boundary_margin
         self._fallback = HistoricalDeviationStrategy()
+
+    def is_applicable(self, context: SensorContext) -> bool:
+        """Applicable when physical bounds exist and are non-degenerate.
+        Without bounds, assign() falls back to HistoricalDeviation — but
+        from composite's perspective, this strategy is NOT applicable since
+        it's not providing physics-specific information."""
+        if context.physical_min is None or context.physical_max is None:
+            return False
+        return context.physical_max > context.physical_min
 
     def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
         if context.physical_min is None or context.physical_max is None:
@@ -298,12 +331,33 @@ class CompositeStrategy(UncertaintyStrategy):
         total_weight = sum(w for _, w in strategies)
         self.normalized_weights = [w / total_weight for _, w in strategies]
 
+    def is_applicable(self, context: SensorContext) -> bool:
+        """Composite is applicable if at least one sub-strategy is applicable."""
+        return any(strat.is_applicable(context) for strat, _ in self.strategies)
+
     def assign(self, context: SensorContext) -> tuple[float, float, float, float]:
+        # Collect only applicable strategies and their weights
+        applicable = [
+            (strat, weight)
+            for strat, weight in self.strategies
+            if strat.is_applicable(context)
+        ]
+
+        # If no strategies apply, return vacuous opinion
+        if not applicable:
+            return self._clamp_and_normalize(0.0, 0.0, 1.0)
+
+        # Renormalize weights over applicable strategies only
+        total_weight = sum(w for _, w in applicable)
+        if total_weight <= 0:
+            return self._clamp_and_normalize(0.0, 0.0, 1.0)
+
         b_total, d_total, u_total, a_total = 0.0, 0.0, 0.0, 0.0
-        for (strategy, _), weight in zip(self.strategies, self.normalized_weights):
-            b, d, u, a = strategy.assign(context)
-            b_total += b * weight
-            d_total += d * weight
-            u_total += u * weight
-            a_total += a * weight
+        for strat, weight in applicable:
+            b, d, u, a = strat.assign(context)
+            w = weight / total_weight
+            b_total += b * w
+            d_total += d * w
+            u_total += u * w
+            a_total += a * w
         return self._clamp_and_normalize(b_total, d_total, u_total, a_total)
