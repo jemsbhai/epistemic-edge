@@ -15,7 +15,7 @@ This repository accompanies:
 > **Epistemic Edge: Subjective Logic Guardrails for LLM-Driven IoT Actuation.**
 > Muntaser Syed and Marius Silaghi.
 > *IEEE 27th International Conference on Information Reuse and Integration for Data Science
-> (IEEE IRI 2026)*, Seattle, WA. To appear.
+> (IEEE IRI 2026), Seattle, WA. Published, pp. 37–40.
 
 Three findings from the paper:
 
@@ -38,7 +38,7 @@ Three findings from the paper:
   booktitle = {2026 IEEE 27th International Conference on Information Reuse and
                Integration for Data Science (IRI)},
   year      = {2026},
-  note      = {To appear}
+  pages      = {37--40}
 }
 ```
 
